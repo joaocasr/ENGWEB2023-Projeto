@@ -45,16 +45,20 @@ for file in os.listdir(path):
                 i+=1
             j=0
         if 'lista-casas' in dic['rua']['corpo']:
-            for p in dic['rua']['corpo']['lista-casas']['casa']:
-                print(">>")
+            print("HERE")
+            print(dic['rua']['corpo']['lista-casas']['casa'])
+            while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
+                print(">>"+str(i))
+                print(t4[i])
                 if('desc' in (dic['rua']['corpo']['lista-casas']['casa'])):
                         #if(xmlfile=="/home/joao/XMLJSON/texto/MRB-29-Beco.xml"):print(dic['rua']['corpo']['lista-casas']['casa']['desc'])
-                        print(len(t4))
-                        print(i)
-                        print(dic['rua']['corpo']['lista-casas']['casa'])
-                        dic['rua']['corpo']['lista-casas']['casa']['desc']['para']=t4[i]
+                        entryText = {
+                            "#text":t4[i]
+                        }
+                        dic['rua']['corpo']['lista-casas']['casa']['desc']['para']=entryText
                         i+=1   
-                elif('desc' in dic['rua']['corpo']['lista-casas']['casa'][j]):
+                elif('desc' in dic['rua']['corpo']['lista-casas']['casa'][j] and dic['rua']['corpo']['lista-casas']['casa'][j]['desc']!=None):
+                    #print(dic['rua']['corpo']['lista-casas']['casa'][j])
                     if(type(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']) is dict):
                         #print(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para'])
                         print("heu")
