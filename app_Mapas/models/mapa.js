@@ -23,4 +23,4 @@ var mapaSchema = new mongoose.Schema({
     figuras: [figuraSchema]
 })
 
-module.exports = mongoose.model('ruas',mapaSchema)
+module.exports = mongoose.model('streets',mapaSchema)
