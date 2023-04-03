@@ -15,17 +15,17 @@ for file in os.listdir(path):
 
     finalDic = dict()
 
-    with open(xmlfile,"r") as f:
+    with open(xmlfile,"r",encoding='utf-8') as f:
         xmltext = f.read()
         dic = xmltodict.parse(xmltext)
         numero = dic['rua']['meta']['número']
         nome = dic['rua']['meta']['nome']
-        dic['rua']['corpo']['_id'] = int(numero)
+        dic['rua']['corpo']['_id'] = numero
         dic['rua']['corpo']['nome'] = nome
         dic['rua'].pop('meta')
         #jsonobj = json.dumps(dic, indent=4,ensure_ascii=False)
         
-    with open(xmlfile,"r") as f:
+    with open(xmlfile,"r",encoding='utf-8') as f:
         xml = f.read()
         t1 = re.sub(r'<lugar>(.*?)<\/lugar>',r"\1",xml)    
         t2 = re.sub(r'<data>(.*?)<\/data>',r"\1",t1)
@@ -76,6 +76,9 @@ for file in os.listdir(path):
                                 }
                     dic['rua']['corpo']['lista-casas']['casa'][j]['desc']=entryDesc
                 j+=1
+        if 'figura' in dic['rua']['corpo']:
+            if type(dic['rua']['corpo']['figura']) is dict:
+                dic['rua']['corpo']['figura'] = [dic['rua']['corpo']['figura']]
 
     #print(dic['rua']['corpo'].items())
     for (k,v) in dic['rua']['corpo'].items():
