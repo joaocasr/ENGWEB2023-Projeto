@@ -15,7 +15,7 @@ for file in os.listdir(path):
 
     finalDic = dict()
 
-    with open(xmlfile,"r",encoding='utf-8') as f:
+    with open(xmlfile,"r",encoding='utf-8')as f:
         xmltext = f.read()
         dic = xmltodict.parse(xmltext)
         numero = dic['rua']['meta']['número']
@@ -45,7 +45,6 @@ for file in os.listdir(path):
                 i+=1
             j=0
         if 'lista-casas' in dic['rua']['corpo']:
-            print("HERE")
             print(dic['rua']['corpo']['lista-casas']['casa'])
             while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
                 print(">>"+str(i))
@@ -61,7 +60,6 @@ for file in os.listdir(path):
                     #print(dic['rua']['corpo']['lista-casas']['casa'][j])
                     if(type(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']) is dict):
                         #print(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para'])
-                        print("heu")
                         dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']['#text']=t4[i]
                         i+=1
                     if(type(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']) is str):
