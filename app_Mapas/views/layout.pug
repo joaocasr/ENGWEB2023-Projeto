@@ -1,19 +1,10 @@
 doctype html
+
 html(lang='en')
-  head
-    meta(charset='UTF-8')
-    link(rel='icon', href='favicon.png')
-    link(rel='stylesheet', type='text/css', href='w3.css')
-    title Mapa de Braga
-  body.(style='min-height:100vh; display:flex; flex-direction:column;', class='w3-light-grey')
-    .w3-card-4
-      header.w3-container.w3-cell-row(class='w3-blue')
-        .w3-container.w3-cell.w3-center
-          h3
-            input.w3-button(type='button', value='Previous page', onclick='history.back()')
-        .w3-container.w3-cell.w3-center
-          h1 Mapa de Braga
-        .w3-container.w3-cell.w3-center
-          h3
-            input.w3-button(type='button', value='Next Page', onclick='history.forward()')
-    div(style='padding-bottom: 20px;width: 100%')
+	head
+		meta(charset='UTF-8')
+		link(rel='icon', href='favicon.png')
+		link(rel='stylesheet', type='text/css', href='stylesheets/w3.css')
+		title Mapa de Braga
+	body.w3-light-grey(style="min-height:100vh; display:flex; flex-direction:column;")
+		block content

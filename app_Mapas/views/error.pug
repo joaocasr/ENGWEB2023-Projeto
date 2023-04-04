@@ -1,8 +1,24 @@
 extends layout
 
-		block content
-			h1= message
-			h2= error.status
-			pre #{error.stack}
+block content
+	.w3-card-4
+		header.w3-container.w3-cell-row(class='w3-blue')
+			.w3-container.w3-cell.w3-center
+				h3
+					input.w3-button(type='button', value="Previous page", onclick='history.back()')
+			.w3-container.w3-cell.w3-center
+				h1 Mapa de Braga
+			.w3-container.w3-cell.w3-center
+				h3
+					input.w3-button(type='button', value="  Next Page  ", onclick='history.forward()')
+		div(style='padding-bottom: 20px;width: 100%')
 
-extends footer
+
+		h1= message
+		h2= error.status
+		pre #{error.stack}
+
+
+		div(style='padding-top: 20px;width: 100%')
+	footer.w3-container.w3-blue(style='margin-top: auto; width:100%;')
+		h5 Trabalho sobre as ruas de Braga
