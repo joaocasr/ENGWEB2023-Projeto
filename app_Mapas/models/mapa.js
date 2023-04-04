@@ -1,26 +1,49 @@
 var mongoose = require('mongoose')
 
+
+var entidadeSchema = new mongoose.Schema({
+    '@tipo': String,
+    '#text': String
+})
+
 var paraSchema = new mongoose.Schema({
-    primeiro:String,
-    último:String
+    lugar: [String],
+    data: [String],
+    entidade: entidadeSchema,
+    '#text': String  
+})
+
+var descSchema = new mongoose.Schema({
+    para: paraSchema
 })
 
 var casaSchema = new mongoose.Schema({
-    primeiro:String,
-    último:String
+    'número': String,
+    enfiteuta: String,
+    foro: String,
+    desc: descSchema
+})
+
+var casasSchema = new mongoose.Schema({
+    casa: [casaSchema]
+})
+
+var imagemSchema = new mongoose.Schema({
+    '@path': String
 })
 
 var figuraSchema = new mongoose.Schema({
-    primeiro:String,
-    último:String
+    '@id': String,
+    imagem: imagemSchema,
+    legenda: String
 })
 
 var mapaSchema = new mongoose.Schema({
-    __id : String,
+    _id : String,
     nome: String,
     para: [paraSchema],
-    casas: [casaSchema],
-    figuras: [figuraSchema]
+    'lista-casas': casasSchema,
+    figura: [figuraSchema]
 })
 
 module.exports = mongoose.model('streets',mapaSchema)

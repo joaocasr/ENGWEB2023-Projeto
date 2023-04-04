@@ -4,12 +4,12 @@ var path = require('path');
 var logger = require('morgan');
 
 var mongoose = require('mongoose')
-var mongoDB = 'mongodb://127.0.0.1/mapa'
+var mongoDB = 'mongodb://127.0.0.1/MapaBraga'
 mongoose.connect(mongoDB,{useNewUrlParser: true,useUnifiedTopology:true})
 var db = mongoose.connection;
 db.on('error',console.error.bind(console,"eerro"))
 db.on('open',function() {
-  console.log("sucesso")
+  console.log("Conexão ao MongoDB realizada com sucesso...")
 })
 
 var indexRouter = require('./routes/index');
