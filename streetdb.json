@@ -9213,7 +9213,7 @@
                     "lugar": [
                         "Campo de Santiago"
                     ],
-                    "#text": "Pertenceram ao prazo do campo ou lugar de Castelo Rodrigo. Foram demolidas antes de 1715, «ficando o enfiteuta principal obrigado a sub-rogar ao cabido outra em seu lugar».O cabido recebeu, assim, do Cónego Francisco de Meira Carrilho, enfiteuta principal, em troca dos nº 25, 26 e 27, a casa nº7 da Rua dos Chãos de Baixo, bem como 30.000 reis que andavam a juro, «para satisfação de algum prejuízo, que pudesse haver nesta subrogação»."
+                    "#text": "Pertenceram ao prazo do campo ou lugar de Castelo Rodrigo. Foram demolidas antes de 1663, «ficando o enfiteuta principal obrigado a sub-rogar ao cabido outra em seu lugar».O cabido recebeu, assim, do Bento Aranha de Brito, abade de S. Cosme, enfiteuta principal, em troca dos nº 25, 26 e 27, a casa nº7 do Campo de Santiago, bem como 30.000 reis que andavam a juro, «para satisfação de algum prejuízo, que pudesse haver nesta subrogação»."
                 }
             }
         },
@@ -9221,13 +9221,13 @@
             "número": "21 a 27",
             "desc": {
                 "para": {
-                    "data": "1715",
-                    "entidade": {
+                    "data": ["1715"],
+                    "entidade": [{
                         "@tipo": "pessoa",
                         "#text": "Cónego Francisco de Meira Carrilho"
-                    },
-                    "lugar": "Rua dos Chãos de Baixo",
-                    "#text": "Pertenceram ao prazo do campo ou lugar de Castelo Rodrigo. Foram demolidas antes de , «ficando o enfiteuta principal obrigado a sub-rogar ao cabido outra em seu lugar».O cabido recebeu, assim, do , enfiteuta principal, em troca dos nº 25, 26 e 27, a casa nº7 da , bem como 30.000 reis que andavam a juro, «para satisfação de algum prejuízo, que pudesse haver nesta subrogação»."
+                    }],
+                    "lugar": ["Rua dos Chãos de Baixo"],
+                    "#text": "Pertenceram ao prazo do campo ou lugar de Castelo Rodrigo. Foram demolidas antes de 1715, «ficando o enfiteuta principal obrigado a sub-rogar ao cabido outra em seu lugar».O cabido recebeu, assim, do Cónego Francisco de Meira Carrilho, enfiteuta principal, em troca dos nº 25, 26 e 27, a casa nº7 da Rua dos Chãos de Baixo, bem como 30.000 reis que andavam a juro, «para satisfação de algum prejuízo, que pudesse haver nesta subrogação»."
                 }
             }
         }
@@ -23257,8 +23257,8 @@
                             "#text": "Sebastiana Maria"
                         }
                     ],
-                    "lugar": "casal do Lagarto",
-                    "#text": ", casado com , paga 800 reis ao enfiteuta do prazo da 1.ª metade do . Confronta, do nascente, com casa foreira à Misericórdia."
+                    "lugar": ["casal do Lagarto"],
+                    "#text": "Jácome de Matos, casado com Sebastiana Maria, paga 800 reis ao enfiteuta do prazo da 1.ª metade do casal do Lagarto. Confronta, do nascente, com casa foreira à Misericórdia."
                 }
             }
         }
