@@ -22,7 +22,7 @@ module.exports.getMapa = id => {
         })
 }
 
-module.exports.addAluno = a => {
+module.exports.addMapa = a => {
     return Mapa.create(a)
             .then(dados => {
                 return dados
@@ -32,7 +32,7 @@ module.exports.addAluno = a => {
             })
 }
 
-module.exports.updateAluno = a => {
+module.exports.updateMapa = a => {
     return Mapa.updateOne({_id: a._id}, a)
             .then(resposta => {
                 return resposta
@@ -42,7 +42,7 @@ module.exports.updateAluno = a => {
             })
 }
 
-module.exports.deleteAluno = id => {
+module.exports.deleteMapa = id => {
     return Mapa.deleteOne({_id: id})
             .then(resposta => {
                 return resposta.data
