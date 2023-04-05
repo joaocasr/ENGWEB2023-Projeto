@@ -6,7 +6,8 @@ var Mapa = require('../controllers/mapa')
 router.get('/', function(req, res, next) {
   Mapa.list()
     .then(mapas => {
-      res.render('index', { slist: mapas});
+      //res.render('index', { slist: mapas});
+      res.status(200).json(mapas)
     })
     .catch(erro => {
       res.render('error', {error: erro, message: "Erro na obtenção da lista"})

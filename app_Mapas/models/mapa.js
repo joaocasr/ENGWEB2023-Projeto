@@ -9,7 +9,7 @@ var entidadeSchema = new mongoose.Schema({
 var paraSchema = new mongoose.Schema({
     lugar: [String],
     data: [String],
-    entidade: entidadeSchema,
+    entidade: [entidadeSchema],
     '#text': String  
 })
 
@@ -24,25 +24,17 @@ var casaSchema = new mongoose.Schema({
     desc: descSchema
 })
 
-var casasSchema = new mongoose.Schema({
-    casa: [casaSchema]
-})
-
-var imagemSchema = new mongoose.Schema({
-    '@path': String
-})
-
 var figuraSchema = new mongoose.Schema({
     '@id': String,
-    imagem: imagemSchema,
-    legenda: String
+    legenda: String,
+    '@path': String
 })
 
 var mapaSchema = new mongoose.Schema({
     _id : String,
     nome: String,
     para: [paraSchema],
-    'lista-casas': casasSchema,
+    'lista-casas': [casaSchema],
     figura: [figuraSchema]
 })
 
