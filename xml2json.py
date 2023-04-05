@@ -43,6 +43,15 @@ for file in os.listdir(path):
                                 }
                     dic['rua']['corpo']['para'][i]=entryText
                 i+=1
+                if 'lugar' in p:
+                    if type(p['lugar']) is not list:
+                        p['lugar'] = [p['lugar']]
+                if 'entidade' in p:
+                    if type(p['entidade']) is not list:
+                        p['entidade'] = [p['entidade']]
+                if 'data' in p:
+                    if type(p) != str and type(p['data']) is not list:
+                        p['data'] = [p['data']]
             j=0
         if 'lista-casas' in dic['rua']['corpo']:
             print(dic['rua']['corpo']['lista-casas']['casa'])
@@ -76,12 +85,12 @@ for file in os.listdir(path):
                 j+=1
 
             if type(dic['rua']['corpo']['lista-casas']) is dict:
-                if type(dic['rua']['corpo']['lista-casas']['casa']) is dict:
+                if type(dic['rua']['corpo']['lista-casas']['casa']) is not list:
                     dic['rua']['corpo']['lista-casas'] = [dic['rua']['corpo']['lista-casas']['casa']]
                 else:
                     dic['rua']['corpo']['lista-casas'] = dic['rua']['corpo']['lista-casas']['casa']
         if 'figura' in dic['rua']['corpo']:
-            if type(dic['rua']['corpo']['figura']) is dict:
+            if type(dic['rua']['corpo']['figura']) is not list:
                 dic['rua']['corpo']['figura'] = [dic['rua']['corpo']['figura']]
 
     #print(dic['rua']['corpo'].items())
