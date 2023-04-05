@@ -94,14 +94,24 @@ for file in os.listdir(path):
 
                 if(len(dic['rua']['corpo']['lista-casas'])>j and type(dic['rua']['corpo']['lista-casas'][j]) is dict):
                     if('enfiteuta' in dic['rua']['corpo']['lista-casas'][j]):
-                        print("\n\naquiii")
-                        print(dic['rua']['corpo']['lista-casas'][j]['enfiteuta'])
-                        print("\n\n")
                         if not dic['rua']['corpo']['lista-casas'][j]['enfiteuta']:
                             dic['rua']['corpo']['lista-casas'][j].pop('enfiteuta')
                     if('foro' in (dic['rua']['corpo']['lista-casas'][j])):
                         if not dic['rua']['corpo']['lista-casas'][j]['foro']:
                             dic['rua']['corpo']['lista-casas'][j].pop('foro')
+                    if('desc' in (dic['rua']['corpo']['lista-casas'][j])):
+                        if('para' in (dic['rua']['corpo']['lista-casas'][j]['desc'])):
+                            p = dic['rua']['corpo']['lista-casas'][j]['desc']['para']
+                            if type(p) is dict:
+                                if 'lugar' in p:
+                                    if type(p['lugar']) is not list:
+                                        p['lugar'] = [p['lugar']]
+                                if 'entidade' in p:
+                                    if type(p['entidade']) is not list:
+                                        p['entidade'] = [p['entidade']]
+                                if 'data' in p:
+                                    if type(p['data']) is not list:
+                                        p['data'] = [p['data']]
                 j+=1
 
         if 'figura' in dic['rua']['corpo']:
