@@ -3,17 +3,13 @@
     "figura": [
         {
             "@id": "MRB-01-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-01-RuaDoCampo-nascente.PNG"
-            },
-            "legenda": "Rua do Campo - vista nascente."
+            "legenda": "Rua do Campo - vista nascente.",
+            "@path": "../imagem/MRB-01-RuaDoCampo-nascente.PNG"
         },
         {
             "@id": "MRB-01-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-01-RuaDoCampo-poente.PNG"
-            },
-            "legenda": "Rua do Campo - vista poente."
+            "legenda": "Rua do Campo - vista poente.",
+            "@path": "../imagem/MRB-01-RuaDoCampo-poente.PNG"
         }
     ],
     "para": [
@@ -140,17 +136,13 @@
     "figura": [
         {
             "@id": "MRB-02-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-02-RuaNova-norte.png"
-            },
-            "legenda": "Rua Nova - vista norte."
+            "legenda": "Rua Nova - vista norte.",
+            "@path": "../imagem/MRB-02-RuaNova-norte.png"
         },
         {
             "@id": "MRB-02-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-02-RuaNova-sul.png"
-            },
-            "legenda": "Rua Nova - vista sul."
+            "legenda": "Rua Nova - vista sul.",
+            "@path": "../imagem/MRB-02-RuaNova-sul.png"
         }
     ],
     "para": [
@@ -233,8 +225,6 @@
     "lista-casas": [
         {
             "número": "1",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": [
@@ -341,7 +331,6 @@
         {
             "número": "8",
             "enfiteuta": "Vid. casa nº32, Rua de Maximinos(rua nº22).",
-            "foro": null,
             "desc": {
                 "para": {
                     "data": "1707",
@@ -362,7 +351,6 @@
         {
             "número": "9",
             "enfiteuta": "Vid. casa nº10.",
-            "foro": null,
             "desc": {
                 "para": {
                     "data": "1725",
@@ -430,7 +418,6 @@
         {
             "número": "14",
             "enfiteuta": "Vid. casa nº1 da Rua do Campo(rua nº1).",
-            "foro": null,
             "desc": {
                 "para": {
                     "data": "1719",
@@ -470,17 +457,13 @@
     "figura": [
         {
             "@id": "MRB-03-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-03-RuaDosAcouguesVelhos-nascente.PNG"
-            },
-            "legenda": "Rua dos Açougues Velhos - vista nascente."
+            "legenda": "Rua dos Açougues Velhos - vista nascente.",
+            "@path": "../imagem/MRB-03-RuaDosAcouguesVelhos-nascente.PNG"
         },
         {
             "@id": "MRB-03-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-03-RuaDosAcouguesVelhos-poente.PNG"
-            },
-            "legenda": "Rua dos Açougues Velhos - vista poente."
+            "legenda": "Rua dos Açougues Velhos - vista poente.",
+            "@path": "../imagem/MRB-03-RuaDosAcouguesVelhos-poente.PNG"
         }
     ],
     "para": [
@@ -535,8 +518,6 @@
     "lista-casas": [
         {
             "número": "1",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Praça do Pão",
@@ -616,17 +597,13 @@
     "figura": [
         {
             "@id": "MRB-04-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-04-PracaDoPao-norte.PNG"
-            },
-            "legenda": "Praça do Pão - vista norte."
+            "legenda": "Praça do Pão - vista norte.",
+            "@path": "../imagem/MRB-04-PracaDoPao-norte.PNG"
         },
         {
             "@id": "MRB-04-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-04-PracaDoPao-sul.PNG"
-            },
-            "legenda": "Praça do Pão - vista sul."
+            "legenda": "Praça do Pão - vista sul.",
+            "@path": "../imagem/MRB-04-PracaDoPao-sul.PNG"
         }
     ],
     "para": [
@@ -877,10 +854,8 @@
     "figura": [
         {
             "@id": "MRB-05",
-            "imagem": {
-                "@path": "../imagem/MRB-05-RuaDasOucias.png"
-            },
-            "legenda": "Rua das Oucias."
+            "legenda": "Rua das Oucias.",
+            "@path": "../imagem/MRB-05-RuaDasOucias.png"
         }
     ],
     "para": [
@@ -963,7 +938,6 @@
     "lista-casas": [
         {
             "número": "1",
-            "enfiteuta": null,
             "foro": "38 reis e 6 pretos (de censo)",
             "desc": {
                 "para": {
@@ -977,8 +951,6 @@
         },
         {
             "número": "2",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de S.João",
@@ -988,8 +960,6 @@
         },
         {
             "número": "3 e 4",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de S. João",
@@ -1022,7 +992,6 @@
         },
         {
             "número": "7",
-            "enfiteuta": null,
             "foro": "160 reis (de censo)",
             "desc": {
                 "para": {
@@ -1058,8 +1027,6 @@
         },
         {
             "número": "9",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": [
@@ -1076,8 +1043,6 @@
         },
         {
             "número": "10 e 11",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": [
@@ -1164,17 +1129,13 @@
     "figura": [
         {
             "@id": "MRB-06-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-06-RuaDoSouto.PortaDoSouto-norte.png"
-            },
-            "legenda": "Rua do Souto, Porta do Souto - vista norte."
+            "legenda": "Rua do Souto, Porta do Souto - vista norte.",
+            "@path": "../imagem/MRB-06-RuaDoSouto.PortaDoSouto-norte.png"
         },
         {
             "@id": "MRB-06-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-06-RuaDoSouto.PortaDoSouto-sul.png"
-            },
-            "legenda": "Rua do Souto, Porta do Souto - vista sul."
+            "legenda": "Rua do Souto, Porta do Souto - vista sul.",
+            "@path": "../imagem/MRB-06-RuaDoSouto.PortaDoSouto-sul.png"
         }
     ],
     "para": [
@@ -1494,8 +1455,6 @@
         },
         {
             "número": "18",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "obra da Sé",
@@ -1554,7 +1513,6 @@
         },
         {
             "número": "22",
-            "enfiteuta": null,
             "foro": "75 reis (de censo)",
             "desc": {
                 "para": {
@@ -1569,7 +1527,6 @@
         },
         {
             "número": "23",
-            "enfiteuta": null,
             "foro": "72 reis (de censo)",
             "desc": {
                 "para": {
@@ -1584,7 +1541,6 @@
         },
         {
             "número": "24",
-            "enfiteuta": null,
             "foro": "13 reis e 5 pretos",
             "desc": {
                 "para": {
@@ -1700,7 +1656,6 @@
         },
         {
             "número": "35",
-            "enfiteuta": null,
             "foro": "13 reis e 2 pretos (de censo)",
             "desc": {
                 "para": {
@@ -1714,7 +1669,6 @@
         },
         {
             "número": "36",
-            "enfiteuta": null,
             "foro": "13 reis e 2 pretos (de censo)",
             "desc": {
                 "para": {
@@ -1728,7 +1682,6 @@
         },
         {
             "número": "37",
-            "enfiteuta": null,
             "foro": "13 reis e 2 pretos (de censo)",
             "desc": {
                 "para": {
@@ -1753,8 +1706,6 @@
         },
         {
             "número": "39",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de S. João",
@@ -1916,10 +1867,8 @@
     "figura": [
         {
             "@id": "MRB-07",
-            "imagem": {
-                "@path": "../imagem/MRB-07-LouraETerreiroDoCastelo.JPG"
-            },
-            "legenda": "Loura e Terreiro do Castelo."
+            "legenda": "Loura e Terreiro do Castelo.",
+            "@path": "../imagem/MRB-07-LouraETerreiroDoCastelo.JPG"
         }
     ],
     "para": [
@@ -2037,10 +1986,8 @@
     "figura": [
         {
             "@id": "MRB-08",
-            "imagem": {
-                "@path": "../imagem/MRB-08-RuaDeJanes.JPG"
-            },
-            "legenda": "Rua de Janes."
+            "legenda": "Rua de Janes.",
+            "@path": "../imagem/MRB-08-RuaDeJanes.JPG"
         }
     ],
     "para": [
@@ -2151,8 +2098,6 @@
         },
         {
             "número": "7",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Souto",
@@ -2183,8 +2128,6 @@
         },
         {
             "número": "9",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Souto",
@@ -2194,8 +2137,6 @@
         },
         {
             "número": "10",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Souto",
@@ -2205,8 +2146,6 @@
         },
         {
             "número": "11",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Souto",
@@ -2342,17 +2281,13 @@
     "figura": [
         {
             "@id": "MRB-09-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-9-RuaDeSJoao-Norte.jpg"
-            },
-            "legenda": "Rua de S.João - vista norte."
+            "legenda": "Rua de S.João - vista norte.",
+            "@path": "../imagem/MRB-9-RuaDeSJoao-Norte.jpg"
         },
         {
             "@id": "MRB-09-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-9-RuaDeSJoao-Sul.jpg"
-            },
-            "legenda": "Rua de S.João - vista sul."
+            "legenda": "Rua de S.João - vista sul.",
+            "@path": "../imagem/MRB-9-RuaDeSJoao-Sul.jpg"
         }
     ],
     "_id": "9",
@@ -2411,24 +2346,18 @@
     "figura": [
         {
             "@id": "MRB-10-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Norte.jpg"
-            },
-            "legenda": "Travessa da Rua de S. João para a do Forno - vista norte."
+            "legenda": "Travessa da Rua de S. João para a do Forno - vista norte.",
+            "@path": "../imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Norte.jpg"
         },
         {
             "@id": "MRB-10-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Sul.jpg"
-            },
-            "legenda": "Travessa da Rua de S. João para a do Forno - vista sul."
+            "legenda": "Travessa da Rua de S. João para a do Forno - vista sul.",
+            "@path": "../imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Sul.jpg"
         }
     ],
     "lista-casas": [
         {
             "número": "1",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de S. João",
@@ -2438,8 +2367,6 @@
         },
         {
             "número": "2",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "data": "1607",
@@ -2648,17 +2575,13 @@
     "figura": [
         {
             "@id": "MRB-11-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-11-RuaDosCegosOuDoForno-Nascente.jpg"
-            },
-            "legenda": "Rua dos Cegos ou do Forno - vista nascente."
+            "legenda": "Rua dos Cegos ou do Forno - vista nascente.",
+            "@path": "../imagem/MRB-11-RuaDosCegosOuDoForno-Nascente.jpg"
         },
         {
             "@id": "MRB-11-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-11-RuaDosCegosOuDoForno-Poente.jpg"
-            },
-            "legenda": "Rua dos Cegos ou do Forno - vista poente."
+            "legenda": "Rua dos Cegos ou do Forno - vista poente.",
+            "@path": "../imagem/MRB-11-RuaDosCegosOuDoForno-Poente.jpg"
         }
     ],
     "lista-casas": [
@@ -2967,17 +2890,13 @@
     "figura": [
         {
             "@id": "MRB-12-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg"
-            },
-            "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista norte."
+            "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista norte.",
+            "@path": "../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg"
         },
         {
             "@id": "MRB-12-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Sul.jpg"
-            },
-            "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista sul."
+            "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista sul.",
+            "@path": "../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -3195,17 +3114,13 @@
     "figura": [
         {
             "@id": "MRB-13-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-13-RuaPequena-Nascente.jpg"
-            },
-            "legenda": "RuaPequena - vista nascente."
+            "legenda": "RuaPequena - vista nascente.",
+            "@path": "../imagem/MRB-13-RuaPequena-Nascente.jpg"
         },
         {
             "@id": "MRB-13-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-13-RuaPequena-Poente.jpg"
-            },
-            "legenda": "RuaPequena - vista poente."
+            "legenda": "RuaPequena - vista poente.",
+            "@path": "../imagem/MRB-13-RuaPequena-Poente.jpg"
         }
     ],
     "lista-casas": [
@@ -3423,17 +3338,13 @@
     "figura": [
         {
             "@id": "MRB-14-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-14-RuaDeSMariaOuDoPoco-Nascente.jpg"
-            },
-            "legenda": "Rua de Sta. Maria ou do Poço - vista Nascente."
+            "legenda": "Rua de Sta. Maria ou do Poço - vista Nascente.",
+            "@path": "../imagem/MRB-14-RuaDeSMariaOuDoPoco-Nascente.jpg"
         },
         {
             "@id": "MRB-14-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-14-RuaDeSMariaOuDoPoco-Poente.jpg"
-            },
-            "legenda": "Rua de Sta. Maria ou do Poço - vista Poente."
+            "legenda": "Rua de Sta. Maria ou do Poço - vista Poente.",
+            "@path": "../imagem/MRB-14-RuaDeSMariaOuDoPoco-Poente.jpg"
         }
     ],
     "lista-casas": [
@@ -3807,17 +3718,13 @@
     "figura": [
         {
             "@id": "MRB-15-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg"
-            },
-            "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista norte."
+            "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista norte.",
+            "@path": "../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg"
         },
         {
             "@id": "MRB-15-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Sul.jpg"
-            },
-            "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista sul."
+            "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista sul.",
+            "@path": "../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -4004,10 +3911,8 @@
     "figura": [
         {
             "@id": "MRB-16-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-16-RuaDeDGualdim-Poente.jpg"
-            },
-            "legenda": "Rua de D. Gualdim - vista Poente."
+            "legenda": "Rua de D. Gualdim - vista Poente.",
+            "@path": "../imagem/MRB-16-RuaDeDGualdim-Poente.jpg"
         }
     ],
     "lista-casas": [
@@ -4073,7 +3978,6 @@
         },
         {
             "número": "7",
-            "enfiteuta": null,
             "foro": "600 reis e 4 galinhas",
             "desc": {
                 "para": {
@@ -4131,7 +4035,6 @@
         },
         {
             "número": "12",
-            "enfiteuta": null,
             "foro": "500 reis e 2 galinhas",
             "desc": {
                 "para": {
@@ -4142,7 +4045,6 @@
         },
         {
             "número": "13",
-            "enfiteuta": null,
             "foro": "120 reis e 1 galinha",
             "desc": {
                 "para": {
@@ -4153,7 +4055,6 @@
         },
         {
             "número": "14",
-            "enfiteuta": null,
             "foro": "120 reis e 1 galinha",
             "desc": {
                 "para": {
@@ -4375,17 +4276,13 @@
     "figura": [
         {
             "@id": "MRB-17-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-norte.jpg"
-            },
-            "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - norte"
+            "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - norte",
+            "@path": "../imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-norte.jpg"
         },
         {
             "@id": "MRB-17-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-sul.jpg"
-            },
-            "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - sul"
+            "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - sul",
+            "@path": "../imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -4408,8 +4305,6 @@
         },
         {
             "número": "3",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de Santo António",
@@ -4433,8 +4328,6 @@
         },
         {
             "número": "5",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua de D. Gualdim",
@@ -4494,17 +4387,13 @@
     "figura": [
         {
             "@id": "MRB-18-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-18-RuaDasChagas-nascente.jpg"
-            },
-            "legenda": "Rua das Chagas - nascente"
+            "legenda": "Rua das Chagas - nascente",
+            "@path": "../imagem/MRB-18-RuaDasChagas-nascente.jpg"
         },
         {
             "@id": "MRB-18-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-18-RuaDasChagas-poente.jpg"
-            },
-            "legenda": "Rua das Chagas - poente"
+            "legenda": "Rua das Chagas - poente",
+            "@path": "../imagem/MRB-18-RuaDasChagas-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -4674,17 +4563,13 @@
     "figura": [
         {
             "@id": "MRB-19-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-19-RuaDeStoAntonio-nascente.jpg"
-            },
-            "legenda": "Rua de Sto. António - nascente"
+            "legenda": "Rua de Sto. António - nascente",
+            "@path": "../imagem/MRB-19-RuaDeStoAntonio-nascente.jpg"
         },
         {
             "@id": "MRB-19-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-19-RuaDeStoAntonio-poente.jpg"
-            },
-            "legenda": "Rua de Sto. António - poente"
+            "legenda": "Rua de Sto. António - poente",
+            "@path": "../imagem/MRB-19-RuaDeStoAntonio-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -4935,17 +4820,13 @@
     "figura": [
         {
             "@id": "MRB-20-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-20-TerreiroDeStoAntonioEPostigo-norte.jpg"
-            },
-            "legenda": "RUa das Chagas - norte"
+            "legenda": "RUa das Chagas - norte",
+            "@path": "../imagem/MRB-20-TerreiroDeStoAntonioEPostigo-norte.jpg"
         },
         {
             "@id": "MRB-20-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-20-TerreiroDeStoAntonioEPostigo-sul.jpg"
-            },
-            "legenda": "RUa das Chagas - poente"
+            "legenda": "RUa das Chagas - poente",
+            "@path": "../imagem/MRB-20-TerreiroDeStoAntonioEPostigo-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -5095,17 +4976,13 @@
     "figura": [
         {
             "@id": "MRB-21-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-21-RuaVerde-nascente.jpg"
-            },
-            "legenda": "Rua Verde - nascente."
+            "legenda": "Rua Verde - nascente.",
+            "@path": "../imagem/MRB-21-RuaVerde-nascente.jpg"
         },
         {
             "@id": "MRB-21-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-21-RuaVerde-poente.jpg"
-            },
-            "legenda": "Rua Verde - poente."
+            "legenda": "Rua Verde - poente.",
+            "@path": "../imagem/MRB-21-RuaVerde-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -5374,17 +5251,13 @@
     "figura": [
         {
             "@id": "MRB-22-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-22-RuaDeMaximinos-norte.jpg"
-            },
-            "legenda": "Rua de Maximinos - norte."
+            "legenda": "Rua de Maximinos - norte.",
+            "@path": "../imagem/MRB-22-RuaDeMaximinos-norte.jpg"
         },
         {
             "@id": "MRB-22-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-22-RuaDeMaximinos-sul.jpg"
-            },
-            "legenda": "Rua de Maximinos - sul."
+            "legenda": "Rua de Maximinos - sul.",
+            "@path": "../imagem/MRB-22-RuaDeMaximinos-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -5881,17 +5754,13 @@
     "figura": [
         {
             "@id": "MRB-23-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-23-RuaDosSapateirosERossioDaPraca-nascente.jpg"
-            },
-            "legenda": "Rua dos Sapateiros e do Rossio da Praça - nascente."
+            "legenda": "Rua dos Sapateiros e do Rossio da Praça - nascente.",
+            "@path": "../imagem/MRB-23-RuaDosSapateirosERossioDaPraca-nascente.jpg"
         },
         {
             "@id": "MRB-23-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-23-RuaDosSapateirosERossioDaPraca-poente.jpg"
-            },
-            "legenda": "Rua dos Sapateiros e do Rossio da Praça - poente."
+            "legenda": "Rua dos Sapateiros e do Rossio da Praça - poente.",
+            "@path": "../imagem/MRB-23-RuaDosSapateirosERossioDaPraca-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -6187,17 +6056,13 @@
     "figura": [
         {
             "@id": "MRB-24-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-24-RuaDaVielinha-nascente.jpg"
-            },
-            "legenda": "Rua da Vielinha - nascente."
+            "legenda": "Rua da Vielinha - nascente.",
+            "@path": "../imagem/MRB-24-RuaDaVielinha-nascente.jpg"
         },
         {
             "@id": "MRB-24-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-24-RuaDaVielinha-poente.jpg"
-            },
-            "legenda": "Rua da Vielinha - poente."
+            "legenda": "Rua da Vielinha - poente.",
+            "@path": "../imagem/MRB-24-RuaDaVielinha-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -6295,17 +6160,13 @@
     "figura": [
         {
             "@id": "MRB-25-poente-a",
-            "imagem": {
-                "@path": "../imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-A.png"
-            },
-            "legenda": "Campo de S. Sebastião - Poente."
+            "legenda": "Campo de S. Sebastião - Poente.",
+            "@path": "../imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-A.png"
         },
         {
             "@id": "MRB-25-poente-b",
-            "imagem": {
-                "@path": "../imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-B.png"
-            },
-            "legenda": "Em Frente do Assougue - Poente."
+            "legenda": "Em Frente do Assougue - Poente.",
+            "@path": "../imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-B.png"
         }
     ],
     "para": [
@@ -6439,17 +6300,13 @@
     "figura": [
         {
             "@id": "MRB-26-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-26-SaoMiguelOAnjo-Norte.png"
-            },
-            "legenda": "Rua de S.Miguel O Anjo - Norte"
+            "legenda": "Rua de S.Miguel O Anjo - Norte",
+            "@path": "../imagem/MRB-26-SaoMiguelOAnjo-Norte.png"
         },
         {
             "@id": "MRB-26-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-26-SaoMiguelOAnjo-Sul.png"
-            },
-            "legenda": "Rua de S.Miguel O Anjo - Sul"
+            "legenda": "Rua de S.Miguel O Anjo - Sul",
+            "@path": "../imagem/MRB-26-SaoMiguelOAnjo-Sul.png"
         }
     ],
     "para": [
@@ -6622,17 +6479,13 @@
     "figura": [
         {
             "@id": "MRB-27-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-27-RuaDaCruzDePedra-Poente.png"
-            },
-            "legenda": "Rua Da Cruz De Pedra - poente"
+            "legenda": "Rua Da Cruz De Pedra - poente",
+            "@path": "../imagem/MRB-27-RuaDaCruzDePedra-Poente.png"
         },
         {
             "@id": "MRB-27-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-27-RuaDaCruzDePedra-Nascente.png"
-            },
-            "legenda": "Rua Da Cruz De Pedra - nascente"
+            "legenda": "Rua Da Cruz De Pedra - nascente",
+            "@path": "../imagem/MRB-27-RuaDaCruzDePedra-Nascente.png"
         }
     ],
     "para": [
@@ -7303,17 +7156,13 @@
     "figura": [
         {
             "@id": "MRB-28-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-28-RuaDireita-Poente.png"
-            },
-            "legenda": "Rua Direita - poente"
+            "legenda": "Rua Direita - poente",
+            "@path": "../imagem/MRB-28-RuaDireita-Poente.png"
         },
         {
             "@id": "MRB-28-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-28-RuaDireita-Nascente.png"
-            },
-            "legenda": "Rua Direita - nascente"
+            "legenda": "Rua Direita - nascente",
+            "@path": "../imagem/MRB-28-RuaDireita-Nascente.png"
         }
     ],
     "para": [
@@ -7358,17 +7207,13 @@
     "figura": [
         {
             "@id": "MRB-29-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-29-Beco-Norte.png"
-            },
-            "legenda": "Rua do Beco - Norte"
+            "legenda": "Rua do Beco - Norte",
+            "@path": "../imagem/MRB-29-Beco-Norte.png"
         },
         {
             "@id": "MRB-29-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-29-Beco-Sul.png"
-            },
-            "legenda": "Rua do Beco - Sul"
+            "legenda": "Rua do Beco - Sul",
+            "@path": "../imagem/MRB-29-Beco-Sul.png"
         }
     ],
     "para": [
@@ -7425,17 +7270,13 @@
     "figura": [
         {
             "@id": "MRB-30-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-30-CangostaDeSSbebastiao-Norte.png"
-            },
-            "legenda": "Cangosta De S. Sebastião - norte"
+            "legenda": "Cangosta De S. Sebastião - norte",
+            "@path": "../imagem/MRB-30-CangostaDeSSbebastiao-Norte.png"
         },
         {
             "@id": "MRB-30-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-30-CangostaDeSSbebastiao-Sul.png"
-            },
-            "legenda": "Cangosta De S. Sebastião - sul"
+            "legenda": "Cangosta De S. Sebastião - sul",
+            "@path": "../imagem/MRB-30-CangostaDeSSbebastiao-Sul.png"
         }
     ],
     "para": [
@@ -7473,8 +7314,6 @@
     "lista-casas": [
         {
             "número": "1 e 2",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde da Cruz da Pedra",
@@ -7485,7 +7324,6 @@
         {
             "número": "3, 4, 5, 6, 7 e 8",
             "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde da Cruz de Pedra",
@@ -7496,7 +7334,6 @@
         {
             "número": "9",
             "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-            "foro": null,
             "desc": {
                 "para": {
                     "#text": "Pertence ao n.º 36 da Rua do Arrabalde da Cruz da Pedra, a qual, está integrada no prazo da casa n.º 20, da mesma rua."
@@ -7506,7 +7343,6 @@
         {
             "número": "10",
             "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde da Cruz de Pedra",
@@ -7516,8 +7352,6 @@
         },
         {
             "número": "11",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "#text": "Portal de serventia da casa n.º 33 do Arrabalde da Cruz de Pedra."
@@ -7527,7 +7361,6 @@
         {
             "número": "12, 13, 14 e 15",
             "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde da Cruz da Pedra",
@@ -7537,8 +7370,6 @@
         },
         {
             "número": "16 e 17",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde da Cruz da Pedra",
@@ -7549,7 +7380,6 @@
         {
             "número": "19, 20 e 21",
             "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua da Cruz da Pedra",
@@ -7559,8 +7389,6 @@
         },
         {
             "número": "22",
-            "enfiteuta": null,
-            "foro": null,
             "desc": {
                 "para": {
                     "lugar": "Rua do Arrabalde de Cruz da Pedra",
@@ -7576,10 +7404,8 @@
     "figura": [
         {
             "@id": "MRB-31-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-31-DoAlcaide-Sul.png"
-            },
-            "legenda": "Rua do Alcaide - Sul."
+            "legenda": "Rua do Alcaide - Sul.",
+            "@path": "../imagem/MRB-31-DoAlcaide-Sul.png"
         }
     ],
     "para": [
@@ -7723,17 +7549,13 @@
     "figura": [
         {
             "@id": "MRB-32-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-32-Nascente.png"
-            },
-            "legenda": "Rua dos Pelames - Nascente."
+            "legenda": "Rua dos Pelames - Nascente.",
+            "@path": "../imagem/MRB-32-Nascente.png"
         },
         {
             "@id": "MRB-32-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-32-Poente.png"
-            },
-            "legenda": "Rua dos Pelames - Poente."
+            "legenda": "Rua dos Pelames - Poente.",
+            "@path": "../imagem/MRB-32-Poente.png"
         }
     ],
     "para": [
@@ -8101,17 +7923,13 @@
     "figura": [
         {
             "@id": "MR-33-a",
-            "imagem": {
-                "@path": "../imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-primeira.jpg"
-            },
-            "legenda": "Campo de São Tiago - Sul"
+            "legenda": "Campo de São Tiago - Sul",
+            "@path": "../imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-primeira.jpg"
         },
         {
             "@id": "MR-33-b",
-            "imagem": {
-                "@path": "../imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-segunda.jpg"
-            },
-            "legenda": "Rua do Anjo - Sul."
+            "legenda": "Rua do Anjo - Sul.",
+            "@path": "../imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-segunda.jpg"
         }
     ],
     "nome": "Campo de S. Tiago",
@@ -8786,17 +8604,13 @@
     "figura": [
         {
             "@id": "MRB-34-a",
-            "imagem": {
-                "@path": "../imagem/MRB-34-QuingostaDasCruzes-primeira.jpg"
-            },
-            "legenda": "Quingosta das Cruzes - Norte."
+            "legenda": "Quingosta das Cruzes - Norte.",
+            "@path": "../imagem/MRB-34-QuingostaDasCruzes-primeira.jpg"
         },
         {
             "@id": "MRB-34-b",
-            "imagem": {
-                "@path": "../imagem/MRB-34-QuingostaDasCruzes-segunda.jpg"
-            },
-            "legenda": "Quingosta das Cruzes - Sul."
+            "legenda": "Quingosta das Cruzes - Sul.",
+            "@path": "../imagem/MRB-34-QuingostaDasCruzes-segunda.jpg"
         }
     ],
     "_id": "34",
@@ -8806,17 +8620,13 @@
     "figura": [
         {
             "@id": "MRB3-5-a",
-            "imagem": {
-                "@path": "../imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-primeira.jpg"
-            },
-            "legenda": "Rua de São Marcos - Nascente"
+            "legenda": "Rua de São Marcos - Nascente",
+            "@path": "../imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-primeira.jpg"
         },
         {
             "@id": "MRB-35-b",
-            "imagem": {
-                "@path": "../imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-segunda.jpg"
-            },
-            "legenda": "Rua dos Granjinhos - Nascente"
+            "legenda": "Rua dos Granjinhos - Nascente",
+            "@path": "../imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-segunda.jpg"
         }
     ],
     "para": [
@@ -9426,17 +9236,13 @@
     "figura": [
         {
             "@id": "MRB-36-a",
-            "imagem": {
-                "@path": "../imagem/MRB-36-RuaDasAgoas-primeira.jpg"
-            },
-            "legenda": "Rua das Águas - Poente."
+            "legenda": "Rua das Águas - Poente.",
+            "@path": "../imagem/MRB-36-RuaDasAgoas-primeira.jpg"
         },
         {
             "@id": "MRB-36-b",
-            "imagem": {
-                "@path": "../imagem/MRB-36-RuaDasAgoas-segunda.jpg"
-            },
-            "legenda": "Rua das Águas - Nascente."
+            "legenda": "Rua das Águas - Nascente.",
+            "@path": "../imagem/MRB-36-RuaDasAgoas-segunda.jpg"
         }
     ],
     "_id": "36",
@@ -10267,17 +10073,13 @@
     "figura": [
         {
             "@id": "MRB-37-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-37-RuaDeSLazaro-Nascente.jpg"
-            },
-            "legenda": "Rua de S.Lázaro - Nascente."
+            "legenda": "Rua de S.Lázaro - Nascente.",
+            "@path": "../imagem/MRB-37-RuaDeSLazaro-Nascente.jpg"
         },
         {
             "@id": "MRB-37-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-37-RuaDeSLazaro-Poente.jpg"
-            },
-            "legenda": "Rua de S.Lázaro - Poente."
+            "legenda": "Rua de S.Lázaro - Poente.",
+            "@path": "../imagem/MRB-37-RuaDeSLazaro-Poente.jpg"
         }
     ],
     "_id": "37",
@@ -11826,31 +11628,23 @@
     "figura": [
         {
             "@id": "MRB38-nascente-a",
-            "imagem": {
-                "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg"
-            },
-            "legenda": "Rua da Ponte de Guimarães - Nascente-a."
+            "legenda": "Rua da Ponte de Guimarães - Nascente-a.",
+            "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg"
         },
         {
             "@id": "MRB38-nascente-b",
-            "imagem": {
-                "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg"
-            },
-            "legenda": "Rua da Ponte de Guimarães - Nascente-b."
+            "legenda": "Rua da Ponte de Guimarães - Nascente-b.",
+            "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg"
         },
         {
             "@id": "MRB38-poente-a",
-            "imagem": {
-                "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg"
-            },
-            "legenda": "Rua da Ponte de Guimarães - Poente-a."
+            "legenda": "Rua da Ponte de Guimarães - Poente-a.",
+            "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg"
         },
         {
             "@id": "MRB38-poente-b",
-            "imagem": {
-                "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg"
-            },
-            "legenda": "Rua da Ponte de Guimarães - Poente-b."
+            "legenda": "Rua da Ponte de Guimarães - Poente-b.",
+            "@path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg"
         }
     ],
     "_id": "38",
@@ -12246,17 +12040,13 @@
     "figura": [
         {
             "@id": "MRB39-Norte",
-            "imagem": {
-                "@path": "../imagem/MRB-39-PonteDeGuimaraes-Norte.jpg"
-            },
-            "legenda": "Ponte de Guimarães - Norte"
+            "legenda": "Ponte de Guimarães - Norte",
+            "@path": "../imagem/MRB-39-PonteDeGuimaraes-Norte.jpg"
         },
         {
             "@id": "MRB39-Poente",
-            "imagem": {
-                "@path": "../imagem/MRB-39-PonteDeGuimaraes-Poente.jpg"
-            },
-            "legenda": "Ponte de Guimarães - Poente"
+            "legenda": "Ponte de Guimarães - Poente",
+            "@path": "../imagem/MRB-39-PonteDeGuimaraes-Poente.jpg"
         }
     ],
     "_id": "39",
@@ -12606,17 +12396,13 @@
     "figura": [
         {
             "@id": "MRB40-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-40-RuaDoPaymanta-Sul.jpg"
-            },
-            "legenda": "Rua do Paymanta - Sul."
+            "legenda": "Rua do Paymanta - Sul.",
+            "@path": "../imagem/MRB-40-RuaDoPaymanta-Sul.jpg"
         },
         {
             "@id": "MRB40-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-40-RuaDoPaymanta-Norte.jpg"
-            },
-            "legenda": "Rua do Paymanta - Norte."
+            "legenda": "Rua do Paymanta - Norte.",
+            "@path": "../imagem/MRB-40-RuaDoPaymanta-Norte.jpg"
         }
     ],
     "_id": "40",
@@ -12751,17 +12537,13 @@
     "figura": [
         {
             "@id": "MRB-41-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-41-CampoDeSantaAna-Norte.jpg"
-            },
-            "legenda": "Campo de Santa Ana - Norte."
+            "legenda": "Campo de Santa Ana - Norte.",
+            "@path": "../imagem/MRB-41-CampoDeSantaAna-Norte.jpg"
         },
         {
             "@id": "MRB-41-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-41-CampoDeSantaAna-Sul.jpg"
-            },
-            "legenda": "Campo de Santa Ana - Sul."
+            "legenda": "Campo de Santa Ana - Sul.",
+            "@path": "../imagem/MRB-41-CampoDeSantaAna-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -12944,17 +12726,13 @@
     "figura": [
         {
             "@id": "MRB-42-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Norte.jpg"
-            },
-            "legenda": "Campo e Calçada de Nossa Senhora a Branca- Norte."
+            "legenda": "Campo e Calçada de Nossa Senhora a Branca- Norte.",
+            "@path": "../imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Norte.jpg"
         },
         {
             "@id": "MRB-42-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Sul.jpg"
-            },
-            "legenda": "Campo e Calçada de Nossa Senhora a Branca- Sul."
+            "legenda": "Campo e Calçada de Nossa Senhora a Branca- Sul.",
+            "@path": "../imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -13512,17 +13290,13 @@
     "figura": [
         {
             "@id": "MRB-43-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Norte.jpg"
-            },
-            "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Norte."
+            "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Norte.",
+            "@path": "../imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Norte.jpg"
         },
         {
             "@id": "MRB-43-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Sul.jpg"
-            },
-            "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Sul"
+            "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Sul",
+            "@path": "../imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -14354,17 +14128,13 @@
     "figura": [
         {
             "@id": "MRB-44-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Norte.jpg"
-            },
-            "legenda": "Rua da Fonte da Carcova- Norte."
+            "legenda": "Rua da Fonte da Carcova- Norte.",
+            "@path": "../imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Norte.jpg"
         },
         {
             "@id": "MRB-44-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Sul.jpg"
-            },
-            "legenda": "Rua da Fonte da Carcova- Sul"
+            "legenda": "Rua da Fonte da Carcova- Sul",
+            "@path": "../imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Sul.jpg"
         }
     ],
     "lista-casas": [
@@ -14753,17 +14523,13 @@
     "figura": [
         {
             "@id": "MRB-45-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg"
         },
         {
             "@id": "MRB-45-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg"
         }
     ],
     "lista-casas": [
@@ -15120,7 +14886,6 @@
         },
         {
             "número": "24",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15143,7 +14908,6 @@
         },
         {
             "número": "25",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "data": "1686",
@@ -15154,7 +14918,6 @@
         },
         {
             "número": "26",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15173,7 +14936,6 @@
         },
         {
             "número": "27",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": {
@@ -15186,7 +14948,6 @@
         },
         {
             "número": "28",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "#text": "Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro."
@@ -15195,7 +14956,6 @@
         },
         {
             "número": "29",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "#text": "Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro."
@@ -15204,7 +14964,6 @@
         },
         {
             "número": "30",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15223,7 +14982,6 @@
         },
         {
             "número": "31",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "#text": "Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro."
@@ -15232,7 +14990,6 @@
         },
         {
             "número": "32",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15251,7 +15008,6 @@
         },
         {
             "número": "33",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15271,7 +15027,6 @@
         },
         {
             "número": "34",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15291,7 +15046,6 @@
         },
         {
             "número": "35",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "data": "1545",
@@ -15301,7 +15055,6 @@
         },
         {
             "número": "36",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": {
@@ -15314,7 +15067,6 @@
         },
         {
             "número": "37",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": {
@@ -15328,7 +15080,6 @@
         },
         {
             "número": "38",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": [
@@ -15347,7 +15098,6 @@
         },
         {
             "número": "39",
-            "enfiteuta": null,
             "desc": {
                 "para": {
                     "entidade": {
@@ -15647,17 +15397,13 @@
     "figura": [
         {
             "@id": "MRB-46-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg"
         },
         {
             "@id": "MRB-46-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg"
         }
     ],
     "lista-casas": [
@@ -16283,17 +16029,13 @@
     "figura": [
         {
             "@id": "MRB-47-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-47-RuaDeS.Barnabe-a(nascente).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-47-RuaDeS.Barnabe-a(nascente).jpg"
         },
         {
             "@id": "MRB-47-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-47-RuaDeS.Barnabe-a(poente).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-47-RuaDeS.Barnabe-a(poente).jpg"
         }
     ],
     "para": [
@@ -16565,31 +16307,23 @@
     "figura": [
         {
             "@id": "MRB-48-nascente",
-            "imagem": {
-                "@path": "../imagem/MRB-48-PracaDoGaviao-a(nascente).jpg"
-            },
-            "legenda": "Praça do Gavião - Nascente."
+            "legenda": "Praça do Gavião - Nascente.",
+            "@path": "../imagem/MRB-48-PracaDoGaviao-a(nascente).jpg"
         },
         {
             "@id": "MRB-48-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-48-PracaDoGaviao-a(norte).jpg"
-            },
-            "legenda": "Praça do Gavião - Norte."
+            "legenda": "Praça do Gavião - Norte.",
+            "@path": "../imagem/MRB-48-PracaDoGaviao-a(norte).jpg"
         },
         {
             "@id": "MRB-48-poente",
-            "imagem": {
-                "@path": "../imagem/MRB-48-PracaDoGaviao-a(poente).jpg"
-            },
-            "legenda": "Praça do Gavião - Poente."
+            "legenda": "Praça do Gavião - Poente.",
+            "@path": "../imagem/MRB-48-PracaDoGaviao-a(poente).jpg"
         },
         {
             "@id": "MRB-48-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-48-PracaDoGaviao-a(sul).jpg"
-            },
-            "legenda": "Praça do Gavião - Sul."
+            "legenda": "Praça do Gavião - Sul.",
+            "@path": "../imagem/MRB-48-PracaDoGaviao-a(sul).jpg"
         }
     ],
     "para": [
@@ -16830,17 +16564,13 @@
     "figura": [
         {
             "@id": "MRB-49-a",
-            "imagem": {
-                "@path": "../imagem/MRB-49-RuaDeSGoncalo-a.jpg"
-            },
-            "legenda": "Rua de S.Gonçalo - Vista nascente-"
+            "legenda": "Rua de S.Gonçalo - Vista nascente-",
+            "@path": "../imagem/MRB-49-RuaDeSGoncalo-a.jpg"
         },
         {
             "@id": "MRB-49-b",
-            "imagem": {
-                "@path": "../imagem/MRB-49-RuaDeSGoncalo-b.jpg"
-            },
-            "legenda": "Rua de S.Gonçalo - Vista poente."
+            "legenda": "Rua de S.Gonçalo - Vista poente.",
+            "@path": "../imagem/MRB-49-RuaDeSGoncalo-b.jpg"
         }
     ],
     "lista-casas": [
@@ -17316,17 +17046,13 @@
     "figura": [
         {
             "@id": "MRB-50-a",
-            "imagem": {
-                "@path": "../imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-a.jpg"
-            },
-            "legenda": "Rua de Nossa Senhora de Guadalupe - Vista norte."
+            "legenda": "Rua de Nossa Senhora de Guadalupe - Vista norte.",
+            "@path": "../imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-a.jpg"
         },
         {
             "@id": "MRB-50-b",
-            "imagem": {
-                "@path": "../imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-b.jpg"
-            },
-            "legenda": "Rua de Nossa Senhora de Guadalupe - Vista sul"
+            "legenda": "Rua de Nossa Senhora de Guadalupe - Vista sul",
+            "@path": "../imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-b.jpg"
         }
     ],
     "lista-casas": [
@@ -17563,17 +17289,13 @@
     "figura": [
         {
             "@id": "MRB-51-a",
-            "imagem": {
-                "@path": "../imagem/MRB-51-RuaDaOliveira-a.jpg"
-            },
-            "legenda": "Rua da Oliveira - Vista nascente."
+            "legenda": "Rua da Oliveira - Vista nascente.",
+            "@path": "../imagem/MRB-51-RuaDaOliveira-a.jpg"
         },
         {
             "@id": "MRB-51-b",
-            "imagem": {
-                "@path": "../imagem/MRB-51-RuaDaOliveira-b.jpg"
-            },
-            "legenda": "Rua da Oliveira - Vista poente."
+            "legenda": "Rua da Oliveira - Vista poente.",
+            "@path": "../imagem/MRB-51-RuaDaOliveira-b.jpg"
         }
     ],
     "lista-casas": [
@@ -18073,17 +17795,13 @@
     "figura": [
         {
             "@id": "MRB-52-a",
-            "imagem": {
-                "@path": "../imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-a.jpg"
-            },
-            "legenda": "Rua em frente da N. Sra. de Guadalupe - Vista poente."
+            "legenda": "Rua em frente da N. Sra. de Guadalupe - Vista poente.",
+            "@path": "../imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-a.jpg"
         },
         {
             "@id": "MRB-52-b",
-            "imagem": {
-                "@path": "../imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-b.jpg"
-            },
-            "legenda": "Rua da Regueira Margarida - Vista norte."
+            "legenda": "Rua da Regueira Margarida - Vista norte.",
+            "@path": "../imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-b.jpg"
         }
     ],
     "lista-casas": [
@@ -18344,17 +18062,13 @@
     "figura": [
         {
             "@id": "MRB-53-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-53-RuaDosChaosDeCima-norte.JPG"
-            },
-            "legenda": "Rua dos Chãos de Cima - vista norte."
+            "legenda": "Rua dos Chãos de Cima - vista norte.",
+            "@path": "../imagem/MRB-53-RuaDosChaosDeCima-norte.JPG"
         },
         {
             "@id": "MRB-53-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-53-RuaDosChaosDeCima-sul.JPG"
-            },
-            "legenda": "Rua dos Chãos de Cima - vista sul."
+            "legenda": "Rua dos Chãos de Cima - vista sul.",
+            "@path": "../imagem/MRB-53-RuaDosChaosDeCima-sul.JPG"
         }
     ],
     "lista-casas": [
@@ -20298,17 +20012,13 @@
     "figura": [
         {
             "@id": "MRB-54-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-54-RuaDasPalhotas-nascente.jpg"
-            },
-            "legenda": "Rua das Palhotas - vista nascente."
+            "legenda": "Rua das Palhotas - vista nascente.",
+            "@path": "../imagem/MRB-54-RuaDasPalhotas-nascente.jpg"
         },
         {
             "@id": "MRB-54-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-54-RuaDasPalhotas-poente.jpg"
-            },
-            "legenda": "Rua das Palhotas - vista poente."
+            "legenda": "Rua das Palhotas - vista poente.",
+            "@path": "../imagem/MRB-54-RuaDasPalhotas-poente.jpg"
         }
     ],
     "lista-casas": [
@@ -21128,10 +20838,8 @@
     "figura": [
         {
             "@id": "MRB-55-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-55-RuaDeInfias-norte.jpg"
-            },
-            "legenda": "Rua de Infias - vista norte."
+            "legenda": "Rua de Infias - vista norte.",
+            "@path": "../imagem/MRB-55-RuaDeInfias-norte.jpg"
         }
     ],
     "lista-casas": [
@@ -21722,17 +21430,13 @@
     "figura": [
         {
             "@id": "MRB-56-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-56-CangostaDaEscoura-norte.jpg"
-            },
-            "legenda": "Cangosta da Escoura - vista norte."
+            "legenda": "Cangosta da Escoura - vista norte.",
+            "@path": "../imagem/MRB-56-CangostaDaEscoura-norte.jpg"
         },
         {
             "@id": "MRB-56-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-56-CangostaDaEscoura-sul.jpg"
-            },
-            "legenda": "Cangosta da Escoura - vista sul."
+            "legenda": "Cangosta da Escoura - vista sul.",
+            "@path": "../imagem/MRB-56-CangostaDaEscoura-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -22074,17 +21778,13 @@
     "figura": [
         {
             "@id": "MRB-57-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-57-EstradaDeReal-norte.jpg"
-            },
-            "legenda": "Estrada de Real - norte."
+            "legenda": "Estrada de Real - norte.",
+            "@path": "../imagem/MRB-57-EstradaDeReal-norte.jpg"
         },
         {
             "@id": "MRB-57-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-57-EstradaDeReal-sul.jpg"
-            },
-            "legenda": "Estrada de Real - sul."
+            "legenda": "Estrada de Real - sul.",
+            "@path": "../imagem/MRB-57-EstradaDeReal-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -22203,17 +21903,13 @@
     "figura": [
         {
             "@id": "MRB-58-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-58-RuaDaCónega-norte.jpg"
-            },
-            "legenda": "RuaDaCónega - norte."
+            "legenda": "RuaDaCónega - norte.",
+            "@path": "../imagem/MRB-58-RuaDaCónega-norte.jpg"
         },
         {
             "@id": "MRB-58-sul",
-            "imagem": {
-                "@path": "../imagem/MRB-58-RuaDaCónega-sul.jpg"
-            },
-            "legenda": "RuaDaCónega- sul."
+            "legenda": "RuaDaCónega- sul.",
+            "@path": "../imagem/MRB-58-RuaDaCónega-sul.jpg"
         }
     ],
     "lista-casas": [
@@ -22807,10 +22503,8 @@
     "figura": [
         {
             "@id": "MRB-59-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-59-RuaDosBiscainhos-norte.jpg"
-            },
-            "legenda": "Rua Dos Biscaínhos - norte."
+            "legenda": "Rua Dos Biscaínhos - norte.",
+            "@path": "../imagem/MRB-59-RuaDosBiscainhos-norte.jpg"
         }
     ],
     "lista-casas": [
@@ -22884,10 +22578,8 @@
     "figura": [
         {
             "@id": "MRB-60-norte",
-            "imagem": {
-                "@path": "../imagem/MRB-60-CangostaDaRuaDasAguas-norte.jpg"
-            },
-            "legenda": "Cangosta da Rua das Águas - norte."
+            "legenda": "Cangosta da Rua das Águas - norte.",
+            "@path": "../imagem/MRB-60-CangostaDaRuaDasAguas-norte.jpg"
         }
     ],
     "lista-casas": [
@@ -22896,6 +22588,10 @@
             "enfiteuta": "*Vid.casa nº33 da Rua das Águas (rua 36)",
             "desc": {
                 "para": {
+                    "lugar": [
+                        "rua das Águas",
+                        "rua das Águas"
+                    ],
                     "#text": " A numeração que lhe é atribuída pelos índices dá seguimento à da rua das Águas.A casa nº37 confronta, de poente, com o nº36 da rua das Águas."
                 }
             }
