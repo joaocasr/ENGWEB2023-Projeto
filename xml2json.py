@@ -43,55 +43,73 @@ for file in os.listdir(path):
                                 }
                     dic['rua']['corpo']['para'][i]=entryText
                 i+=1
-                if 'lugar' in p:
-                    if type(p['lugar']) is not list:
-                        p['lugar'] = [p['lugar']]
-                if 'entidade' in p:
-                    if type(p['entidade']) is not list:
-                        p['entidade'] = [p['entidade']]
-                if 'data' in p:
-                    if type(p) != str and type(p['data']) is not list:
-                        p['data'] = [p['data']]
+                if type(p) is dict:
+                    if 'lugar' in p:
+                        if type(p['lugar']) is not list:
+                            p['lugar'] = [p['lugar']]
+                    if 'entidade' in p:
+                        if type(p['entidade']) is not list:
+                            p['entidade'] = [p['entidade']]
+                    if 'data' in p:
+                        if type(p['data']) is not list:
+                            p['data'] = [p['data']]
             j=0
         if 'lista-casas' in dic['rua']['corpo']:
             print(dic['rua']['corpo']['lista-casas']['casa'])
-            while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
-                print(">>"+str(i))
-                print(t4[i])
-                if('desc' in (dic['rua']['corpo']['lista-casas']['casa'])):
-                        #if(xmlfile=="/home/joao/XMLJSON/texto/MRB-29-Beco.xml"):print(dic['rua']['corpo']['lista-casas']['casa']['desc'])
-                        entryText = {
-                            "#text":t4[i]
-                        }
-                        dic['rua']['corpo']['lista-casas']['casa']['desc']['para']=entryText
-                        i+=1   
-                elif('desc' in dic['rua']['corpo']['lista-casas']['casa'][j] and dic['rua']['corpo']['lista-casas']['casa'][j]['desc']!=None):
-                    #print(dic['rua']['corpo']['lista-casas']['casa'][j])
-                    if(type(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']) is dict):
-                        #print(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para'])
-                        dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']['#text']=t4[i]
-                        i+=1
-                    if(type(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']) is str):
-                        entryText = {
-                            "#text":t4[i]
-                        }
-                        dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para']=entryText
-                        i+=1
-                else:
-                    entryDesc = {
-                                    "#text":None
-                                }
-                    dic['rua']['corpo']['lista-casas']['casa'][j]['desc']=entryDesc
-                j+=1
 
             if type(dic['rua']['corpo']['lista-casas']) is dict:
                 if type(dic['rua']['corpo']['lista-casas']['casa']) is not list:
                     dic['rua']['corpo']['lista-casas'] = [dic['rua']['corpo']['lista-casas']['casa']]
                 else:
                     dic['rua']['corpo']['lista-casas'] = dic['rua']['corpo']['lista-casas']['casa']
+
+            while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
+                print(">>"+str(i))
+                print(t4[i])
+
+                if('desc' in (dic['rua']['corpo']['lista-casas'])):
+                        #if(xmlfile=="/home/joao/XMLJSON/texto/MRB-29-Beco.xml"):print(dic['rua']['corpo']['lista-casas']['casa']['desc'])
+                        entryText = {
+                            "#text":t4[i]
+                        }
+                        dic['rua']['corpo']['lista-casas']['desc']['para']=entryText
+                        i+=1   
+                elif('desc' in dic['rua']['corpo']['lista-casas'][j] and dic['rua']['corpo']['lista-casas'][j]['desc']!=None):
+                    #print(dic['rua']['corpo']['lista-casas']['casa'][j])
+                    if(type(dic['rua']['corpo']['lista-casas'][j]['desc']['para']) is dict):
+                        #print(dic['rua']['corpo']['lista-casas']['casa'][j]['desc']['para'])
+                        dic['rua']['corpo']['lista-casas'][j]['desc']['para']['#text']=t4[i]
+                        i+=1
+                    if(type(dic['rua']['corpo']['lista-casas'][j]['desc']['para']) is str):
+                        entryText = {
+                            "#text":t4[i]
+                        }
+                        dic['rua']['corpo']['lista-casas'][j]['desc']['para']=entryText
+                        i+=1
+                else:
+                    entryDesc = {
+                                    "#text":None
+                                }
+                    dic['rua']['corpo']['lista-casas'][j]['desc']=entryDesc
+
+                if(len(dic['rua']['corpo']['lista-casas'])>j and type(dic['rua']['corpo']['lista-casas'][j]) is dict):
+                    if('enfiteuta' in dic['rua']['corpo']['lista-casas'][j]):
+                        print("\n\naquiii")
+                        print(dic['rua']['corpo']['lista-casas'][j]['enfiteuta'])
+                        print("\n\n")
+                        if not dic['rua']['corpo']['lista-casas'][j]['enfiteuta']:
+                            dic['rua']['corpo']['lista-casas'][j].pop('enfiteuta')
+                    if('foro' in (dic['rua']['corpo']['lista-casas'][j])):
+                        if not dic['rua']['corpo']['lista-casas'][j]['foro']:
+                            dic['rua']['corpo']['lista-casas'][j].pop('foro')
+                j+=1
+
         if 'figura' in dic['rua']['corpo']:
             if type(dic['rua']['corpo']['figura']) is not list:
                 dic['rua']['corpo']['figura'] = [dic['rua']['corpo']['figura']]
+            for fig in dic['rua']['corpo']['figura']:
+                fig['@path']=fig['imagem']['@path']
+                fig.pop('imagem')
 
     #print(dic['rua']['corpo'].items())
     for (k,v) in dic['rua']['corpo'].items():
