@@ -27,9 +27,9 @@ for file in os.listdir(path):
         
     with open(xmlfile,"r",encoding='utf-8') as f:
         xml = f.read()
-        t1 = re.sub(r'<lugar>(.*?)<\/lugar>',r"#[a(href='lugares/\1')]",xml)    
-        t2 = re.sub(r'<data>(.*?)<\/data>',r"#[a(href='datas/\1')]",t1)
-        t3 = re.sub(r'<entidade.*?>(.*?)<\/entidade>',r"#[a(href='entidades/\1')]",t2)
+        t1 = re.sub(r'<lugar>(.*?)<\/lugar>',r"#[a(href='lugares/\1') \1]",xml)    
+        t2 = re.sub(r'<data>(.*?)<\/data>',r"#[a(href='datas/\1') \1]",t1)
+        t3 = re.sub(r'<entidade.*?>(.*?)<\/entidade>',r"#[a(href='entidades/\1') \1]",t2)
         t4 = re.findall(r'<para>(.*?)<\/para>',t3)
         i=0
         
