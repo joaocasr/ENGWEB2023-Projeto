@@ -1,20 +1,30 @@
 var express = require('express');
+var fs = require('fs')
 var router = express.Router();
 var Mapa = require('../controllers/mapa')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   Mapa.list()
-    .then(mapas => {
-      //res.render('index', { slist: mapas});
-      res.status(200).json(mapas)
+    .then(mapa => {
+      res.render('index', { streets: mapa});
+      //res.status(200).json(mapas)
     })
     .catch(erro => {
-      res.render('error', {error: erro, message: "Erro na obtenção da lista"})
+      res.render('error', {error: erro, message: "Erro na obtenção da lista de ruas."})
     })
-
     /* .then(dados=> res.status(200).json(dados))
     .catch(erro =>res.status(520).json({erro:erro,mesagem:"erro na obtençao de lista"})) */
 });
+
+router.get('/ruas/:idRua', function(req, res, next) {
+  Mapa.getRua(req.params.idRua).then(rua => {
+      res.render('rua', { street: rua});
+    })
+    .catch(erro => {
+      res.render('error', {error: erro, message: "Erro na obtenção da rua."})
+    })
+});
+
 
 module.exports = router;

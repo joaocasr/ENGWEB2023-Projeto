@@ -12,7 +12,7 @@ module.exports.list = () => {
         })
 }
 
-module.exports.getMapa = id => {
+module.exports.getRua = id => {
     return Mapa.findOne({_id: id})
         .then(resposta => {
             return resposta
@@ -22,7 +22,7 @@ module.exports.getMapa = id => {
         })
 }
 
-module.exports.addMapa = a => {
+module.exports.addRua = a => {
     return Mapa.create(a)
             .then(dados => {
                 return dados
@@ -42,7 +42,7 @@ module.exports.updateMapa = a => {
             })
 }
 
-module.exports.deleteMapa = id => {
+module.exports.deleteRua = id => {
     return Mapa.deleteOne({_id: id})
             .then(resposta => {
                 return resposta.data
