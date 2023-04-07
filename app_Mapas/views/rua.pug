@@ -13,3 +13,64 @@ block content
 	.w3-content.w3-padding(style="max-width:1564px")
 		.w3-container.w3-padding-32(id="rua")
 			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16 #{street.nome}
+
+
+		.w3-row-padding
+
+			.l3.m6.w3-margin-bottom
+				.w3-row-padding
+					each pastimage in street.figura
+						.w3-col.l6.w3-margin-bottom
+						.w3-display-container
+							.w3-display-topleft.w3-black.w3-padding Antigamente
+							img(src="/images/dados/materialBase/"+ pastimage.path alt="House" style="width:100%;object-fit: cover;")
+
+
+				.w3-container.w3-padding-32.w3-light-grey.w3-round(style="margin-left:16px;margin-right:16px;")
+					p Descrição: eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae </p>
+            
+			.l3.m6.w3-margin-bottom
+
+				.w3-row-padding
+
+					.w3-col.l6.w3-margin-bottom
+					.w3-display-container
+						.w3-display-topleft.w3-black.w3-padding Agora
+						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:400px;object-fit: cover;")
+
+					.w3-col.l6.w3-margin-bottom
+					.w3-display-container
+						.w3-display-topleft.w3-black.w3-padding Agora
+						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista2.JPG" alt="House" style="width:100%;height:400px;object-fit: cover;")
+
+				if street.para
+					.w3-container.w3-padding-32.w3-light-grey.w3-round(style="margin-left:16px;margin-right:16px;")
+						h3 Lugares de interesse e curiosidades:
+					each to in street.para
+						if to
+								if to.lugar
+									p Lugares:
+										each place in to.lugar
+											p 
+												li
+													a(href='/lugares/'+place) #{place}
+								if to.data
+									p Datas:
+										each date in to.data
+											p
+												li
+													a(href='/datas/'+date) #{date} 
+								if to.entidade
+									p Entidades:
+										each entity in to.entidade
+											p
+												li
+													a(href='/entidades/'+entity.text) #{entity.text}
+								p #{to.text}
+								
+
+	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
+		p Made by EngWeb2023 Group XX
+		p 2023 All Rights Reserved
+
+

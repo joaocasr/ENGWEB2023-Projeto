@@ -2,15 +2,15 @@ var mongoose = require('mongoose')
 
 
 var entidadeSchema = new mongoose.Schema({
-    '@tipo': String,
-    '#text': String
+    tipo: String,
+    text: String
 })
 
 var paraSchema = new mongoose.Schema({
     lugar: [String],
     data: [String],
     entidade: [entidadeSchema],
-    '#text': String  
+    text: String  
 })
 
 var descSchema = new mongoose.Schema({
@@ -25,9 +25,9 @@ var casaSchema = new mongoose.Schema({
 })
 
 var figuraSchema = new mongoose.Schema({
-    '@id': String,
+    id: String,
     legenda: String,
-    '@path': String
+    path: String
 })
 
 var mapaSchema = new mongoose.Schema({
