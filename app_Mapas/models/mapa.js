@@ -13,8 +13,15 @@ var paraSchema = new mongoose.Schema({
     text: String  
 })
 
+var paraDSchema = new mongoose.Schema({
+    lugar: [String],
+    data: [String],
+    entidade: [entidadeSchema],
+    text: String  
+})
+
 var descSchema = new mongoose.Schema({
-    para: paraSchema
+    para: paraDSchema
 })
 
 var casaSchema = new mongoose.Schema({
@@ -34,7 +41,7 @@ var mapaSchema = new mongoose.Schema({
     _id : String,
     nome: String,
     para: [paraSchema],
-    'lista-casas': [casaSchema],
+    listacasas: [casaSchema],
     figura: [figuraSchema]
 })
 

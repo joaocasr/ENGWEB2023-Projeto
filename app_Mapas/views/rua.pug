@@ -1,6 +1,7 @@
 extends layout
 
 block content
+	.modal(id="modaldesc")
 	.w3-top
 		.w3-bar.w3-black.w3-card(style="height:100%;")
 			p.w3-bar-item.w3-padding-large(style="font-size:16px;") BRAGA STREET VIEW
@@ -24,11 +25,36 @@ block content
 						.w3-display-container
 							.w3-display-topleft.w3-black.w3-padding Antigamente
 							img(src="/images/dados/materialBase/"+ pastimage.path alt="House" style="width:100%;object-fit: cover;")
+				.w3-container.w3-padding-32.w3-grey.w3-round(style="margin-left:10px;margin-right:10px;")
+					h4 Lista de Casas da rua: #{street.nome}
+					table.w3-table-all
+						thead 
+							tr.w3-brown
+								th Número
+								th Enfiteuta
+								th Foro
+								th Descrição
+							each house in street.listacasas
+								tr
+									if house.número
+										td=house.número
+									else 
+										td="NA"
+									if house.enfiteuta
+										td=house.enfiteuta
+									else 
+										td="NA"
+									if house.foro
+										td=house.foro
+									else 
+										td="NA"
+									td
+										if house.desc.para
+											button(onclick=`showDesc(${JSON.stringify(house.desc.para)});`)= "Descrição"
+										else
+											button(onclick=`showDesc(${JSON.stringify(null)});`)= "Descrição"
 
 
-				.w3-container.w3-padding-32.w3-light-grey.w3-round(style="margin-left:16px;margin-right:16px;")
-					p Descrição: eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae eiagkgnaeºhgeaknhgae </p>
-            
 			.l3.m6.w3-margin-bottom
 
 				.w3-row-padding
@@ -36,41 +62,41 @@ block content
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
 						.w3-display-topleft.w3-black.w3-padding Agora
-						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:400px;object-fit: cover;")
+						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
 
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
 						.w3-display-topleft.w3-black.w3-padding Agora
-						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista2.JPG" alt="House" style="width:100%;height:400px;object-fit: cover;")
+						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista2.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
 
 				if street.para
 					.w3-container.w3-padding-32.w3-light-grey.w3-round(style="margin-left:16px;margin-right:16px;")
-						h3 Lugares de interesse e curiosidades:
-					each to in street.para
-						if to
-								if to.lugar
-									p Lugares:
-										each place in to.lugar
-											p 
-												li
-													a(href='/lugares/'+place) #{place}
-								if to.data
-									p Datas:
-										each date in to.data
-											p
-												li
-													a(href='/datas/'+date) #{date} 
-								if to.entidade
-									p Entidades:
-										each entity in to.entidade
-											p
-												li
-													a(href='/entidades/'+entity.text) #{entity.text}
-								p #{to.text}
+						h3 Lugares relacionados e curiosidades:
+						each to in street.para
+							if to
+									if to.lugar.length>0
+										p Lugares:
+											each place in to.lugar
+												p 
+													li
+														a(href='/lugares/'+place) #{place}
+									if to.data.length>0
+										p Datas:
+											each date in to.data
+												p
+													li
+														a(href='/datas/'+date) #{date} 
+									if to.entidade.length>0
+										p Entidades:
+											each entity in to.entidade
+												p
+													li
+														a(href='/entidades/'+entity.text) #{entity.text}
+									p #{to.text}
 								
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
-		p Made by EngWeb2023 Group XX
-		p 2023 All Rights Reserved
+		p Made by Group XX - EngWeb2023
+		p ©2023 All Rights Reserved
 
 
