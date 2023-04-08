@@ -126,7 +126,7 @@ for file in os.listdir(path):
             if type(dic['rua']['corpo']['figura']) is not list:
                 dic['rua']['corpo']['figura'] = [dic['rua']['corpo']['figura']]
             for fig in dic['rua']['corpo']['figura']:
-                fig['path']=fig['imagem']['@path']
+                fig['path']=re.sub(r'\.\./i',r"i",fig['imagem']['@path'])
                 fig.pop('imagem')
                 fig['id']=fig.pop('@id')
 
