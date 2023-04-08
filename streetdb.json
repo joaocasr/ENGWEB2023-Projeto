@@ -77,7 +77,9 @@
             "text": "A #[a(href='lugares/rua do Campo') rua do Campo] é um troço da actual #[a(href='lugares/rua D. Frei Caetano Brandao') rua D. Frei Caetano Brandao], entre a #[a(href='lugares/rua D. Diogo de Sousa') rua D. Diogo de Sousa] e o #[a(href='lugares/largo Conselheiro Torres e Almeida') largo Conselheiro Torres e Almeida], tendo recebido esta designação na sessão da Câmara de #[a(href='datas/28.07.1890') 28.07.1890]."
         }
     ],
-    "lista-casas": [
+    "_id": "1",
+    "nome": "Rua do Campo",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Domingos Dias",
@@ -132,9 +134,7 @@
                 }
             }
         }
-    ],
-    "_id": "1",
-    "nome": "Rua do Campo"
+    ]
 },
 {
     "figura": [
@@ -226,7 +226,9 @@
             "text": "A #[a(href='lugares/Pracinha') Pracinha] viu os seus edifícios crescer em altura, sobretudo do lado Este e o mercado coberto foi retirado em data que desconhecemos."
         }
     ],
-    "lista-casas": [
+    "_id": "2",
+    "nome": "Rua Nova",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -471,9 +473,7 @@
                 }
             }
         }
-    ],
-    "_id": "2",
-    "nome": "Rua Nova"
+    ]
 },
 {
     "figura": [
@@ -537,7 +537,9 @@
             "text": "Não sabemos quando o seu nome mudou para a #[a(href='lugares/rua do Cabido') rua do Cabido]. No mapa de #[a(href='datas/1857') 1857] tem ainda o nome de #[a(href='lugares/Travessa dos Açougues Velhos') Travessa dos Açougues Velhos]."
         }
     ],
-    "lista-casas": [
+    "_id": "3",
+    "nome": "Rua dos Açougues velhos",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -631,9 +633,7 @@
                 }
             }
         }
-    ],
-    "_id": "3",
-    "nome": "Rua dos Açougues velhos"
+    ]
 },
 {
     "figura": [
@@ -708,7 +708,9 @@
             "text": "Das 5 casas do lado Norte e 9 do lado Sul eram prazos do #[a(href='entidades/Cabido') Cabido] 4 e 9, respectivamente."
         }
     ],
-    "lista-casas": [
+    "_id": "4",
+    "nome": "Praça do Pão",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Maria Barbosa, viúva de Manuel Fernandes, alfaiate do Campo de S. Sebastião",
@@ -900,9 +902,7 @@
             "enfiteuta": "José Luís. alfaiate",
             "foro": "260 reis e 1 capão"
         }
-    ],
-    "_id": "4",
-    "nome": "Praça do Pão"
+    ]
 },
 {
     "figura": [
@@ -989,7 +989,9 @@
             "text": "A designação de Oucias (e aparecem também as designações de Ussias e Adussias), será talvez uma corrupção de ousia, isto é capela-mor. E a de #[a(href='entidades/Nossa Senhora do Leite') Nossa Senhora do Leite] é devida à belíssima imagem, da #[a(href='lugares/escola coimbrã') escola coimbrã] do séc. XVI, que foi oferecida por #[a(href='entidades/D. Diogo de Sousa ') D. Diogo de Sousa ]."
         }
     ],
-    "lista-casas": [
+    "_id": "5",
+    "nome": "Rua das Oucias",
+    "listacasas": [
         {
             "número": "1",
             "foro": "38 reis e 6 pretos (de censo)",
@@ -1207,9 +1209,7 @@
                 }
             }
         }
-    ],
-    "_id": "5",
-    "nome": "Rua das Oucias"
+    ]
 },
 {
     "figura": [
@@ -1298,7 +1298,9 @@
             "text": "Das 37 casas do lado Norte e 55 do lado Sul eram prazos do Cabido 16 e 33 respectivamente. "
         }
     ],
-    "lista-casas": [
+    "_id": "6",
+    "nome": "Rua do Souto Porta do Souto",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Agostinha Maia, viúva de Domingos Antunes da Rocha, ourives",
@@ -2017,9 +2019,7 @@
                 }
             }
         }
-    ],
-    "_id": "6",
-    "nome": "Rua do Souto Porta do Souto"
+    ]
 },
 {
     "figura": [
@@ -2101,7 +2101,9 @@
             "text": "Estas duas artérias têm hoje o nome comum de #[a(href='lugares/rua do Castelo') rua do Castelo]."
         }
     ],
-    "lista-casas": [
+    "_id": "7",
+    "nome": "Loura e Terreiro do Castelo",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Manuel Ribeiro Pereira",
@@ -2144,9 +2146,7 @@
                 }
             }
         }
-    ],
-    "_id": "7",
-    "nome": "Loura e Terreiro do Castelo"
+    ]
 },
 {
     "figura": [
@@ -2197,7 +2197,9 @@
             "text": "Este topónimo, que se mantém ainda hoje, deriva do nome do instituidor da medieval #[a(href='lugares/igreja de S. João de Souto') igreja de S. João de Souto], #[a(href='entidades/João Anes') João Anes]."
         }
     ],
-    "lista-casas": [
+    "_id": "8",
+    "nome": "Rua de Janes",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Miguel da Silva Cação, pasteleiro",
@@ -2431,9 +2433,7 @@
                 }
             }
         }
-    ],
-    "_id": "8",
-    "nome": "Rua de Janes"
+    ]
 },
 {
     "para": [
@@ -2551,7 +2551,9 @@
             "id": "MRB-10-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "10",
+    "nome": "Travessa da Rua de S. João para a do Forno",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -2723,9 +2725,7 @@
                 }
             }
         }
-    ],
-    "_id": "10",
-    "nome": "Travessa da Rua de S. João para a do Forno"
+    ]
 },
 {
     "para": [
@@ -2806,7 +2806,9 @@
             "id": "MRB-11-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "11",
+    "nome": "Rua dos Cegos ou do Forno",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -3090,9 +3092,7 @@
                 }
             }
         }
-    ],
-    "_id": "11",
-    "nome": "Rua dos Cegos ou do Forno"
+    ]
 },
 {
     "para": [
@@ -3155,7 +3155,9 @@
             "id": "MRB-12-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "12",
+    "nome": "Travessa Da Rua Do Forno Para A Do Poco",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Dr. Francisco Gomes do Couto",
@@ -3329,9 +3331,7 @@
                 }
             }
         }
-    ],
-    "_id": "12",
-    "nome": "Travessa Da Rua Do Forno Para A Do Poco"
+    ]
 },
 {
     "para": [
@@ -3397,7 +3397,9 @@
             "id": "MRB-13-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "13",
+    "nome": "Rua Pequena",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -3516,9 +3518,7 @@
                 }
             }
         }
-    ],
-    "_id": "13",
-    "nome": "Rua Pequena"
+    ]
 },
 {
     "para": [
@@ -3633,7 +3633,9 @@
             "id": "MRB-14-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "14",
+    "nome": "Rua de Sta. Maria ou do Poço",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -4008,9 +4010,7 @@
                 }
             }
         }
-    ],
-    "_id": "14",
-    "nome": "Rua de Sta. Maria ou do Poço"
+    ]
 },
 {
     "para": [
@@ -4049,7 +4049,9 @@
             "id": "MRB-15-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "15",
+    "nome": "Travessa da Rua do Poço para a de D.Gualdim",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -4169,9 +4171,7 @@
                 }
             }
         }
-    ],
-    "_id": "15",
-    "nome": "Travessa da Rua do Poço para a de D.Gualdim"
+    ]
 },
 {
     "para": [
@@ -4255,7 +4255,9 @@
             "id": "MRB-16-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "16",
+    "nome": "Rua de D. Gualdim",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -4601,9 +4603,7 @@
                 }
             }
         }
-    ],
-    "_id": "16",
-    "nome": "Rua de D. Gualdim"
+    ]
 },
 {
     "para": [
@@ -4653,7 +4653,9 @@
             "id": "MRB-17-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "17",
+    "nome": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Padre José António Pereira",
@@ -4709,9 +4711,7 @@
                 }
             }
         }
-    ],
-    "_id": "17",
-    "nome": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo"
+    ]
 },
 {
     "para": [
@@ -4770,7 +4770,9 @@
             "id": "MRB-18-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "18",
+    "nome": "Rua das Chagas",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D. Inácia Gomes da Costa",
@@ -4914,9 +4916,7 @@
                 }
             }
         }
-    ],
-    "_id": "18",
-    "nome": "Rua das Chagas"
+    ]
 },
 {
     "para": [
@@ -4958,7 +4958,9 @@
             "id": "MRB-19-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "19",
+    "nome": "Rua de Sto. António",
+    "listacasas": [
         {
             "número": "1 e 2",
             "enfiteuta": "Francisco Soares de Novais, abade de S. Vicente do Bico",
@@ -5155,9 +5157,7 @@
                 }
             }
         }
-    ],
-    "_id": "19",
-    "nome": "Rua de Sto. António"
+    ]
 },
 {
     "para": [
@@ -5235,7 +5235,9 @@
             "id": "MRB-20-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "20",
+    "nome": "Terreiro de Sto. António e Postigo",
+    "listacasas": [
         {
             "número": "1 e 2",
             "enfiteuta": "Fernando da Cunha Sottomayor",
@@ -5333,9 +5335,7 @@
                 }
             }
         }
-    ],
-    "_id": "20",
-    "nome": "Terreiro de Sto. António e Postigo"
+    ]
 },
 {
     "para": [
@@ -5403,7 +5403,9 @@
             "id": "MRB-21-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "21",
+    "nome": "Rua Verde",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Maria Catarina do Céu, religiosa do Salvador",
@@ -5624,9 +5626,7 @@
                 }
             }
         }
-    ],
-    "_id": "21",
-    "nome": "Rua Verde"
+    ]
 },
 {
     "para": [
@@ -5698,7 +5698,9 @@
             "id": "MRB-22-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "22",
+    "nome": "Rua de Maximinos",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Senado da Câmara de Braga",
@@ -6165,9 +6167,7 @@
                 }
             }
         }
-    ],
-    "_id": "22",
-    "nome": "Rua de Maximinos"
+    ]
 },
 {
     "para": [
@@ -6243,7 +6243,9 @@
             "id": "MRB-23-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "23",
+    "nome": "Rua dos Sapateiros e Rossio da Praça",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -6510,9 +6512,7 @@
             },
             "vista": "Poente"
         }
-    ],
-    "_id": "23",
-    "nome": "Rua dos Sapateiros e Rossio da Praça"
+    ]
 },
 {
     "para": [
@@ -6563,7 +6563,9 @@
             "id": "MRB-24-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "24",
+    "nome": "Rua da Vielinha",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Os herdeiros de Filipa Francisca, mulher de Francisco de Freitas",
@@ -6658,9 +6660,7 @@
                 }
             }
         }
-    ],
-    "_id": "24",
-    "nome": "Rua da Vielinha"
+    ]
 },
 {
     "figura": [
@@ -6761,7 +6761,9 @@
             "text": "Actualmente, #[a(href='lugares/Em Frente do Açougue') Em Frente do Açougue] corresponde à #[a(href='lugares/avenida de S. Miguel o Anjo') avenida de S. Miguel o Anjo]; o #[a(href='lugares/campo deS. Sebastião') campo deS. Sebastião] é partilhado pelo #[a(href='lugares/campo das Carvalheiras') campo das Carvalheiras] e #[a(href='lugares/rua do Matadouro Velho') rua do Matadouro Velho]."
         }
     ],
-    "lista-casas": [
+    "_id": "25",
+    "nome": "Campo de S. Sebastião e em Frente do Açougue",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D. António de Noronha de Mesquita Soares",
@@ -6802,9 +6804,7 @@
                 }
             }
         }
-    ],
-    "_id": "25",
-    "nome": "Campo de S. Sebastião e em Frente do Açougue"
+    ]
 },
 {
     "figura": [
@@ -6859,7 +6859,9 @@
             "text": "Desde 1891 que se chama #[a(href='lugares/rua Visconde Pindela') rua Visconde Pindela]"
         }
     ],
-    "lista-casas": [
+    "_id": "26",
+    "nome": "Rua de S.Miguel O Anjo",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Inácio Peixoto",
@@ -6995,9 +6997,7 @@
                 }
             }
         }
-    ],
-    "_id": "26",
-    "nome": "Rua de S.Miguel O Anjo"
+    ]
 },
 {
     "figura": [
@@ -7066,7 +7066,9 @@
             "text": "Actualmente conserva ainda a mesma designação que lhe deverá ter sido dada pela cruz que existia no extremo Nordeste da rua, na idade Média e que em #[a(href='datas/1750') 1750] se situava no extremo oposto."
         }
     ],
-    "lista-casas": [
+    "_id": "27",
+    "nome": "Rua Da Cruz De Pedra",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D. António de Noronha de Mesquita Soares",
@@ -7734,9 +7736,7 @@
                 }
             }
         }
-    ],
-    "_id": "27",
-    "nome": "Rua Da Cruz De Pedra"
+    ]
 },
 {
     "figura": [
@@ -7774,7 +7774,9 @@
             "text": "Mantém actualmente o mesmo nome."
         }
     ],
-    "lista-casas": [
+    "_id": "28",
+    "nome": "Rua Direita",
+    "listacasas": [
         {
             "número": "-",
             "enfiteuta": "-",
@@ -7785,9 +7787,7 @@
                 }
             }
         }
-    ],
-    "_id": "28",
-    "nome": "Rua Direita"
+    ]
 },
 {
     "figura": [
@@ -7837,7 +7837,9 @@
             "text": "Das 21 casas do lado Norte e 15 do Sul nenhuma era prazo do #[a(href='entidades/Cabido') Cabido]."
         }
     ],
-    "lista-casas": [
+    "_id": "29",
+    "nome": "Rua do Beco",
+    "listacasas": [
         {
             "número": "-",
             "enfiteuta": "-",
@@ -7848,9 +7850,7 @@
                 }
             }
         }
-    ],
-    "_id": "29",
-    "nome": "Rua do Beco"
+    ]
 },
 {
     "figura": [
@@ -7897,7 +7897,9 @@
             "text": "Mantém hoje o topónimo de S. Sebastião embora também seja conehcida por #[a(href='lugares/rua dos Marchantes') rua dos Marchantes]."
         }
     ],
-    "lista-casas": [
+    "_id": "30",
+    "nome": "Cangosta De S. Sebastião",
+    "listacasas": [
         {
             "número": "1 e 2",
             "desc": {
@@ -7996,9 +7998,7 @@
                 }
             }
         }
-    ],
-    "_id": "30",
-    "nome": "Cangosta De S. Sebastião"
+    ]
 },
 {
     "figura": [
@@ -8041,7 +8041,9 @@
             "text": "As 18 casas que apresentam são todas prazos do Cabido."
         }
     ],
-    "lista-casas": [
+    "_id": "31",
+    "nome": "Rua do Alcaide",
+    "listacasas": [
         {
             "número": "1 e 2",
             "enfiteuta": "-",
@@ -8159,9 +8161,7 @@
                 }
             }
         }
-    ],
-    "_id": "31",
-    "nome": "Rua do Alcaide"
+    ]
 },
 {
     "figura": [
@@ -8201,7 +8201,9 @@
             "text": "Das 34 casas do lado Nascente e 30 do Poente era prazos do #[a(href='entidades/Cabido') Cabido] 9 e 7 respectivamente, que se localizavam apenas na parte Norte da rua."
         }
     ],
-    "lista-casas": [
+    "_id": "32",
+    "nome": "Rua dos Pelames",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "-",
@@ -8579,9 +8581,7 @@
                 }
             }
         }
-    ],
-    "_id": "32",
-    "nome": "Rua dos Pelames"
+    ]
 },
 {
     "figura": [
@@ -8693,7 +8693,8 @@
             "text": "Em #[a(href='datas/1750') 1750] no lado Sul deste largo havia onze casas, todas prazos do #[a(href='entidades/Cabido') Cabido], que se podiam dividir em três grupos: um, mais pobre, (casas dos prazos 5 a 11) de desenho de fachada simples, com janelas do tipo bracarense, parcialmente cobertas por gelosias; outro (casas dos prazos 2 a 4) mais cuidado, com portas com rebordo saliente e frisos, também de pedra, sobre as janelas; e o terceiro, formado pela belíssima #[a(href='lugares/casa dos Falcões Cota') casa dos Falcões Cota], mandada fazer em #[a(href='datas/1703') 1703] pelo #[a(href='entidades/Cónego Meira Carrilho') Cónego Meira Carrilho], e onde actualmente está instalado o #[a(href='entidades/Governo Civil') Governo Civil]."
         }
     ],
-    "lista-casas": [
+    "_id": "33",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Estevão Falcão Costa",
@@ -9237,8 +9238,7 @@
                 }
             }
         }
-    ],
-    "_id": "33"
+    ]
 },
 {
     "para": [
@@ -9271,7 +9271,21 @@
             "text": "Não sabemos a razão porque esta Cangosta foi conhecida pelo nomes das «Cruzes», nem sabemos qual a data em que passou a ser conhecida pelo nome actual, «Falcões», embora em #[a(href='datas/1857') 1857] já assim apareça designada. Essa designação deverá ser mais antiga e provém, sem dúvida, do nome da #[a(href='entidades/família Falcões Cota') família Falcões Cota] cujo palácio existente no #[a(href='lugares/Campo de S. Tiago') Campo de S. Tiago] tinha a envolvê-lo terrenos desta rua, os que estão a Oeste do prazo nº 13."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Quingosta das Cruzes - Norte.",
+            "path": "../imagem/MRB-34-QuingostaDasCruzes-primeira.jpg",
+            "id": "MRB-34-a"
+        },
+        {
+            "legenda": "Quingosta das Cruzes - Sul.",
+            "path": "../imagem/MRB-34-QuingostaDasCruzes-segunda.jpg",
+            "id": "MRB-34-b"
+        }
+    ],
+    "_id": "34",
+    "nome": "Cangosta das Cruzes",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -9348,21 +9362,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Quingosta das Cruzes - Norte.",
-            "path": "../imagem/MRB-34-QuingostaDasCruzes-primeira.jpg",
-            "id": "MRB-34-a"
-        },
-        {
-            "legenda": "Quingosta das Cruzes - Sul.",
-            "path": "../imagem/MRB-34-QuingostaDasCruzes-segunda.jpg",
-            "id": "MRB-34-b"
-        }
-    ],
-    "_id": "34",
-    "nome": "Cangosta das Cruzes"
+    ]
 },
 {
     "figura": [
@@ -9443,7 +9443,8 @@
         }
     ],
     "nome": "Rua de S. Marcos",
-    "lista-casas": [
+    "_id": "35",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "António de Araújo Ferreira, alfaiate",
@@ -9606,8 +9607,7 @@
                 }
             }
         }
-    ],
-    "_id": "35"
+    ]
 },
 {
     "para": [
@@ -9656,7 +9656,21 @@
             "text": "A #[a(href='lugares/rua das Águas') rua das Águas] corresponde ao troço da #[a(href='lugares/avenida da Liberdade') avenida da Liberdade] entre a #[a(href='lugares/Arcada') Arcada] e o #[a(href='lugares/Rechicho') Rechicho]."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Rua das Águas - Poente.",
+            "path": "../imagem/MRB-36-RuaDasAgoas-primeira.jpg",
+            "id": "MRB-36-a"
+        },
+        {
+            "legenda": "Rua das Águas - Nascente.",
+            "path": "../imagem/MRB-36-RuaDasAgoas-segunda.jpg",
+            "id": "MRB-36-b"
+        }
+    ],
+    "_id": "36",
+    "nome": "Rua das Águas",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Francisco José Pereira, chantre de Guimarães",
@@ -10044,21 +10058,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Rua das Águas - Poente.",
-            "path": "../imagem/MRB-36-RuaDasAgoas-primeira.jpg",
-            "id": "MRB-36-a"
-        },
-        {
-            "legenda": "Rua das Águas - Nascente.",
-            "path": "../imagem/MRB-36-RuaDasAgoas-segunda.jpg",
-            "id": "MRB-36-b"
-        }
-    ],
-    "_id": "36",
-    "nome": "Rua das Águas"
+    ]
 },
 {
     "para": [
@@ -10102,7 +10102,21 @@
             "text": "A #[a(href='lugares/rua de S. Lázaro') rua de S. Lázaro] corresponde hoje ao fragmento da #[a(href='lugares/avenida da Liberdade') avenida da Liberdade], entre o #[a(href='lugares/largo do Rechicho') largo do Rechicho] e a #[a(href='lugares/rua 25 de Abril') rua 25 de Abril]."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Rua de S.Lázaro - Nascente.",
+            "path": "../imagem/MRB-37-RuaDeSLazaro-Nascente.jpg",
+            "id": "MRB-37-nascente"
+        },
+        {
+            "legenda": "Rua de S.Lázaro - Poente.",
+            "path": "../imagem/MRB-37-RuaDeSLazaro-Poente.jpg",
+            "id": "MRB-37-poente"
+        }
+    ],
+    "_id": "37",
+    "nome": "Rua de S. Lázaro",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Lopo de Barros e Almeida",
@@ -10969,21 +10983,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Rua de S.Lázaro - Nascente.",
-            "path": "../imagem/MRB-37-RuaDeSLazaro-Nascente.jpg",
-            "id": "MRB-37-nascente"
-        },
-        {
-            "legenda": "Rua de S.Lázaro - Poente.",
-            "path": "../imagem/MRB-37-RuaDeSLazaro-Poente.jpg",
-            "id": "MRB-37-poente"
-        }
-    ],
-    "_id": "37",
-    "nome": "Rua de S. Lázaro"
+    ]
 },
 {
     "para": [
@@ -11032,7 +11032,31 @@
             "text": "Esta rua corresponde hoje ao #[a(href='lugares/troço da avenida da Liberdade') troço da avenida da Liberdade] entre a #[a(href='lugares/rua 25 de Abril') rua 25 de Abril] e o #[a(href='lugares/largo das Latinhas ou do Senhor dos Aflitos') largo das Latinhas ou do Senhor dos Aflitos]."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Rua da Ponte de Guimarães - Nascente-a.",
+            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg",
+            "id": "MRB38-nascente-a"
+        },
+        {
+            "legenda": "Rua da Ponte de Guimarães - Nascente-b.",
+            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg",
+            "id": "MRB38-nascente-b"
+        },
+        {
+            "legenda": "Rua da Ponte de Guimarães - Poente-a.",
+            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg",
+            "id": "MRB38-poente-a"
+        },
+        {
+            "legenda": "Rua da Ponte de Guimarães - Poente-b.",
+            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg",
+            "id": "MRB38-poente-b"
+        }
+    ],
+    "_id": "38",
+    "nome": "Rua da Ponte de Guimarães",
+    "listacasas": [
         {
             "número": "1 e 2",
             "enfiteuta": "Lopo de Barros e Almeida",
@@ -12668,31 +12692,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Rua da Ponte de Guimarães - Nascente-a.",
-            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg",
-            "id": "MRB38-nascente-a"
-        },
-        {
-            "legenda": "Rua da Ponte de Guimarães - Nascente-b.",
-            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg",
-            "id": "MRB38-nascente-b"
-        },
-        {
-            "legenda": "Rua da Ponte de Guimarães - Poente-a.",
-            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg",
-            "id": "MRB38-poente-a"
-        },
-        {
-            "legenda": "Rua da Ponte de Guimarães - Poente-b.",
-            "path": "../imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg",
-            "id": "MRB38-poente-b"
-        }
-    ],
-    "_id": "38",
-    "nome": "Rua da Ponte de Guimarães"
+    ]
 },
 {
     "para": [
@@ -12737,7 +12737,21 @@
             "text": "As 23 casas do lado Norte e 15 do Poente são todas prazos do #[a(href='entidades/Cabido') Cabido]."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Ponte de Guimarães - Norte",
+            "path": "../imagem/MRB-39-PonteDeGuimaraes-Norte.jpg",
+            "id": "MRB39-Norte"
+        },
+        {
+            "legenda": "Ponte de Guimarães - Poente",
+            "path": "../imagem/MRB-39-PonteDeGuimaraes-Poente.jpg",
+            "id": "MRB39-Poente"
+        }
+    ],
+    "_id": "39",
+    "nome": "Ponte de Guimarães",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "João de Magalhães de Araújo Costa, enfiteuta principal do prazo da metade do Casal dos Galos, que foi de Mateus Rodrigues",
@@ -13124,21 +13138,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Ponte de Guimarães - Norte",
-            "path": "../imagem/MRB-39-PonteDeGuimaraes-Norte.jpg",
-            "id": "MRB39-Norte"
-        },
-        {
-            "legenda": "Ponte de Guimarães - Poente",
-            "path": "../imagem/MRB-39-PonteDeGuimaraes-Poente.jpg",
-            "id": "MRB39-Poente"
-        }
-    ],
-    "_id": "39",
-    "nome": "Ponte de Guimarães"
+    ]
 },
 {
     "para": [
@@ -13190,7 +13190,21 @@
             "text": "Não tem hoje uma correspondência correcta pois andava entre as actuais ruas de#[a(href='lugares/Pai Amante') Pai Amante] (que está em vias de completo desaparecimento) e #[a(href='lugares/Conselheiro Lobato') Conselheiro Lobato]."
         }
     ],
-    "lista-casas": [
+    "figura": [
+        {
+            "legenda": "Rua do Paymanta - Sul.",
+            "path": "../imagem/MRB-40-RuaDoPaymanta-Sul.jpg",
+            "id": "MRB40-sul"
+        },
+        {
+            "legenda": "Rua do Paymanta - Norte.",
+            "path": "../imagem/MRB-40-RuaDoPaymanta-Norte.jpg",
+            "id": "MRB40-norte"
+        }
+    ],
+    "_id": "40",
+    "nome": "Rua do Paymanta",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -13492,21 +13506,7 @@
                 }
             }
         }
-    ],
-    "figura": [
-        {
-            "legenda": "Rua do Paymanta - Sul.",
-            "path": "../imagem/MRB-40-RuaDoPaymanta-Sul.jpg",
-            "id": "MRB40-sul"
-        },
-        {
-            "legenda": "Rua do Paymanta - Norte.",
-            "path": "../imagem/MRB-40-RuaDoPaymanta-Norte.jpg",
-            "id": "MRB40-norte"
-        }
-    ],
-    "_id": "40",
-    "nome": "Rua do Paymanta"
+    ]
 },
 {
     "para": [
@@ -13646,7 +13646,9 @@
             "id": "MRB-41-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "41",
+    "nome": "Campo de Santa Ana",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D.Agostinha de Barros Gavião, enfiteuta principal do casal dos Chãos ou Quinteiro, sito na freguesia de S.José de S.Lázaro",
@@ -13762,9 +13764,7 @@
                 }
             }
         }
-    ],
-    "_id": "41",
-    "nome": "Campo de Santa Ana"
+    ]
 },
 {
     "para": [
@@ -13841,7 +13841,9 @@
             "id": "MRB-42-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "42",
+    "nome": "Campo e Calçada de Nossa Senhora a Branca",
+    "listacasas": [
         {
             "número": "1,2 e 3",
             "desc": {
@@ -14350,9 +14352,7 @@
                 }
             }
         }
-    ],
-    "_id": "42",
-    "nome": "Campo e Calçada de Nossa Senhora a Branca"
+    ]
 },
 {
     "para": [
@@ -14439,7 +14439,9 @@
             "id": "MRB-43-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "43",
+    "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
+    "listacasas": [
         {
             "número": "1",
             "vista": "Norte",
@@ -15185,9 +15187,7 @@
                 }
             }
         }
-    ],
-    "_id": "43",
-    "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara"
+    ]
 },
 {
     "para": [
@@ -15293,7 +15293,8 @@
             "id": "MRB-44-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "44",
+    "listacasas": [
         {
             "número": "1",
             "vista": "Norte",
@@ -15659,8 +15660,7 @@
                 }
             }
         }
-    ],
-    "_id": "44"
+    ]
 },
 {
     "para": [
@@ -15724,7 +15724,9 @@
             "id": "MRB-45-poente"
         }
     ],
-    "lista-casas": [
+    "_id": "45",
+    "nome": "Rua dos Chãos de Baixo",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -16619,9 +16621,7 @@
                 }
             }
         }
-    ],
-    "_id": "45",
-    "nome": "Rua dos Chãos de Baixo"
+    ]
 },
 {
     "para": [
@@ -16676,7 +16676,9 @@
             "id": "MRB-46-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "46",
+    "nome": "Rua de Santo André",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -17359,9 +17361,7 @@
                 }
             }
         }
-    ],
-    "_id": "46",
-    "nome": "Rua de Santo André"
+    ]
 },
 {
     "figura": [
@@ -17409,7 +17409,9 @@
             "text": "Todas estas construções são prazos do#[a(href='entidades/ Cabido')  Cabido].Mantém o nome de #[a(href='lugares/S. Barnabé') S. Barnabé]."
         }
     ],
-    "lista-casas": [
+    "_id": "47",
+    "nome": "Rua de S. Barnabé",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -17685,9 +17687,7 @@
                 }
             }
         }
-    ],
-    "_id": "47",
-    "nome": "Rua de S. Barnabé"
+    ]
 },
 {
     "figura": [
@@ -17757,7 +17757,9 @@
             "text": "A #[a(href='lugares/praça do Gavião') praça do Gavião], que no #[a(href='datas/século XVIII') século XVIII] também foi conhecida por, Quinteiro, Reduto ou campo Novo do Reduto, tem actualmente a designação oficial de #[a(href='lugares/praça Mouzinho de Albuquerque') praça Mouzinho de Albuquerque], que lhe foi dada pela Câmara Municipal em 4 de Janeiro de 1898. É mais conhecida, porém, por Campo Novo."
         }
     ],
-    "lista-casas": [
+    "_id": "48",
+    "nome": "Praça do Gavião",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -17931,9 +17933,7 @@
                 }
             }
         }
-    ],
-    "_id": "48",
-    "nome": "Praça do Gavião"
+    ]
 },
 {
     "para": [
@@ -17991,7 +17991,9 @@
             "id": "MRB-49-b"
         }
     ],
-    "lista-casas": [
+    "_id": "49",
+    "nome": "Rua de S. Gonçalo",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro",
@@ -18447,9 +18449,7 @@
                 }
             }
         }
-    ],
-    "_id": "49",
-    "nome": "Rua de S. Gonçalo"
+    ]
 },
 {
     "para": [
@@ -18517,7 +18517,9 @@
             "id": "MRB-50-b"
         }
     ],
-    "lista-casas": [
+    "_id": "50",
+    "nome": "Rua de Nossa Senhora de Guadalupe",
+    "listacasas": [
         {
             "número": "1 e 2",
             "enfiteuta": "D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.",
@@ -18703,9 +18705,7 @@
                 }
             }
         }
-    ],
-    "_id": "50",
-    "nome": "Rua de Nossa Senhora de Guadalupe"
+    ]
 },
 {
     "para": [
@@ -18778,7 +18778,9 @@
             "id": "MRB-51-b"
         }
     ],
-    "lista-casas": [
+    "_id": "51",
+    "nome": "Rua Da Oliveira",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "D. Agostinho Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.",
@@ -19210,9 +19212,7 @@
                 }
             }
         }
-    ],
-    "_id": "51",
-    "nome": "Rua Da Oliveira"
+    ]
 },
 {
     "para": [
@@ -19322,7 +19322,8 @@
             "id": "MRB-52-b"
         }
     ],
-    "lista-casas": [
+    "_id": "52",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Vid. casa n.º9 da rua de N. Sr.ª de Guadalupe.",
@@ -19537,8 +19538,7 @@
             },
             "vista": "Norte"
         }
-    ],
-    "_id": "52"
+    ]
 },
 {
     "para": [
@@ -19599,7 +19599,9 @@
             "id": "MRB-53-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "53",
+    "nome": "Rua dos Chãos de Cima",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Os herdeiros de Gabriel de Araújo e Vasconcelos, casado com D. Angela da Fonseca Coutinho, enfiteutas principais do prazo do casal das Oliveira.",
@@ -21674,9 +21676,7 @@
                 }
             }
         }
-    ],
-    "_id": "53",
-    "nome": "Rua dos Chãos de Cima"
+    ]
 },
 {
     "para": [
@@ -21747,7 +21747,9 @@
             "id": "MRB-54-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "54",
+    "nome": "Rua das Palhotas",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -22618,9 +22620,7 @@
                 }
             }
         }
-    ],
-    "_id": "54",
-    "nome": "Rua das Palhotas"
+    ]
 },
 {
     "para": [
@@ -22664,7 +22664,9 @@
             "id": "MRB-55-norte"
         }
     ],
-    "lista-casas": [
+    "_id": "55",
+    "nome": "Rua de Infias",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Isabel Maria da Silva, viúva do Dr. Santos de Araújo Alves. Dezembargador de Braga",
@@ -23270,9 +23272,7 @@
                 }
             }
         }
-    ],
-    "_id": "55",
-    "nome": "Rua de Infias"
+    ]
 },
 {
     "para": [
@@ -23327,7 +23327,9 @@
             "id": "MRB-56-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "56",
+    "nome": "Cangosta da Escoura",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -23699,9 +23701,7 @@
                 }
             }
         }
-    ],
-    "_id": "56",
-    "nome": "Cangosta da Escoura"
+    ]
 },
 {
     "para": [
@@ -23739,7 +23739,9 @@
             "id": "MRB-57-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "57",
+    "nome": "Estrada de Real",
+    "listacasas": [
         {
             "número": "1",
             "desc": {
@@ -23778,9 +23780,7 @@
                 }
             }
         }
-    ],
-    "_id": "57",
-    "nome": "Estrada de Real"
+    ]
 },
 {
     "para": [
@@ -23866,7 +23866,9 @@
             "id": "MRB-58-sul"
         }
     ],
-    "lista-casas": [
+    "_id": "58",
+    "nome": "Rua da Cónega",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Sebastião de Faria Gusmão, enfiteuta principal da quinta da Cónega",
@@ -24489,9 +24491,7 @@
                 }
             }
         }
-    ],
-    "_id": "58",
-    "nome": "Rua da Cónega"
+    ]
 },
 {
     "para": [
@@ -24531,7 +24531,9 @@
             "id": "MRB-59-norte"
         }
     ],
-    "lista-casas": [
+    "_id": "59",
+    "nome": "Rua dos Biscaínhos",
+    "listacasas": [
         {
             "número": "1",
             "enfiteuta": "Sebastião de Faria Gusmão, enfiteuta principal da Quinta da Cónega.",
@@ -24563,9 +24565,7 @@
                 }
             }
         }
-    ],
-    "_id": "59",
-    "nome": "Rua dos Biscaínhos"
+    ]
 },
 {
     "para": [
@@ -24610,7 +24610,9 @@
             "id": "MRB-60-norte"
         }
     ],
-    "lista-casas": [
+    "_id": "60",
+    "nome": "Cangosta da Rua das Águas",
+    "listacasas": [
         {
             "número": "37 a 42",
             "enfiteuta": "*Vid.casa nº33 da Rua das Águas (rua 36)",
@@ -24624,7 +24626,5 @@
                 }
             }
         }
-    ],
-    "_id": "60",
-    "nome": "Cangosta da Rua das Águas"
+    ]
 }]

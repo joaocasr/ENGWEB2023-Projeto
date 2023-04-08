@@ -67,43 +67,44 @@ for file in os.listdir(path):
 
             if type(dic['rua']['corpo']['lista-casas']) is dict:
                 if type(dic['rua']['corpo']['lista-casas']['casa']) is not list:
-                    dic['rua']['corpo']['lista-casas'] = [dic['rua']['corpo']['lista-casas']['casa']]
+                    dic['rua']['corpo']['listacasas'] = [dic['rua']['corpo']['lista-casas']['casa']]
                 else:
-                    dic['rua']['corpo']['lista-casas'] = dic['rua']['corpo']['lista-casas']['casa']
+                    dic['rua']['corpo']['listacasas'] = dic['rua']['corpo']['lista-casas']['casa']
+                dic['rua']['corpo'].pop('lista-casas')
 
             while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
                 print("\n>>"+str(i))                
                 print(t4[i])
 
-                if('desc' in dic['rua']['corpo']['lista-casas'][j] and dic['rua']['corpo']['lista-casas'][j]['desc']!=None):
+                if('desc' in dic['rua']['corpo']['listacasas'][j] and dic['rua']['corpo']['listacasas'][j]['desc']!=None):
                     #print(dic['rua']['corpo']['lista-casas'][j])
-                    if(type(dic['rua']['corpo']['lista-casas'][j]['desc']['para']) is dict):
+                    if(type(dic['rua']['corpo']['listacasas'][j]['desc']['para']) is dict):
                         #print(dic['rua']['corpo']['lista-casas'][j]['desc']['para'])
-                        dic['rua']['corpo']['lista-casas'][j]['desc']['para']['text']=t4[i]
-                        dic['rua']['corpo']['lista-casas'][j]['desc']['para'].pop('#text')
+                        dic['rua']['corpo']['listacasas'][j]['desc']['para']['text']=t4[i]
+                        dic['rua']['corpo']['listacasas'][j]['desc']['para'].pop('#text')
                         i+=1
-                    if(type(dic['rua']['corpo']['lista-casas'][j]['desc']['para']) is str):
+                    if(type(dic['rua']['corpo']['listacasas'][j]['desc']['para']) is str):
                         entryText = {
                             "text":t4[i]
                         }
-                        dic['rua']['corpo']['lista-casas'][j]['desc']['para']=entryText
+                        dic['rua']['corpo']['listacasas'][j]['desc']['para']=entryText
                         i+=1
                 else:
                     entryDesc = {
                                     "text":None
                                 }
-                    dic['rua']['corpo']['lista-casas'][j]['desc']=entryDesc
+                    dic['rua']['corpo']['listacasas'][j]['desc']=entryDesc
 
-                if(len(dic['rua']['corpo']['lista-casas'])>j and type(dic['rua']['corpo']['lista-casas'][j]) is dict):
-                    if('enfiteuta' in dic['rua']['corpo']['lista-casas'][j]):
-                        if not dic['rua']['corpo']['lista-casas'][j]['enfiteuta']:
-                            dic['rua']['corpo']['lista-casas'][j].pop('enfiteuta')
-                    if('foro' in (dic['rua']['corpo']['lista-casas'][j])):
-                        if not dic['rua']['corpo']['lista-casas'][j]['foro']:
-                            dic['rua']['corpo']['lista-casas'][j].pop('foro')
-                    if('desc' in (dic['rua']['corpo']['lista-casas'][j])):
-                        if('para' in (dic['rua']['corpo']['lista-casas'][j]['desc'])):
-                            p = dic['rua']['corpo']['lista-casas'][j]['desc']['para']
+                if(len(dic['rua']['corpo']['listacasas'])>j and type(dic['rua']['corpo']['listacasas'][j]) is dict):
+                    if('enfiteuta' in dic['rua']['corpo']['listacasas'][j]):
+                        if not dic['rua']['corpo']['listacasas'][j]['enfiteuta']:
+                            dic['rua']['corpo']['listacasas'][j].pop('enfiteuta')
+                    if('foro' in (dic['rua']['corpo']['listacasas'][j])):
+                        if not dic['rua']['corpo']['listacasas'][j]['foro']:
+                            dic['rua']['corpo']['listacasas'][j].pop('foro')
+                    if('desc' in (dic['rua']['corpo']['listacasas'][j])):
+                        if('para' in (dic['rua']['corpo']['listacasas'][j]['desc'])):
+                            p = dic['rua']['corpo']['listacasas'][j]['desc']['para']
                             if type(p) is dict:
                                 if 'lugar' in p:
                                     if type(p['lugar']) is not list:
