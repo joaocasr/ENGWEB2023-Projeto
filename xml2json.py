@@ -3,6 +3,33 @@ import json
 import re
 import os
 
+def aux_tratamento_para(p):
+    if type(p) is dict:
+        if 'lugar' in p:
+            if type(p['lugar']) is not list:
+                p['lugar'] = [p['lugar']]
+            for en in p['lugar']:
+                if '@norm' in en:
+                    en['norm']=en.pop('@norm')
+        if 'entidade' in p:
+            print("oi2")
+            if type(p['entidade']) is not list:
+                p['entidade'] = [p['entidade']]
+                print("ola")
+            for en in p['entidade']:
+                if '#text' in en:
+                    print("oi")
+                    en['text']=en.pop('#text')
+                if '@tipo' in en:
+                    en['tipo']=en.pop('@tipo')
+                if '@entidade' in en:
+                    en['tipo']=en.pop('@entidade')
+        if 'data' in p:
+            if type(p['data']) is not list:
+                p['data'] = [p['data']]
+        if '#text' in p:
+            p['text'] = p.pop('#text')
+
 with open("streetdb.json", "w",encoding='utf-8') as output:
     output.write("[\n")
 
@@ -45,21 +72,7 @@ for file in os.listdir(path):
                                 }
                     dic['rua']['corpo']['para'][i]=entryText
                 i+=1
-                if type(p) is dict:
-                    if 'lugar' in p:
-                        if type(p['lugar']) is not list:
-                            p['lugar'] = [p['lugar']]
-                    if 'entidade' in p:
-                        if type(p['entidade']) is not list:
-                            p['entidade'] = [p['entidade']]
-                        for en in p['entidade']:
-                            if '#text' in en:
-                                en['text']=en.pop('#text')
-                            if '@tipo' in en:
-                                en['tipo']=en.pop('@tipo')
-                    if 'data' in p:
-                        if type(p['data']) is not list:
-                            p['data'] = [p['data']]
+                aux_tratamento_para(p)
             j=0
 
         if 'lista-casas' in dic['rua']['corpo']:
@@ -73,8 +86,8 @@ for file in os.listdir(path):
                 dic['rua']['corpo'].pop('lista-casas')
 
             while i in range(0,len(t4)):#for p in dic['rua']['corpo']['lista-casas']['casa']:
-                print("\n>>"+str(i))                
-                print(t4[i])
+                #print("\n>>"+str(i))                
+                #print(t4[i])
 
                 if('desc' in dic['rua']['corpo']['listacasas'][j] and dic['rua']['corpo']['listacasas'][j]['desc']!=None):
                     #print(dic['rua']['corpo']['lista-casas'][j])
@@ -105,21 +118,7 @@ for file in os.listdir(path):
                     if('desc' in (dic['rua']['corpo']['listacasas'][j])):
                         if('para' in (dic['rua']['corpo']['listacasas'][j]['desc'])):
                             p = dic['rua']['corpo']['listacasas'][j]['desc']['para']
-                            if type(p) is dict:
-                                if 'lugar' in p:
-                                    if type(p['lugar']) is not list:
-                                        p['lugar'] = [p['lugar']]
-                                if 'entidade' in p:
-                                    if type(p['entidade']) is not list:
-                                        p['entidade'] = [p['entidade']]
-                                    for en in p['entidade']:
-                                        if '#text' in en:
-                                            en['text']=en.pop('#text')
-                                        if '@tipo' in en:
-                                            en['tipo']=en.pop('@tipo')
-                                if 'data' in p:
-                                    if type(p['data']) is not list:
-                                        p['data'] = [p['data']]
+                            aux_tratamento_para(p)
                 j+=1
 
         if 'figura' in dic['rua']['corpo']:

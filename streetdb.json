@@ -6679,8 +6679,8 @@
         {
             "entidade": [
                 {
-                    "@entidade": "pessoa",
-                    "text": "D. Diogo de Sousa"
+                    "text": "D. Diogo de Sousa",
+                    "tipo": "pessoa"
                 }
             ],
             "lugar": [
@@ -6740,12 +6740,12 @@
             ],
             "entidade": [
                 {
-                    "@entidade": "instituição",
-                    "text": "Cabido"
+                    "text": "Cabido",
+                    "tipo": "instituição"
                 },
                 {
-                    "@entidade": "instituição",
-                    "text": "Cabido"
+                    "text": "Cabido",
+                    "tipo": "instituição"
                 }
             ],
             "text": "Das 7 casas de #[a(href='lugares/Em Frente do Açougue') Em Frente do Açougue] 5 são do #[a(href='entidades/Cabido') Cabido] e das 17 do #[a(href='lugares/campo de S. Sebastião') campo de S. Sebastião]são foreiras ao #[a(href='entidades/Cabido') Cabido] 9."
@@ -6772,12 +6772,12 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Garcia de Noronha de Mesquita e Melo"
+                            "text": "Garcia de Noronha de Mesquita e Melo",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "D. Brites Josefa de Abreu Soares."
+                            "text": "D. Brites Josefa de Abreu Soares.",
+                            "tipo": "pessoa"
                         }
                     ],
                     "lugar": [
@@ -7035,8 +7035,8 @@
             ],
             "entidade": [
                 {
-                    "@entidade": "pessoa",
-                    "text": "D. Jõao de Castela"
+                    "text": "D. Jõao de Castela",
+                    "tipo": "pessoa"
                 }
             ],
             "text": "Totalmente destruída em #[a(href='datas/1384') 1384], por #[a(href='entidades/D. Jõao de Castela') D. Jõao de Castela] perdem-se depois as notícias sobre a sua história."
@@ -7053,8 +7053,8 @@
         {
             "entidade": [
                 {
-                    "@entidade": "instituição",
-                    "text": "Cabido"
+                    "text": "Cabido",
+                    "tipo": "instituição"
                 }
             ],
             "text": "Das 52 casas do lado Nascente e 54 do Poente, eram prazos do #[a(href='entidades/Cabido') Cabido] 38 e 20, respetivamente."
@@ -7076,12 +7076,12 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "instituição",
-                            "text": "Hospital de S. Marcos"
+                            "text": "Hospital de S. Marcos",
+                            "tipo": "instituição"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria Ferreira"
+                            "text": "Maria Ferreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "lugar": [
@@ -7098,16 +7098,16 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "instituição",
-                            "text": "Hospital de S. Marcos"
+                            "text": "Hospital de S. Marcos",
+                            "tipo": "instituição"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Bento de Araújo"
+                            "text": "Bento de Araújo",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria Francisca"
+                            "text": "Maria Francisca",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Esta casa é foreira ao #[a(href='entidades/Hospital de S. Marcos') Hospital de S. Marcos]. O quintal paga, de foro, 1006 reis e meio ao n.º 1 do Campo de S. Sebastião. São subenfiteutas os herdeiros de #[a(href='entidades/ Bento de Araújo')  Bento de Araújo], casado com #[a(href='entidades/Maria Francisca') Maria Francisca]."
@@ -7124,12 +7124,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "José Cunha"
+                            "text": "José Cunha",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Ursula Ferreira"
+                            "text": "Ursula Ferreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, pelo quintal desta casa, 1613 reis ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião].São subenfiteutas os herdeiros de #[a(href='entidades/José Cunha') José Cunha], padeiro, casado com #[a(href='entidades/Ursula Ferreira') Ursula Ferreira]"
@@ -7147,8 +7147,8 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Manuel da Costa Braga"
+                            "text": "Manuel da Costa Braga",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga 1250 reis, pelo quintal desta casa, ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. A casa é foreira ao Hospital de S. Marcos. São subenfiteutas os herdeiros de #[a(href='entidades/Manuel da Costa Braga') Manuel da Costa Braga], morador em #[a(href='lugares/Lisboa') Lisboa]."
@@ -7165,12 +7165,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Domingos da Costa"
+                            "text": "Domingos da Costa",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria Correira"
+                            "text": "Maria Correira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Pertence ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião], a quem se paga, de pensão ou foro, 3271 reis.São subenfiteutas os herdeiros de #[a(href='entidades/Domingos da Costa') Domingos da Costa], casado com #[a(href='entidades/Maria Correira') Maria Correira]."
@@ -7187,12 +7187,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Domingos Peixoto"
+                            "text": "Domingos Peixoto",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Paula de Araújo"
+                            "text": "Paula de Araújo",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga foro ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas os herdeiros de #[a(href='entidades/Domingos Peixoto') Domingos Peixoto],casado com #[a(href='entidades/Paula de Araújo') Paula de Araújo]."
@@ -7209,12 +7209,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "José de Teive"
+                            "text": "José de Teive",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria Antónia"
+                            "text": "Maria Antónia",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga 893 reis ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas os herdeiros de #[a(href='entidades/José de Teive') José de Teive],casado com #[a(href='entidades/Maria Antónia') Maria Antónia]."
@@ -7243,12 +7243,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria de Carvalho"
+                            "text": "Maria de Carvalho",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Manuel Carvalho"
+                            "text": "Manuel Carvalho",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, 1583 reis e meio ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas sos herdeiros de #[a(href='entidades/Maria de Carvalho') Maria de Carvalho], viúva de #[a(href='entidades/Manuel Carvalho') Manuel Carvalho]."
@@ -7265,12 +7265,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "João Gomes Ferreira"
+                            "text": "João Gomes Ferreira",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Custódia Carvalho"
+                            "text": "Custódia Carvalho",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, 1522 reis ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas, os herdeiros de #[a(href='entidades/João Gomes Ferreira') João Gomes Ferreira], marchante,casado com #[a(href='entidades/Custódia Carvalho') Custódia Carvalho]."
@@ -7287,12 +7287,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Domingos FRancisco"
+                            "text": "Domingos FRancisco",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Rosa Francisca"
+                            "text": "Rosa Francisca",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, 803 reis e um quarto ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas os herdeiros de #[a(href='entidades/Domingos FRancisco') Domingos FRancisco], torneiro, casado com #[a(href='entidades/Rosa Francisca') Rosa Francisca]."
@@ -7309,12 +7309,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "João Barbosa"
+                            "text": "João Barbosa",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Benta Francisca"
+                            "text": "Benta Francisca",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, 803 reis ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. São subenfiteutas os herdeiros de #[a(href='entidades/João Barbosa') João Barbosa], caso com #[a(href='entidades/Benta Francisca') Benta Francisca]."
@@ -7335,12 +7335,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Manuel Gomes Góis"
+                            "text": "Manuel Gomes Góis",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Jerónima Luísa"
+                            "text": "Jerónima Luísa",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, 1521 reis e meio ao n.º 1 do #[a(href='lugares/Campo de S. Sebastião') Campo de S. Sebastião]. Foi construída depois do ano de#[a(href='datas/1669') 1669]. Confronta, do sul, com serventia do referido n.º 1, a qual, por sua vez, confronta com casa foreira à #[a(href='lugares/Companhia de Jesus') Companhia de Jesus].São subenfiteutas os herdeiros de #[a(href='entidades/Manuel Gomes Góis') Manuel Gomes Góis], casado com #[a(href='entidades/Jerónima Luísa') Jerónima Luísa]."
@@ -7383,8 +7383,8 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "João Afonso Chanceler"
+                            "text": "João Afonso Chanceler",
+                            "tipo": "pessoa"
                         }
                     ],
                     "data": [
@@ -7432,12 +7432,12 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "António Ferreira"
+                            "text": "António Ferreira",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Domingos Ferreira"
+                            "text": "Domingos Ferreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "data": [
@@ -7479,12 +7479,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Manuel Calheiros"
+                            "text": "Manuel Calheiros",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Maria Perreira"
+                            "text": "Maria Perreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, de foro, 20 reis ao n.º 20. Foi suemprazada em #[a(href='datas/1690') 1690]. São subenfiteutas os herdeiros de #[a(href='entidades/Manuel Calheiros') Manuel Calheiros], casado com #[a(href='entidades/Maria Perreira') Maria Perreira]."
@@ -7510,12 +7510,12 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "João Vaz"
+                            "text": "João Vaz",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Mariana de Campos"
+                            "text": "Mariana de Campos",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, de foro, 20 reis, ao n.º 20. Foi subemprazada no ano de #[a(href='datas/1706') 1706]. São subenfiteutas os herdeiros de #[a(href='entidades/João Vaz') João Vaz], frasqueiro, casado com #[a(href='entidades/Mariana de Campos') Mariana de Campos]."
@@ -7532,8 +7532,8 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Catarina Álvares"
+                            "text": "Catarina Álvares",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, de foro, 700 reis ao n.º 20. Possui porta de serventia para o n.º 11 da cangosta de #[a(href='lugares/S. Sebastião') S. Sebastião]. É subenfiteuta #[a(href='entidades/Catarina Álvares') Catarina Álvares], solteira."
@@ -7547,12 +7547,12 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Valentim Pereira"
+                            "text": "Valentim Pereira",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Francisca Ferreira"
+                            "text": "Francisca Ferreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, de foro, 1000 reis ao n.º 20. É subenfiteuta #[a(href='entidades/Valentim Pereira') Valentim Pereira], padeiro, e sua mulher, #[a(href='entidades/Francisca Ferreira') Francisca Ferreira]."
@@ -7569,8 +7569,8 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Padre António Nogueira"
+                            "text": "Padre António Nogueira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "Paga, de foro, 1000 reis ao n.º 20. O quintal desta possui saída para o n.º 9 da cangosta de #[a(href='lugares/S. Sebastião') S. Sebastião]. É subenfiteuta o #[a(href='entidades/Padre António Nogueira') Padre António Nogueira]."
@@ -7600,16 +7600,16 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "instituição",
-                            "text": "confraria do Nome de Deus"
+                            "text": "confraria do Nome de Deus",
+                            "tipo": "instituição"
                         },
                         {
-                            "@entidade": "instituição",
-                            "text": "cabido"
+                            "text": "cabido",
+                            "tipo": "instituição"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Baltazar Carneiro"
+                            "text": "Baltazar Carneiro",
+                            "tipo": "pessoa"
                         }
                     ],
                     "lugar": [
@@ -7646,8 +7646,8 @@
                     ],
                     "entidade": [
                         {
-                            "@entidade": "instituição",
-                            "text": "confrafia da Santíssima Sé"
+                            "text": "confrafia da Santíssima Sé",
+                            "tipo": "instituição"
                         }
                     ],
                     "text": "No ano de #[a(href='datas/1624') 1624] as casas n.º 47 e 48 foram unidas ao n.º 49. O n.º 49 confronta, do norte, com a casa foreira à #[a(href='entidades/confrafia da Santíssima Sé') confrafia da Santíssima Sé]."
@@ -7662,16 +7662,16 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "instituição",
-                            "text": "confraria da Santíssima Sé"
+                            "text": "confraria da Santíssima Sé",
+                            "tipo": "instituição"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Francisco Belo"
+                            "text": "Francisco Belo",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "D. Diogo de Sousa"
+                            "text": "D. Diogo de Sousa",
+                            "tipo": "pessoa"
                         }
                     ],
                     "lugar": [
@@ -7715,12 +7715,12 @@
                 "para": {
                     "entidade": [
                         {
-                            "@entidade": "pessoa",
-                            "text": "Lourenço Francisco da Costa"
+                            "text": "Lourenço Francisco da Costa",
+                            "tipo": "pessoa"
                         },
                         {
-                            "@entidade": "pessoa",
-                            "text": "Mariana Rosa Ferreira"
+                            "text": "Mariana Rosa Ferreira",
+                            "tipo": "pessoa"
                         }
                     ],
                     "text": "#[a(href='entidades/Lourenço Francisco da Costa') Lourenço Francisco da Costa], ourives, casado com #[a(href='entidades/Mariana Rosa Ferreira') Mariana Rosa Ferreira], paga 3000 reis ao n.º 50."
@@ -17941,8 +17941,8 @@
             "lugar": [
                 "campo Novo",
                 {
-                    "@norm": "Campo de Santa Ana",
-                    "#text": "campo de Santa Ana"
+                    "#text": "campo de Santa Ana",
+                    "norm": "Campo de Santa Ana"
                 }
             ],
             "text": "Rua íngreme, pertencente ao complexo urbanístico do #[a(href='lugares/campo Novo') campo Novo], ligava esta praça com o <lugar norm=\"Campo de Santa Ana\">campo de Santa Ana</lugar>."
@@ -17954,8 +17954,8 @@
             "lugar": [
                 "praça do Gavião",
                 {
-                    "@norm": "Praça do Gavião",
-                    "#text": "praça do Gavião"
+                    "#text": "praça do Gavião",
+                    "norm": "Praça do Gavião"
                 }
             ],
             "text": "A metade Norte da rua, bastante plana, tinha do lado Nascente, uma série de casas térreas (71,5%): o Poente apresentava bastantes diferenças: não só os edifícios são todos de dois pisos como, também, há uma casa, no prazo n.º 4, com um desenho de fachada diferente, mais moderno, próximo dos da #[a(href='lugares/praça do Gavião') praça do Gavião]. No prazo n.º 11 vê-se a fachada lateral de um edifício que tem a frontaria virada à <lugar norm=\"Praça do Gavião\">praça do Gavião</lugar>; é curioso ver-se aqui que todo o programa foi totalmente alterado, mostrando não só que a divisão em dois pisos não foi seguida, permitindo a abertura de janelas de uma forma anárquica, como, também, que essas janelas não têm a «moldura» de pedra que as enobrecia."
@@ -17972,8 +17972,8 @@
         {
             "lugar": [
                 {
-                    "@norm": "Rua de S. Gonçalo",
-                    "#text": "rua de S. Gonçalo."
+                    "#text": "rua de S. Gonçalo.",
+                    "norm": "Rua de S. Gonçalo"
                 }
             ],
             "text": "Mantém o nome de <lugar norm=\"Rua de S. Gonçalo\">rua de S. Gonçalo.</lugar>"
@@ -18001,8 +18001,8 @@
                 "para": {
                     "lugar": [
                         {
-                            "@norm": "Campo de Santa Ana",
-                            "#text": "campo de Sta. Ana"
+                            "#text": "campo de Sta. Ana",
+                            "norm": "Campo de Santa Ana"
                         }
                     ],
                     "text": "Pertence à casa n.º 5 do <lugar norm=\"Campo de Santa Ana\">campo de Sta. Ana</lugar>, para onde tem a frontaria e serventia principais"
@@ -18456,13 +18456,13 @@
         {
             "lugar": [
                 {
-                    "@norm": "Campo Novo",
-                    "#text": "campo Novo"
+                    "#text": "campo Novo",
+                    "norm": "Campo Novo"
                 },
                 "Capela de Guadalupe",
                 {
-                    "@norm": "Praça do Gavião",
-                    "#text": "praça do Gavião"
+                    "#text": "praça do Gavião",
+                    "norm": "Praça do Gavião"
                 }
             ],
             "text": "Rua íngreme, pertencente ao complexo urbanístico do <lugar norm=\"Campo Novo\">campo Novo</lugar>, ligava a #[a(href='lugares/Capela de Guadalupe') Capela de Guadalupe] à <lugar norm=\"Praça do Gavião\">praça do Gavião</lugar>."
@@ -18473,12 +18473,12 @@
             ],
             "lugar": [
                 {
-                    "@norm": "Rua de S. Gonçalo",
-                    "#text": "rua de S. Gonçalo"
+                    "#text": "rua de S. Gonçalo",
+                    "norm": "Rua de S. Gonçalo"
                 },
                 {
-                    "@norm": "Rua em Frente de Nossa Senhora de Guadalupe",
-                    "#text": "rua em Frente de Nossa Senhora de Guadalupe"
+                    "#text": "rua em Frente de Nossa Senhora de Guadalupe",
+                    "norm": "Rua em Frente de Nossa Senhora de Guadalupe"
                 }
             ],
             "text": "Aberta também em #[a(href='datas/1725') 1725], tinha já, nesta data, quase todas as suas casas construídas, no lado Norte. Eram simples, na sua grande maioria de um só piso, e que, contrariamente à <lugar norm=\"Rua de S. Gonçalo\">rua de S. Gonçalo</lugar>, se estendiam pela encosta acima, até à <lugar norm=\"Rua em Frente de Nossa Senhora de Guadalupe\">rua em Frente de Nossa Senhora de Guadalupe</lugar>."
@@ -18498,8 +18498,8 @@
         {
             "lugar": [
                 {
-                    "@norm": "Rua de Guadalupe",
-                    "#text": "rua de Guadalupe"
+                    "#text": "rua de Guadalupe",
+                    "norm": "Rua de Guadalupe"
                 }
             ],
             "text": "Ainda hoje é denominada <lugar norm=\"Rua de Guadalupe\">rua de Guadalupe</lugar>."
@@ -18639,8 +18639,8 @@
                     ],
                     "lugar": [
                         {
-                            "@norm": "Rua em Frente de Nossa Senhora de Guadalupe",
-                            "#text": "rua em frente de N. Sra. de Guadalupe"
+                            "#text": "rua em frente de N. Sra. de Guadalupe",
+                            "norm": "Rua em Frente de Nossa Senhora de Guadalupe"
                         }
                     ],
                     "text": "#[a(href='entidades/Luís Cardoso Coutinho de Oliveira') Luís Cardoso Coutinho de Oliveira], casado com #[a(href='entidades/Antónia José Leonor de Vasconcelos') Antónia José Leonor de Vasconcelos], paga 7800 reis ao enfiteuta do prazo do #[a(href='entidades/casal dos Chãos ou Quinteiro') casal dos Chãos ou Quinteiro], conforme o subemprazamento de #[a(href='datas/1740') 1740].Ao prazo pertencem, ainda, os n.° 1 a 6 da <lugar norm=\"Rua em Frente de Nossa Senhora de Guadalupe\">rua em frente de N. Sra. de Guadalupe</lugar>.Os n.° 9 e 10, encontram-se unidos desde o ano de #[a(href='datas/1725') 1725].À face da escritura do ano de #[a(href='datas/1740') 1740] foram feitos títulos subalternos das casas n.° 14, 15, 16 e 17."
@@ -18660,8 +18660,8 @@
                     ],
                     "lugar": [
                         {
-                            "@norm": "Rua em Frente de Nossa Senhora de Guadalupe",
-                            "#text": "rua em frente de N. Sra. de Guadalupe"
+                            "#text": "rua em frente de N. Sra. de Guadalupe",
+                            "norm": "Rua em Frente de Nossa Senhora de Guadalupe"
                         }
                     ],
                     "text": "«Chãos de casas» do prazo do #[a(href='entidades/casal dos Chãos ou Quinteiro') casal dos Chãos ou Quinteiro].O chão n.° 18 confronta, do nascente, com a <lugar norm=\"Rua em Frente de Nossa Senhora de Guadalupe\">rua em frente de N. Sra. de Guadalupe</lugar>."
@@ -18712,25 +18712,25 @@
         {
             "lugar": [
                 {
-                    "@norm": "Campo Novo",
-                    "#text": "campo Novo"
+                    "#text": "campo Novo",
+                    "norm": "Campo Novo"
                 },
                 {
-                    "@norm": "Largo das Teresinhas",
-                    "#text": "largo das Teresinhas"
+                    "#text": "largo das Teresinhas",
+                    "norm": "Largo das Teresinhas"
                 },
                 "Cangosta",
                 {
-                    "@norm": "Rua de Santa Margarida",
-                    "#text": "rua de Santa Margarida"
+                    "#text": "rua de Santa Margarida",
+                    "norm": "Rua de Santa Margarida"
                 },
                 {
-                    "@norm": "Igreja de S. Vicente",
-                    "#text": "igreja de S. Vicente"
+                    "#text": "igreja de S. Vicente",
+                    "norm": "Igreja de S. Vicente"
                 },
                 {
-                    "@norm": "Capela de Guadalupe",
-                    "#text": "capela de Guadalupe"
+                    "#text": "capela de Guadalupe",
+                    "norm": "Capela de Guadalupe"
                 }
             ],
             "text": "Pertencente ao complexo urbanístico do <lugar norm=\"Campo Novo\">campo Novo</lugar>, ligava esta praça aolocal actualmente chamado <lugar norm=\"Largo das Teresinhas\">largo das Teresinhas</lugar>. Uma pequena artéria, denominada #[a(href='lugares/Cangosta') Cangosta] para a <lugar norm=\"Rua de Santa Margarida\">rua de Santa Margarida</lugar>, permitia a passagem para a <lugar norm=\"Igreja de S. Vicente\">igreja de S. Vicente</lugar>e <lugar norm=\"Capela de Guadalupe\">capela de Guadalupe</lugar>."
@@ -18744,8 +18744,8 @@
         {
             "lugar": [
                 {
-                    "@norm": "Praça do Gavião",
-                    "#text": "praça do Gavião"
+                    "#text": "praça do Gavião",
+                    "norm": "Praça do Gavião"
                 }
             ],
             "text": "Os prédios que vemos são de um piso (59%) ou dois, bastante semples, sendo a maior parte (59%) do tipo com porta ladeada de janela no piso térreo. A linha de empenas é irregular, quebrada e as janelas ou são vazadas, ou são do tipo bracarense. Também aqui não há o rigor da marcação de janelas altas e portas, da <lugar norm=\"Praça do Gavião\">praça do Gavião</lugar>; são antes casas avulsas que tiveram o desenho de fachada desejado pelo morador, sem preocupações de conjunto ou de integração. Não deixa de ser curioso notar, contudo, a sequência vertical de porta e janela alta nas casas dos prazos 5 e 7, ou até a janela alta do prazo n.º 8, a lembrar aquela praça."
@@ -19228,8 +19228,8 @@
             ],
             "lugar": [
                 {
-                    "@norm": "Rua de Nossa Senhora de Guadalupe",
-                    "#text": "rua de Nossa Senhora de Guadalupe"
+                    "#text": "rua de Nossa Senhora de Guadalupe",
+                    "norm": "Rua de Nossa Senhora de Guadalupe"
                 }
             ],
             "text": "Parcialmente construído em #[a(href='datas/1725') 1725], tinha, 25 anos mais tarde, ainda 3 «chãos». Um significativo espaço era ocupado por um grande quintal e pela fachada lateral de uma casa da <lugar norm=\"Rua de Nossa Senhora de Guadalupe\">rua de Nossa Senhora de Guadalupe</lugar>, o que mostra bem a subalternização total desta rua."
@@ -19246,8 +19246,8 @@
         {
             "lugar": [
                 {
-                    "@norm": "Rua de Guadalupe",
-                    "#text": "rua de Guadalupe"
+                    "#text": "rua de Guadalupe",
+                    "norm": "Rua de Guadalupe"
                 }
             ],
             "text": "Chama-se actualmente <lugar norm=\"Rua de Guadalupe\">rua de Guadalupe</lugar>."
@@ -19255,12 +19255,12 @@
         {
             "lugar": [
                 {
-                    "@norm": "Igreja de S. Vicente",
-                    "#text": "igreja de S. Vicente"
+                    "#text": "igreja de S. Vicente",
+                    "norm": "Igreja de S. Vicente"
                 },
                 {
-                    "@norm": "Capela de Guadalupe",
-                    "#text": "capela de Guadalupe"
+                    "#text": "capela de Guadalupe",
+                    "norm": "Capela de Guadalupe"
                 }
             ],
             "text": "Pequena artéria, mais parecida com uma cangosta, ligava a <lugar norm=\"Igreja de S. Vicente\">igreja de S. Vicente</lugar> com a <lugar norm=\"Capela de Guadalupe\">capela de Guadalupe</lugar>."
@@ -19269,8 +19269,8 @@
             "lugar": [
                 "Rua de arrabalde",
                 {
-                    "@norm": "Monte de Santa Margarida",
-                    "#text": "monte de Santa Margarida"
+                    "#text": "monte de Santa Margarida",
+                    "norm": "Monte de Santa Margarida"
                 }
             ],
             "text": "#[a(href='lugares/Rua de arrabalde') Rua de arrabalde], na vertente Noroeste do então chamado <lugar norm=\"Monte de Santa Margarida\">monte de Santa Margarida</lugar>, tinha do lado Norte — o único representado no Mappa, onze habitações de um piso e duas de dois. Essas casas eram muito simples, do tipo com porta ladeada de janela. No extremo Este está uma casa de pedra, de dois pisos, bem definida por fortes pilastras, que tem a ladeá-la um bonito, mas singelo, portão de pedra."
@@ -19281,8 +19281,8 @@
             ],
             "lugar": [
                 {
-                    "@norm": "Convento e Capela das Teresinhas",
-                    "#text": "convento e capela das Teresinhas"
+                    "#text": "convento e capela das Teresinhas",
+                    "norm": "Convento e Capela das Teresinhas"
                 }
             ],
             "text": "#[a(href='datas/Na década de 60 do séc. XVIII') Na década de 60 do séc. XVIII], a rua sofreu uma alteração de traçado - que é o que actualmente se vê - devido à construção, neste local, do <lugar norm=\"Convento e Capela das Teresinhas\">convento e capela das Teresinhas</lugar>, facto que motivou a amortização dos prazos 1 a 8."
@@ -19302,8 +19302,8 @@
             ],
             "lugar": [
                 {
-                    "@norm": "Rua de Camões",
-                    "#text": "rua de Camões"
+                    "#text": "rua de Camões",
+                    "norm": "Rua de Camões"
                 }
             ],
             "text": "Desde #[a(href='datas/5 de Junho de 1880') 5 de Junho de 1880] passou, oficialmente, a chamar-se <lugar norm=\"Rua de Camões\">rua de Camões</lugar>."
@@ -19331,8 +19331,8 @@
                 "para": {
                     "lugar": [
                         {
-                            "@norm": "Rua de Nossa Senhora de Guadalupe",
-                            "#text": "Rua de N. Sra. de Guadalupe"
+                            "#text": "Rua de N. Sra. de Guadalupe",
+                            "norm": "Rua de Nossa Senhora de Guadalupe"
                         }
                     ],
                     "text": "Pertence à casa n.° 17 da <lugar norm=\"Rua de Nossa Senhora de Guadalupe\">Rua de N. Sra. de Guadalupe</lugar>, para onde tem frontaria e serventia principais."
@@ -19366,8 +19366,8 @@
                     ],
                     "lugar": [
                         {
-                            "@norm": "Rua de Nossa Senhora de Guadalupe",
-                            "#text": "Rua de N. Sra. de Guadalupe"
+                            "#text": "Rua de N. Sra. de Guadalupe",
+                            "norm": "Rua de Nossa Senhora de Guadalupe"
                         }
                     ],
                     "text": "#[a(href='entidades/Silvestre de Oliveira') Silvestre de Oliveira], jornaleiro, casado com #[a(href='entidades/Inês Dantas') Inês Dantas], paga 2000 reis, pelo chão n.° 3 e pelos n.º 4 e 5, ao subenfiteuta da casa n.° 9 da <lugar norm=\"Rua de Nossa Senhora de Guadalupe\">Rua de N. Sra. de Guadalupe</lugar>."
@@ -19381,8 +19381,8 @@
                 "para": {
                     "lugar": [
                         {
-                            "@norm": "Rua de Nossa Senhora de Guadalupe",
-                            "#text": "Rua N. Sra. de Guadalupe"
+                            "#text": "Rua N. Sra. de Guadalupe",
+                            "norm": "Rua de Nossa Senhora de Guadalupe"
                         }
                     ],
                     "text": "Portal de serventia do quintal que anda subemprazado juntamente com a casa n.° 9 da <lugar norm=\"Rua de Nossa Senhora de Guadalupe\">Rua N. Sra. de Guadalupe</lugar>."
