@@ -74,25 +74,8 @@ block content
 						h3 Lugares relacionados e curiosidades:
 						each to in street.para
 							if to
-									if to.lugar.length>0
-										p Lugares:
-											each place in to.lugar
-												p 
-													li
-														a(href='/lugares/'+place) #{place}
-									if to.data.length>0
-										p Datas:
-											each date in to.data
-												p
-													li
-														a(href='/datas/'+date) #{date} 
-									if to.entidade.length>0
-										p Entidades:
-											each entity in to.entidade
-												p
-													li
-														a(href='/entidades/'+entity.text) #{entity.text}
-									p #{to.text}
+								p !{to.text}
+									
 								
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
