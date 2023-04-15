@@ -2,6 +2,7 @@ var express = require('express');
 var fs = require('fs')
 var router = express.Router();
 var Mapa = require('../controllers/mapa')
+var para = require('../public/javascripts/para')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,12 +20,17 @@ router.get('/', function(req, res, next) {
 
 router.get('/ruas/:idRua', function(req, res, next) {
   Mapa.getRua(req.params.idRua).then(rua => {
-      res.render('rua', { street: rua});
-    })
-    .catch(erro => {
-      res.render('error', {error: erro, message: "Erro na obtenção da rua."})
-    })
+          para.getStreetspara(rua).then(related => {
+          //console.log(related);
+          res.render('rua', { street: rua, relacionados: related});
+        })
+        .catch(erro => {
+          res.render('error', {error: erro, message: "Erro na obtenção das ruas relacionadas."})
+        })
+  })
+  .catch(erro => {
+    res.render('error', {error: erro, message: "Erro na obtenção da rua."})
+  })
 });
-
 
 module.exports = router;

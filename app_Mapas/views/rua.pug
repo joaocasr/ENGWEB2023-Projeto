@@ -75,6 +75,19 @@ block content
 						each to in street.para
 							if to
 								p !{to.text}
+						h4 índice por Lugares
+						each rel in relacionados.lugar
+							li 
+								a(href="/ruas/"+rel._id) #{rel.nome}
+						h4 índice por Datas
+						each rel in relacionados.datas
+							li 
+								a(href="/ruas/"+rel._id) #{rel.nome}
+						h4 índice por Entidades
+						each rel in relacionados.entidades
+							li 
+								a(href="/ruas/"+rel._id) #{rel.nome}
+								
 									
 								
 
