@@ -12,13 +12,10 @@ def aux_tratamento_para(p):
                 if '@norm' in en:
                     en['norm']=en.pop('@norm')
         if 'entidade' in p:
-            print("oi2")
             if type(p['entidade']) is not list:
                 p['entidade'] = [p['entidade']]
-                print("ola")
             for en in p['entidade']:
                 if '#text' in en:
-                    print("oi")
                     en['text']=en.pop('#text')
                 if '@tipo' in en:
                     en['tipo']=en.pop('@tipo')
@@ -44,7 +41,6 @@ for file in os.listdir(path):
 
     with open(xmlfile,"r",encoding='utf-8')as f:
         xmltext = f.read()
-
         dic = xmltodict.parse(xmltext)
         numero = dic['rua']['meta']['número']
         nome = dic['rua']['meta']['nome']
@@ -63,7 +59,7 @@ for file in os.listdir(path):
         
         if 'para' in dic['rua']['corpo']:
             for p in dic['rua']['corpo']['para']:
-                if(len(dic['rua']['corpo']['para'][i])<=3):
+                if(len(dic['rua']['corpo']['para'][i])<=4):
                     dic['rua']['corpo']['para'][i]['text']=t4[i]
                     dic['rua']['corpo']['para'][i].pop('#text')
                 else:
@@ -74,6 +70,7 @@ for file in os.listdir(path):
                 i+=1
                 aux_tratamento_para(p)
             j=0
+
 
         if 'lista-casas' in dic['rua']['corpo']:
             #print(dic['rua']['corpo']['lista-casas']['casa'])
