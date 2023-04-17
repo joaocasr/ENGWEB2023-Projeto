@@ -61,5 +61,7 @@ def create_reldb():
     estradas_relacionadas = estradas_rel(estradas)
 
     jsonobj = json.dumps(estradas_relacionadas, indent=4,ensure_ascii=False)
-    with open("streets_relationsdb.json", "a",encoding='utf-8') as output:
+    with open("streets_relationsdb.json", "w",encoding='utf-8') as output:
         output.write(jsonobj)
+
+create_reldb()
