@@ -8148,7 +8148,10 @@
         },
         {
             "entidade": [
-                "Cabido"
+                {
+                    "text": "Cabido",
+                    "tipo": "indefenido"
+                }
             ],
             "text": "Das 25 casas do lado Norte e 24 do Sul, eram prazos do <a href='#Cabido'>Cabido</a> 20 casas do lado Norte."
         },

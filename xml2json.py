@@ -21,6 +21,12 @@ def aux_tratamento_para(p):
                     en['tipo']=en.pop('@tipo')
                 if '@entidade' in en:
                     en['tipo']=en.pop('@entidade')
+                
+                if type(en) is str:
+                    p['entidade'].remove(en)
+                    en={'text':en,'tipo':'indefenido'}
+                    p['entidade'].append(en)
+
         if 'data' in p:
             if type(p['data']) is not list:
                 p['data'] = [p['data']]
