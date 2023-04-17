@@ -45,15 +45,10 @@ def estradas_rel(estradas):
             if 'entidades' in estradas[i] and 'entidades' in estradas[j] and i != j:
                 for entidade_i in estradas[i]['entidades'] :
                     for entidade_j in estradas[j]['entidades'] :
-                        if 'text' in entidade_i and 'tipo' in entidade_i and 'text' in entidade_j and 'tipo' in entidade_j:
-                            if entidade_i['text'] == entidade_j['text'] and entidade_i['tipo'] == entidade_j['tipo']:
-                                estradas_relacionadas[i]['entidades'].append(estradas_relacionadas[j]['_id'])
-                                estradas_relacionadas[j]['entidades'].append(estradas_relacionadas[i]['_id'])
-                                break
-                        else :
-                            None
-                            #print(entidade_i)
-                            #print(estradas[i]["_id"])
+                        if entidade_i['text'] == entidade_j['text'] and entidade_i['tipo'] == entidade_j['tipo']:
+                            estradas_relacionadas[i]['entidades'].append(estradas_relacionadas[j]['_id'])
+                            estradas_relacionadas[j]['entidades'].append(estradas_relacionadas[i]['_id'])
+                            break
     
     return(estradas_relacionadas)
 
@@ -68,4 +63,5 @@ def main():
     jsonobj = json.dumps(estradas_relacionadas, indent=4,ensure_ascii=False)
     with open("streets_relationsdb.json", "a",encoding='utf-8') as output:
         output.write(jsonobj)
+
 main()
