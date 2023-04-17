@@ -2,6 +2,7 @@ import xmltodict
 import json
 import re
 import os
+from ruas_relacionadas import create_reldb
 
 def aux_tratamento_para(p):
     if type(p) is dict:
@@ -149,6 +150,6 @@ for file in os.listdir(path):
 with open("streetdb.json", "a",encoding='utf-8') as output:
     output.write("]")
 
-
+create_reldb()
 #for c in dic['rua']['corpo']:
 #    print(c)

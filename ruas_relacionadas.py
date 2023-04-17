@@ -52,7 +52,7 @@ def estradas_rel(estradas):
     
     return(estradas_relacionadas)
 
-def main():
+def create_reldb():
     json_file = open("streetdb.json", "r",encoding='utf-8')
     json_str = json_file.read()
     estradas = json.loads(json_str)
@@ -63,5 +63,3 @@ def main():
     jsonobj = json.dumps(estradas_relacionadas, indent=4,ensure_ascii=False)
     with open("streets_relationsdb.json", "a",encoding='utf-8') as output:
         output.write(jsonobj)
-
-main()
