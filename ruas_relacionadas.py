@@ -34,20 +34,20 @@ def estradas_rel(estradas):
                 for lugar in estradas[i]['lugares'] :
                     if lugar in estradas[j]['lugares']:
                         estradas_relacionadas[i]['lugares'].append({'id':estradas_relacionadas[j]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':lugar})
-                        estradas_relacionadas[j]['lugares'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':lugar})
+                        estradas_relacionadas[j]['lugares'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[i]['nome'],'atributo':lugar})
                         break
             if 'data' in estradas[i] and 'data' in estradas[j] and i != j:
                 for data in estradas[i]['data'] :
                     if data in estradas[j]['data']:
                         estradas_relacionadas[i]['data'].append({'id':estradas_relacionadas[j]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':data})
-                        estradas_relacionadas[j]['data'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':data})
+                        estradas_relacionadas[j]['data'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[i]['nome'],'atributo':data})
                         break
             if 'entidades' in estradas[i] and 'entidades' in estradas[j] and i != j:
                 for entidade_i in estradas[i]['entidades'] :
                     for entidade_j in estradas[j]['entidades'] :
                         if entidade_i['text'] == entidade_j['text'] and entidade_i['tipo'] == entidade_j['tipo']:
                             estradas_relacionadas[i]['entidades'].append({'id':estradas_relacionadas[j]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':entidade_i})
-                            estradas_relacionadas[j]['entidades'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':entidade_i})
+                            estradas_relacionadas[j]['entidades'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[i]['nome'],'atributo':entidade_i})
                             break
     
     return(estradas_relacionadas)
