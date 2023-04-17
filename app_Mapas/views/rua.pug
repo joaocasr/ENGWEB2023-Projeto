@@ -79,17 +79,17 @@ block content
 						each rel in relacionados.lugares
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome} 
-								|  (atributo: #{rel.atributo})
+								|  (lugar: #{rel.atributo})
 						h4 índice por Datas
 						each rel in relacionados.data
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome} 
-								|  (atributo: #{rel.atributo})
+								|  (data: #{rel.atributo})
 						h4 índice por Entidades
 						each rel in relacionados.entidades
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome}
-								|  (atributo: #{rel.atributo.text})
+								|  (#{rel.atributo.tipo}: #{rel.atributo.text})
 								
 									
 								
