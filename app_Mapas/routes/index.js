@@ -2,7 +2,8 @@ var express = require('express');
 var fs = require('fs')
 var router = express.Router();
 var Mapa = require('../controllers/mapa')
-var para = require('../public/javascripts/para')
+var Related = require('../controllers/relations')
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,8 +21,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/ruas/:idRua', function(req, res, next) {
   Mapa.getRua(req.params.idRua).then(rua => {
-          para.getStreetspara(rua).then(related => {
-          //console.log(related);
+          Related.getRelatedStreets(rua._id).then(related => {
+          console.log(related);
           res.render('rua', { street: rua, relacionados: related});
         })
         .catch(erro => {

@@ -76,17 +76,20 @@ block content
 							if to
 								p !{to.text}
 						h4 índice por Lugares
-						each rel in relacionados.lugar
+						each rel in relacionados.lugares
 							li 
-								a(href="/ruas/"+rel._id) #{rel.nome}
+								a(href="/ruas/"+rel.id) #{rel.nome} 
+								|  (atributo: #{rel.atributo})
 						h4 índice por Datas
-						each rel in relacionados.datas
+						each rel in relacionados.data
 							li 
-								a(href="/ruas/"+rel._id) #{rel.nome}
+								a(href="/ruas/"+rel.id) #{rel.nome} 
+								|  (atributo: #{rel.atributo})
 						h4 índice por Entidades
 						each rel in relacionados.entidades
 							li 
-								a(href="/ruas/"+rel._id) #{rel.nome}
+								a(href="/ruas/"+rel.id) #{rel.nome}
+								|  (atributo: #{rel.atributo.text})
 								
 									
 								

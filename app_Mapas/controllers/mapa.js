@@ -1,5 +1,4 @@
 var Mapa = require('../models/mapa')
-const { getStreetspara } = require('../public/javascripts/para')
 
 // Mapa list
 module.exports.list = () => {
