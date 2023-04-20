@@ -34,4 +34,8 @@ router.get('/ruas/:idRua', function(req, res, next) {
   })
 });
 
+router.get('/addrua/', function(req, res, next) {
+      res.render('add', {});
+});
+
 module.exports = router;
