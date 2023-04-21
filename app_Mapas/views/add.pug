@@ -21,7 +21,7 @@ block content
         form.w3-container.w3-center(method='POST')
             fieldset
                 legend Nome da Rua
-                input#nomeRua(type='w3-input w3-round' name='nomeRua')
+                input#nomeRua(type='w3-input w3-round' name='nome')
                 br
                 br
             fieldset
@@ -35,6 +35,7 @@ block content
                                 th Enfiteuta
                                 th Foro
                                 th Data
+                                th Numero
                             tbody
                                 tr
                                 td
@@ -44,7 +45,9 @@ block content
                                 td
                                     input(type='text' name='foro')
                                 td
-                                    input(type='number' name='data' value='2023')
+                                    input(type='number' name='data')
+                                td
+                                    input(type='number' name='numero')
                         button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
             fieldset
                 legend Lugares Relacionados

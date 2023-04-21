@@ -23,13 +23,28 @@ module.exports.getRua = id => {
 }
 
 module.exports.addRua = a => {
-    return Mapa.create(a)
-            .then(dados => {
-                return dados
-            })
-            .catch(erro => {
-                return erro
-            })
+    return Mapa.find()
+        .then(resposta => {
+            a['_id']=resposta.length+1
+            a['listacasas']=[]
+            for (let i = 0; i < a['numero'].length; i++){
+                a['listacasas'][i]={
+                    'numero':a['numero'][i],
+                    'enfiteuta':a['enfiteuta'][i],
+                    'foro':a['foro'][i]
+                }
+            }
+            return Mapa.create(a)
+                .then(dados => {
+                    return dados
+                })
+                .catch(erro => {
+                    return erro
+                })
+        })
+        .catch(erro => {
+            return erro
+        })
 }
 
 module.exports.updateMapa = a => {
