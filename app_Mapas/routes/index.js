@@ -38,4 +38,13 @@ router.get('/addrua/', function(req, res, next) {
       res.render('add', {});
 });
 
+router.post('/addrua/', function(req, res, next) {
+  Mapa.addRua(req.body).then(dados =>{
+    console.log("Rua adicionado com sucesso :" + dados)
+    res.redirect("/");
+  })
+  .catch(erro => {
+    res.render('error', {error: erro, message: "Erro a adicionar nova rua."})
+  })
+});
 module.exports = router;
