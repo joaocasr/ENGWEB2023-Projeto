@@ -25,6 +25,36 @@ block content
                 br
                 br
             fieldset
+                legend Descriçao da rua
+                input#para(type='w3-input w3-round' name='para' size="50")
+                br
+                br
+            fieldset
+                legend Atributos importantes a destacar da desccriçao
+                div(style='display:flex; justify-content:center;')
+                    div
+                        table#lugaresTabela
+                            thead
+                                th Lugar
+                                th Tipo de entidade
+                                th entidade
+                                th Data
+                            tbody
+                                tr
+                                    td
+                                        input(type='text' name='lugar')
+                                    td
+                                        select#tipo(name='tipo' style='width: 203px;')
+                                            option(value='') Nenhuma op&ccedil;&atilde;o
+                                            option(value='pessoa') pessoa
+                                            option(value='inst') institui&ccedil;&atilde;o
+                                            option(value='inst') fam&iacute;lia
+                                    td
+                                        input(type='text' name='texto')
+                                    td
+                                        input(type='number' name='data')
+                        button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar Lugar
+            fieldset
                 legend Casas da Rua
                 div(style='display:flex; justify-content:center;')
                     div
@@ -49,33 +79,6 @@ block content
                                 td
                                     input(type='number' name='numero')
                         button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
-            fieldset
-                legend Lugares Relacionados
-                div(style='display:flex; justify-content:center;')
-                    div
-                        table#lugaresTabela
-                            thead
-                                tr
-                                th Texto
-                                th Lugar
-                                th Tipo
-                                // Se houver lugar E tipo, então passa a ser uma entidade, não é preciso meter os 2 inputs
-                                th Data
-                            tbody
-                                tr
-                                    td
-                                        input(type='text' name='texto')
-                                    td
-                                        input(type='text' name='lugar')
-                                    td
-                                        select#tipo(name='tipo' style='width: 203px;')
-                                            option(value='') Nenhuma op&ccedil;&atilde;o
-                                            option(value='pessoa') pessoa
-                                            option(value='inst') institui&ccedil;&atilde;o
-                                            option(value='inst') fam&iacute;lia
-                                    td
-                                        input(type='number' name='data' value='2023')
-                        button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar Lugar
             br
             button.w3-btn.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar
     footer.w3-center.w3-black.w3-padding-16.w3-container(style='margin-top: auto; width:100%;')

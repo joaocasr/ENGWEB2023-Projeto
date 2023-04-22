@@ -15,12 +15,11 @@ function addRowCasa() {
 
 function addRowLugar() {
     var table = document.getElementById("lugaresTabela");
-    var row = table.insertRow(-1);
-    var textoCell = row.insertCell(0);
-    var lugarCell = row.insertCell(1);
-    var tipoCell = row.insertCell(2);
+    var row = table.insertRow(-1);;
+    var lugarCell = row.insertCell(0);
+    var tipoCell = row.insertCell(1);
+    var entidadeCell = row.insertCell(2);
     var dataCell = row.insertCell(3);
-    textoCell.innerHTML = '<input type="text" name="texto" />';
     lugarCell.innerHTML = '<input type="text" name="lugar" />';
     tipoCell.innerHTML = `<select name="tipo" id="tipo" style="width: 203px;">
     <option value="">Nenhuma opção</option>
@@ -28,6 +27,7 @@ function addRowLugar() {
     <option value="inst">instituição</option>
     <option value="inst">família</option>
     </select>`;
+    entidadeCell.innerHTML = '<input type="text" name="entidade" />';
     dataCell.innerHTML = '<input type="number" name="data"/>';
 }
 
