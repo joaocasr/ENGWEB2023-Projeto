@@ -4,7 +4,7 @@ var addfunctions = require('../public/javascripts/add')
 // Mapa list
 module.exports.list = () => {
     return Mapa.find()
-        .sort({nome:-1})
+        .sort({nome:1})
         .then(resposta => {
             return resposta
         })
@@ -26,12 +26,13 @@ module.exports.getRua = id => {
 module.exports.addRua = a => {
     return Mapa.find()
         .then(resposta => {
-            console.log(a)
-            id=parseInt(resposta[resposta.length-1]['_id'])+1
+            id=parseInt(resposta.sort((a, b) => (parseInt(a['_id']) > parseInt(b['_id'])) ? 1 : -1)[resposta.length-1]['_id'])+1
             a['_id']=id.toString()
             a = addfunctions.format(a)
+            console.log(a)
             return Mapa.create(a)
                 .then(dados => {
+                    console.log(dados)
                     return dados
                 })
                 .catch(erro => {

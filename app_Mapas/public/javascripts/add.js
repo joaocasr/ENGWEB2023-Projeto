@@ -38,7 +38,10 @@ exports.format = function (rua){
             'número':rua['numero'],
             'enfiteuta':rua['enfiteuta'],
             'foro':rua['foro'],
-            'data':rua['data_casa']
+            'data':rua['data_casa'],
+            'desc':{
+                'para':{
+                    'text':rua['descricao']}}
             }
     }else if (typeof(rua['numero'])=='object'){
         for (let i = 0; i < rua['numero'].length; i++){
@@ -46,9 +49,48 @@ exports.format = function (rua){
                 'número':rua['numero'][i],
                 'enfiteuta':rua['enfiteuta'][i],
                 'foro':rua['foro'][i],
-                'data':rua['data_casa'][i]
+                'data':rua['data_casa'][i],
+                'desc':{
+                    'para':{
+                        'text':rua['descricao'][i]}}
                 }
         }
+    }
+
+    if (rua['lugar']== ""){
+        delete(rua['lugar'])
+    }else if(typeof(rua['lugar'])=='string'){
+        rua['lugar']=[rua['lugar']]
+    }
+
+    if (rua['data']== ""){
+        delete(rua['data'])
+    }else if (typeof(rua['data'])=='string'){
+        rua['data']=[rua['data']]
+    }
+
+    entidades=[]
+    if(typeof(rua['entidade'])=='string' && rua['entidade']!= ""){
+        entidades={
+            'tipo':rua['tipo'],
+            'text':rua['entidade']
+            }
+    }else if (typeof(rua['entidade'])=='object'){
+        for (let i = 0; i < rua['entidade'].length; i++){
+            entidades[i]={
+                'tipo':rua['tipo'][i],
+                'text':rua['entidade'][i]
+                }
+        }
+    }
+
+    if(typeof(rua['para'])=='string'){
+        rua['para']=[{
+            lugar: rua['lugar'],
+            data: rua['data'],
+            entidade: entidades,
+            text: rua['para'],
+        }]
     }
     return rua
 }
