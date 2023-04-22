@@ -1,132 +1,110 @@
 <html>
-<head>
-<title>Braga Street View</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='icon' href='public/images/favicon-32x32.png'/>
-<link rel="stylesheet" href="public/stylesheets/w3.css">
-<script>
-  function addRowCasa() {
-    var table = document.getElementById("casasTabela");
-    var row = table.insertRow(-1);
-    var descricaoCell = row.insertCell(0);
-    var enfiteutaCell = row.insertCell(1);
-    var foroCell = row.insertCell(2);
-    var dataCell = row.insertCell(3);
-    descricaoCell.innerHTML = '<input type="text" name="descricao" />';
-    enfiteutaCell.innerHTML = '<input type="text" name="enfiteuta" />';
-    foroCell.innerHTML = '<input type="text" name="foro" />';
-    dataCell.innerHTML = '<input type="number" name="data" value="2023"/>';
-  }
-  function addRowLugar() {
-    var table = document.getElementById("lugaresTabela");
-    var row = table.insertRow(-1);
-    var textoCell = row.insertCell(0);
-    var lugarCell = row.insertCell(1);
-    var tipoCell = row.insertCell(2);
-    var dataCell = row.insertCell(3);
-    textoCell.innerHTML = '<input type="text" name="texto" />';
-    lugarCell.innerHTML = '<input type="text" name="lugar" />';
-    tipoCell.innerHTML = `<select name="tipo" id="tipo" style="width: 203px;">
-                            <option value="">Nenhuma opção</option>
-                            <option value="pessoa">pessoa</option>
-                            <option value="inst">instituição</option>
-                            <option value="inst">família</option>
-                          </select>`;
-    dataCell.innerHTML = '<input type="number" name="data" value="2023"/>';
-  }
-</script>
-</head>
-<body>
-    <div class="w3-top">
-        <div class="w3-bar w3-black w3-card" style="height:100%;" >
-            <p class="w3-bar-item w3-padding-large" style="font-size: 16px;">BRAGA STREET VIEW</p>
-            <p><a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a></p>
-            <p><a href="#login" class="w3-bar-item w3-button w3-padding-large">LOGIN</a></p>
+  <head>
+    <title>Braga Street View</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="public/images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="public/stylesheets/w3.css"/>
+    <script src="/javascripts/add.js"></script>
+  </head>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" style="height:100%;">
+      <p class="w3-bar-item w3-padding-large" style="font-size: 16px;">BRAGA STREET VIEW</p>
+      <p><a class="w3-bar-item w3-button w3-padding-large" href="#">HOME</a></p>
+      <p></p><a class="w3-bar-item w3-button w3-padding-large" href="#login">LOGIN</a>
+    </div>
+  </div>
+  <div class="w3-card-4" style="max-width:1564px; margin-top:100px; margin-left: 10%; margin-right: 10%;">
+    <header class="w3-container">
+      <h2 class="w3-center">Nova Rua</h2>
+    </header>
+    <form class="w3-container w3-center" method="POST">
+      <fieldset>
+        <legend>Nome da Rua</legend>
+        <input id="nomeRua" type="w3-input w3-round" name="nome"/><br/><br/>
+      </fieldset>
+      <fieldset>
+        <legend>Descriçao da rua</legend>
+        <input id="para" type="w3-input w3-round" name="para" size="50"/><br/><br/>
+      </fieldset>
+      <fieldset>
+        <legend>Atributos importantes a destacar da desccriçao</legend>
+        <div style="display:flex; justify-content:center;">
+          <div>
+            <table id="lugaresTabela">
+              <thead>
+                <th>Lugar</th>
+                <th>Tipo de entidade</th>
+                <th>entidade</th>
+                <th>Data</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="text" name="lugar"/>
+                  </td>
+                  <td>
+                    <select id="tipo" name="tipo" style="width: 203px;">
+                      <option value="">Nenhuma op&ccedil;&atilde;o</option>
+                      <option value="pessoa">pessoa</option>
+                      <option value="inst">institui&ccedil;&atilde;o</option>
+                      <option value="inst">fam&iacute;lia</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" name="entidade"/>
+                  </td>
+                  <td>
+                    <input type="number" name="data"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="w3-btn w3-black w3-mb-2" style="margin:10px;" type="button" onclick="addRowLugar()">Adicionar mais atributos</button>
+          </div>
         </div>
-    </div>
-
-    <div class="w3-card-4" style="max-width:1564px; margin-top:100px; margin-left: 10%; margin-right: 10%;">
-        <header class="w3-container">
-            <h2 class="w3-center">Nova Rua</h2>
-        </header>
-    
-        <form class="w3-container w3-center" method="POST">
-            <fieldset>
-              <legend>Nome da Rua</legend>
-              <input type="w3-input w3-round" id="nomeRua" name="nomeRua"><br><br>
-            </fieldset>
-            <fieldset>
-                <legend>Casas da Rua</legend>
-                <div style="display:flex; justify-content:center;">
-                  <div>
-                    <table id="casasTabela">
-                      <thead>
-                        <tr>
-                          <th>Descrição</th>
-                          <th>Enfiteuta</th>
-                          <th>Foro</th>
-                          <th>Data</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><input type="text" name="descricao" /></td>
-                          <td><input type="text" name="enfiteuta" /></td>
-                          <td><input type="text" name="foro" /></td>
-                          <td><input type="number" name="data" value="2023"/></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    
-                    <button class="w3-btn w3-black w3-mb-2" style="margin:10px;" type="button" onclick="addRowCasa()">Adicionar Casa</button>
-                  </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Lugares Relacionados</legend>
-              <div style="display:flex; justify-content:center;">
-                <div>
-                  <table id="lugaresTabela">
-                    <thead>
-                      <tr>
-                        <th>Texto</th>
-                        <th>Lugar</th>
-                        <th>Tipo</th> <!-- Se houver lugar E tipo, então passa a ser uma entidade, não é preciso meter os 2 inputs -->
-                        <th>Data</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><input type="text" name="texto" /></td>
-                        <td><input type="text" name="lugar" /></td>
-                        <td>
-                          <select name="tipo" id="tipo" style="width: 203px;">
-                            <option value="">Nenhuma opção</option>
-                            <option value="pessoa">pessoa</option>
-                            <option value="inst">instituição</option>
-                            <option value="inst">família</option>
-                          </select>
-                        </td>
-                        <td><input type="number" name="data" value="2023"/></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-                  <button class="w3-btn w3-black w3-mb-2" style="margin:10px;" type="button" onclick="addRowLugar()">Adicionar Lugar</button>
-                </div>
-              </div>
-            </fieldset>
-            <br/>
-            <button class="w3-btn w3-black w3-mb-2" type="submit" style="margin-bottom:10px;">Guardar</button>
-        </form>
-    </div>
-
-    <footer class="w3-center w3-black w3-padding-16 w3-container" style="margin-top: auto; width:100%;">
-      <p>Made by EngWeb2023 Group XX</p>
-      <p>©2023 All Rights Reserved.</p>
-    </footer>
-  
-</body>
+      </fieldset>
+      <fieldset>
+        <legend>Casas da Rua</legend>
+        <div style="display:flex; justify-content:center;">
+          <div>
+            <table id="casasTabela">
+              <thead>
+                <tr></tr>
+                <th>Descri&ccedil;&atilde;o</th>
+                <th>Enfiteuta</th>
+                <th>Foro</th>
+                <th>Data</th>
+                <th>Numero da Porta</th>
+              </thead>
+              <tbody>
+                <tr></tr>
+                <td>
+                  <input type="text" name="descricao"/>
+                </td>
+                <td>
+                  <input type="text" name="enfiteuta"/>
+                </td>
+                <td>
+                  <input type="text" name="foro"/>
+                </td>
+                <td>
+                  <input type="number" name="data_casa"/>
+                </td>
+                <td>
+                  <input type="number" name="numero"/>
+                </td>
+              </tbody>
+            </table>
+            <button class="w3-btn w3-black w3-mb-2" style="margin:10px;" type="button" onclick="addRowCasa()">Adicionar Casa</button>
+          </div>
+        </div>
+      </fieldset><br/>
+      <button class="w3-btn w3-black w3-mb-2" type="submit" style="margin-bottom:10px;">Guardar</button>
+    </form>
+  </div>
+  <footer class="w3-center w3-black w3-padding-16 w3-container" style="margin-top: auto; width:100%;">
+    <p>Made by EngWeb2023 Group XX</p>
+    <p>&copy;2023 All Rights Reserved.</p>
+  </footer>
 </html>
