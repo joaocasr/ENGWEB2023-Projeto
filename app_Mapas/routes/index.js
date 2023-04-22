@@ -47,4 +47,9 @@ router.post('/addrua/', function(req, res, next) {
     res.render('error', {error: erro, message: "Erro a adicionar nova rua."})
   })
 });
+
+router.get('/delete/:id', function(req, res, next) {
+  Mapa.deleteRua(req.params.id)
+  res.redirect("/");
+});
 module.exports = router;

@@ -12,8 +12,9 @@ block content
 	header.w3-display-container.w3-content.w3-wide(style="height: 50px;", id="home")
 
 	.w3-content.w3-padding(style="max-width:1564px")
-		.w3-container.w3-padding-32(id="rua")
-			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16 #{street.nome}
+		.w3-container.w3-padding-32(id="rua" style="display:flex; justify-content:space-between; align-items:left;align-items:center;")
+			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1") #{street.nome}
+			a.w3-button.w3-black(href="/delete/"+street._id) Delete
 
 
 		.w3-row-padding
