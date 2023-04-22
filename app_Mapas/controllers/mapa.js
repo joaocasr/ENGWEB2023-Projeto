@@ -1,4 +1,5 @@
 var Mapa = require('../models/mapa')
+var addfunctions = require('../public/javascripts/add')
 
 // Mapa list
 module.exports.list = () => {
@@ -25,15 +26,10 @@ module.exports.getRua = id => {
 module.exports.addRua = a => {
     return Mapa.find()
         .then(resposta => {
-            a['_id']=resposta.length+1
-            a['listacasas']=[]
-            for (let i = 0; i < a['numero'].length; i++){
-                a['listacasas'][i]={
-                    'numero':a['numero'][i],
-                    'enfiteuta':a['enfiteuta'][i],
-                    'foro':a['foro'][i]
-                }
-            }
+            console.log(a)
+            id=parseInt(resposta[resposta.length-1]['_id'])+1
+            a['_id']=id.toString()
+            a = addfunctions.format(a)
             return Mapa.create(a)
                 .then(dados => {
                     return dados
