@@ -9,25 +9,25 @@ block content
 			p
 				a.w3-bar-item.w3-button.w3-padding-large(href="/") LOGIN
 	.w3-row
-		.w3-col.w3-container.m5.l4(style="height: 100vh;background-image: url('/images/bom_jesus.jpg');")
-		.w3-col.w3-container.m7.l8
-			.w3-card-4(style="margin-top:80px;margin-left: 80px;width:70%;height: 640px;")
+			.w3-card-4(style="margin-top:80px;margin-left: 80px;width:50%;height: 800px;")
 				.w3-display-container.w3-center
 						.row.align-items-center.justify-content-center(style="padding:10px;")
 						.text-center.mb-5
 							h3.text-uppercase
 								u REGISTER 
 								p Braga Street View
-							form.w3-container(action="/register" method="POST")
-								label(style="margin-left: -500px;") Username
+							form.w3-container(action="/register" method="POST" enctype="multipart/form-data")
+								label(style="margin-left: -600px;") Username
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" placeholder="your-username" name="username")
-								label(style="margin-left: -500px;") Password
+								label(style="margin-left: -600px;") Password
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="password" placeholder="your-password" name="password")
-								label(style="margin-left: -500px;") Email
+								label(style="margin-left: -600px;") Email
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" placeholder="your-email@gmail.com" name="email")
-								label(style="margin-left: -500px;") Name
-								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" name="name")
-								label(style="margin-left: -500px;") Role
+								label(style="margin-left: -600px;") Nome
+								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" placeholder="your-name" name="name")
+								label(style="margin-left: -440px;") Selecione imagem de perfil
+								input.w3-input.w3-border.w3-round.w3-margin-w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="file" name="myphoto")
+								label(style="margin-left: -600px;") Role
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" name="role")
 								button.w3-button.w3-round.w3-brown(type="submit" style="height:50px;width: 400px;margin-top: 40px;") Register
 

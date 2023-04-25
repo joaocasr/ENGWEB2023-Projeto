@@ -8,6 +8,7 @@ var UserSchema = Schema({
     password:String,
     name:String,
     dateCreated:String,
+    profilepicture:String,
     role:String,
     active:Boolean
 })

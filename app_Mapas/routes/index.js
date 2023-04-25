@@ -4,7 +4,8 @@ var router = express.Router();
 var passport = require('passport')
 var Mapa = require('../controllers/mapa')
 var Related = require('../controllers/relations')
-
+var multer = require('multer')
+var upload = multer({dest: 'uploads'})
 
 function verificaAutenticacao(req, res, next){
   console.log('User (verif.): ' + JSON.stringify(req.user))
@@ -21,9 +22,19 @@ router.get('/', function(req, res) {
   res.render('login')
 })
   
-router.post('/', passport.authenticate('local'), function(req, res) {
- 	res.redirect('/ruas')
-})
+router.post('/', function(req, res, next) {
+  passport.authenticate('local', function(err, user, info) {
+    if (err) { return next(err); }
+    if (!user) {
+      let msg = "Os dados que introduziu encontram-se incorretos, efetue novamente o login."
+      res.render('login', {message: msg })
+    }
+    req.logIn(user, function(err) {
+      if (err) { return next(err); }
+      return res.redirect('/ruas');
+    });
+  })(req, res, next);
+});
 
 router.get('/logout', function(req, res) {
   req.logout(function(err){
@@ -42,12 +53,24 @@ router.get('/register',function(req,res){
 })
 
 var userModel= require('../models/users')
-router.post('/register',function(req,res){
+router.post('/register',upload.single('myphoto'),function(req,res){
+  console.log('cdir: '+ __dirname)
+  let oldPath = __dirname + '/../'+ req.file.path
+  console.log('olddir: '+ oldPath)
+  let newPath = __dirname + '/../public/profilepictures/'+req.file.originalname
+  console.log("new path: "+newPath)
+  
+  fs.rename(oldPath,newPath,erro =>{
+    if(erro){
+      console.log("erro")
+    }
+  })
   var d = new Date().toISOString().substring(0,16)
   userModel.register(new userModel({
     username:req.body.username,
     email:req.body.email,
     name:req.body.name,
+    profilepicture:req.file.originalname,
     dateCreated:d,
     role:req.body.role,
     active:true
