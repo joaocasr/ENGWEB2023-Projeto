@@ -8,14 +8,10 @@ block content
 				a.w3-bar-item.w3-button.w3-padding-large(href="/ruas" ) HOME
 			p
 				a.w3-bar-item.w3-button.w3-padding-large(href="/") LOGIN
-			p
-				.w3-dropdown-hover
-					button.w3-button.w3-black(style="margin-left:740px;") Bem-vindo, #{user.name}
-					.w3-dropdown-content.w3-bar-block.w3-border
-						a.w3-bar-item.w3-button(style="margin-left:740px;width:100px;" href="/logout") Logout
-			p
-				img.w3-bar-item(style="border-radius: 50%;width:80px;margin-top:-10px" src="/profilepictures/"+ user.profilepicture)
-
+			p(style="display:flex;justify-content:flex-end;margin-right:30px;")
+				a.w3-bar-item.w3-button.w3-padding-large(href="/logout") LOGOUT
+				img(style="border-radius: 50%;width:45px;height:45px;margin-left:10px;", src="/profilepictures/" + user.profilepicture)
+			
 	header.w3-display-container.w3-content.w3-wide(style="max-width:1540px;",id="home")
 		img.w3-image(src="/images/bom_jesus.jpg",alt="Bom Jesus",width="1540px",height="800px")
 		.w3-display-middle.w3-margin-top.w3-center(style="bottom: 800px;")
