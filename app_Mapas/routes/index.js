@@ -100,22 +100,26 @@ router.get('/ruas', function(req, res, next) {
 });
 
 router.get('/ruas/:idRua', verificaAutenticacao ,function(req, res, next) {
-  Mapa.getRua(req.params.idRua).then(rua => {
-          Related.getRelatedStreets(rua._id).then(related => {
-          console.log(related);
-          res.render('rua', { street: rua, relacionados: related});
-        })
-        .catch(erro => {
-          res.render('error', {error: erro, message: "Erro na obtenção das ruas relacionadas."})
-        })
-  })
-  .catch(erro => {
-    res.render('error', {error: erro, message: "Erro na obtenção da rua."})
-  })
+  if(req.isAuthenticated()){
+    Mapa.getRua(req.params.idRua).then(rua => {
+            Related.getRelatedStreets(rua._id).then(related => {
+            console.log(related);
+            res.render('rua', { street: rua, relacionados: related, user:req.user});
+          })
+          .catch(erro => {
+            res.render('error', {error: erro, message: "Erro na obtenção das ruas relacionadas."})
+          })
+    })
+    .catch(erro => {
+      res.render('error', {error: erro, message: "Erro na obtenção da rua."})
+    })
+  }
 });
 
 router.get('/addrua/', function(req, res, next) {
-      res.render('add', {});
+  if(req.isAuthenticated()){
+      res.render('add', {user: req.user});
+  }
 });
 
 router.post('/addrua/', function(req, res, next) {
