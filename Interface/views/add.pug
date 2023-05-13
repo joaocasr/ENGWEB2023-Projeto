@@ -1,14 +1,17 @@
 extends layout
 
 block content
-
 	.w3-top
-		.w3-bar.w3-black.w3-card(style='height:100%;')
-			p.w3-bar-item.w3-padding-large(style='font-size: 16px;') BRAGA STREET VIEW
+		.w3-bar.w3-black.w3-card(style="height:100%;")
+			p.w3-bar-item.w3-padding-large(style="font-size:16px;") BRAGA STREET VIEW
 			p
 				a.w3-bar-item.w3-button.w3-padding-large(href="/ruas" ) HOME
 			p
 				a.w3-bar-item.w3-button.w3-padding-large(href="/") LOGIN
+			p(style="display:flex;justify-content:flex-end;margin-right:30px;")
+				a.w3-bar-item.w3-button.w3-padding-large(href="/logout") LOGOUT
+				img(style="border-radius: 50%;width:45px;height:45px;margin-left:10px;", src="/profilepictures/" + user.profilepicture)
+				
 	.w3-card-4(style='max-width:1564px; margin-top:100px; margin-left: 10%; margin-right: 10%;')
 		header.w3-container
 			h2.w3-center Nova Rua
