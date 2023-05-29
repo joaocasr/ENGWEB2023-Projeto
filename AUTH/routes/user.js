@@ -4,9 +4,6 @@ var jwt = require('jsonwebtoken')
 var passport = require('passport')
 var userModel = require('../models/user')
 var auth = require('../auth/auth')
-var fs = require('fs')
-var multer = require('multer')
-var upload = multer({dest: 'uploads'})
 
 var User = require('../controllers/user')
 
@@ -28,21 +25,10 @@ router.post('/', auth.verificaAcesso, function(req, res){
     .catch(e => res.status(500).jsonp({error: e}))
 })
 
-router.post('/users/register', function(req, res) {
+router.post('/register', auth.verificaAcesso, function(req, res) {
   var d = new Date().toISOString().substring(0,19)
-  let oldPath = __dirname + '/../'+ req.file.path
-  console.log('olddir: '+ oldPath)
-  let newPath = __dirname + '/../public/profilepictures/'+req.file.originalname
-  console.log("new path: "+newPath)
-  
-  fs.rename(oldPath,newPath,erro =>{
-    if(erro){
-      console.log("erro")
-    }
-  })
-  
-  userModel.register(new userModel({ username: req.body.username, email: req.body.email, name: req.body.name,
-                                     role: req.body.role, active: true, dateCreated: d }), 
+  userModel.register(new userModel({ username: req.body.username, name: req.body.name, email: req.body.email,
+                                      role: req.body.role, active: true, dateCreated: d }), 
                 req.body.password, 
                 function(err, user) {
                   if (err) 
@@ -63,6 +49,7 @@ router.post('/users/register', function(req, res) {
 })
   
 router.post('/login', passport.authenticate('local'), function(req, res){
+  console.log(req.body)
   jwt.sign({ username: req.user.username, role: req.user.role, 
     sub: 'aula de EngWeb2023'}, 
     "EngWeb2023",
