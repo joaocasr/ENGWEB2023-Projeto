@@ -1,92 +1,69 @@
 var express = require('express');
 var router = express.Router();
-var passport = require('passport')
 var env = require('../config/env')
-var fs = require('fs')
 var axios = require('axios')
-var multer = require('multer')
-var upload = multer({dest: 'uploads'})
+var jwt = require('jsonwebtoken')
 
-router.get('/', function(req, res) {
-  res.render('login')
-})
 
-function verificaAutenticacao(req, res, next){
-  console.log('User (verif.): ' + JSON.stringify(req.user))
-  if(req.isAuthenticated()){
-      //req.isAuthenticated() will return true if user is logged in
-      next();
-  } else{
-    res.redirect("/");
+function verificaToken(req, res, next) {
+  if(req.cookies && req.cookies.token) next()
+  else {
+    res.redirect("/login")
   }
 }
+router.get('/', function(req, res){
+  if(req.cookies && req.cookies.token) {
+    jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
+      if(e){
+        res.render('login')
+      }
+      else{
+        res.render('login', {u: payload})
+      }
+    })
+  }
+  else res.render('login')
+})
 
-router.post('/', function(req, res, next) {
-  passport.authenticate('local', function(err, user, info) {
-    if (err) { return next(err); }
-    if (!user) {
-      let msg = "Os dados que introduziu encontram-se incorretos, efetue novamente o login."
-      res.render('login', {message: msg })
-    }
-    req.logIn(user, function(err) {
-      if (err) { return next(err); }
-      return res.redirect('/ruas');
-    });
-  })(req, res, next);
-});
 
-router.get('/logout', function(req, res) {
-  req.logout(function(err){
-    if(err){
-      console.log("LOGOUT ERROR"+err)
-      res.render('error',{error:err})
-    }else{
+router.post("/", (req, res) => {
+  axios.post(env.authAccessPoint + "/login", req.body)
+    .then(response => {
+      res.cookie("token", response.data.token)
       res.redirect('/')
-    }
-  })
+    })
+    .catch(err => {
+      res.render('error', {error: err})
+    })
 })
 
-router.get('/register',function(req,res){
-  res.render('register')
+
+router.get("/logout", verificaToken, (req,res) => {
+  res.cookie('token', "revogado.revogado.revogado")
+  res.redirect('/')
 })
 
-var userModel= require('../models/users')
-router.post('/register',upload.single('myphoto'),function(req,res){
-  console.log('cdir: '+ __dirname)
-  let oldPath = __dirname + '/../'+ req.file.path
-  console.log('olddir: '+ oldPath)
-  let newPath = __dirname + '/../public/profilepictures/'+req.file.originalname
-  console.log("new path: "+newPath)
-  
-  fs.rename(oldPath,newPath,erro =>{
-    if(erro){
-      console.log("erro")
-    }
-  })
-  var d = new Date().toISOString().substring(0,16)
-  userModel.register(new userModel({
-    username:req.body.username,
-    email:req.body.email,
-    name:req.body.name,
-    profilepicture:req.file.originalname,
-    dateCreated:d,
-    role:req.body.role,
-    active:true
-  }),req.body.password,function(err,user){
-    if(err){
-      console.log("register error "+err)
-      res.render('error',{error:err})
-    }else{
+
+router.get("/register", function(req,res) {
+  console.log("get /register")
+  res.render("register")
+})
+
+router.post("/register", function(req, res) {
+  console.log("post /register")
+  axios.post(env.authAccessPoint + "/register", req.body)
+    .then(response => {
       res.redirect('/')
-    }
-  })
+    })
+    .catch(err => {
+      res.render('error', {error: err,message:err})
+    })
 })
-
 
 /* GET home page. */
-router.get('/ruas', function(req, res, next) {
+router.get('/ruas',verificaToken,function(req, res, next) {
   if(req.isAuthenticated()){
-  axios.get(env.apiAcessPoint+"/ruas")
+  axios.get(env.apiAcessPoint+"/ruas"+"?token=" + req.cookies.token)
   .then(mapa =>(
       res.render('index', { streets: mapa.data,user: req.user})
   )).catch(err => (
@@ -97,7 +74,7 @@ router.get('/ruas', function(req, res, next) {
   }
 });
 
-router.get('/ruas/:idRua',verificaAutenticacao , function(req, res, next) {
+router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   if(req.isAuthenticated()){
   axios.get(env.apiAcessPoint+"/ruas/"+req.params.idRua)
   .then(rua =>(

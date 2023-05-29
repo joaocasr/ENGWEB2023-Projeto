@@ -3,21 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var jwt = require('jsonwebtoken')
-
-const session = require('express-session')
-
-var passport = require('passport')
-var LocalStrategy = require('passport-local').Strategy
-
-var mongoose = require('mongoose')
-var mongoDB = 'mongodb://127.0.0.1/MapaBraga'
-mongoose.connect(mongoDB,{useNewUrlParser: true,useUnifiedTopology:true})
-var db = mongoose.connection;
-db.on('error',console.error.bind(console,"eerro"))
-db.on('open',function() {
-  console.log("Conexão ao MongoDB realizada com sucesso...")
-})
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -28,24 +13,14 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-var userModel = require('./models/users')
-passport.use(new LocalStrategy(userModel.authenticate()))
-passport.serializeUser(userModel.serializeUser())
-passport.deserializeUser(userModel.deserializeUser())
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({resave:false,saveUninitialized: true,secret:'blabla'}))
-app.use(passport.initialize());
-app.use(passport.session());
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
