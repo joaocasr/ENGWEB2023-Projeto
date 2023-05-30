@@ -15,8 +15,8 @@ module.exports.list = () => {
             })
 }
 
-module.exports.getUser = id => {
-    return User.findOne({_id:id})
+module.exports.getUser = user => {
+    return User.findOne({username:user})
             .then(resposta => {
                 return resposta
             })

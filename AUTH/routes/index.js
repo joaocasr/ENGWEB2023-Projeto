@@ -7,25 +7,25 @@ var auth = require('../auth/auth')
 
 var User = require('../controllers/user')
 
-router.get('/', auth.verificaAcesso, function(req, res){
+router.get('/users', auth.verificaAcesso, function(req, res){
   User.list()
     .then(dados => res.status(200).jsonp({dados: dados}))
     .catch(e => res.status(500).jsonp({error: e}))
 })
 
-router.get('/:id', auth.verificaAcesso, function(req, res){
+router.get('/users/:id', auth.verificaAcesso, function(req, res){
   User.getUser(req.params.id)
     .then(dados => res.status(200).jsonp({dados: dados}))
     .catch(e => res.status(500).jsonp({error: e}))
 })
 
-router.post('/', auth.verificaAcesso, function(req, res){
+router.post('/users', auth.verificaAcesso, function(req, res){
   User.addUser(req.body)
     .then(dados => res.status(201).jsonp({dados: dados}))
     .catch(e => res.status(500).jsonp({error: e}))
 })
 
-router.post('/register', auth.verificaAcesso, function(req, res) {
+router.post('/users/register', auth.verificaAcesso, function(req, res) {
   var d = new Date().toISOString().substring(0,19)
   userModel.register(new userModel({ username: req.body.username, name: req.body.name, email: req.body.email,
                                       role: req.body.role, active: true, dateCreated: d }), 
@@ -48,9 +48,8 @@ router.post('/register', auth.verificaAcesso, function(req, res) {
   })
 })
   
-router.post('/login', passport.authenticate('local'), function(req, res){
-  console.log(req.body)
-  jwt.sign({ username: req.user.username, role: req.user.role, 
+router.post('/users/login', passport.authenticate('local'), function(req, res){
+  jwt.sign({ username: req.user.username, role: req.user.role, name:req.user.name, 
     sub: 'aula de EngWeb2023'}, 
     "EngWeb2023",
     {expiresIn: 3600},
@@ -60,7 +59,7 @@ router.post('/login', passport.authenticate('local'), function(req, res){
 });
 })
 
-router.put('/:id', auth.verificaAcesso, function(req, res) {
+router.put('/users/:id', auth.verificaAcesso, function(req, res) {
   User.updateUser(req.params.id, req.body)
     .then(dados => {
       res.jsonp(dados)
@@ -70,7 +69,7 @@ router.put('/:id', auth.verificaAcesso, function(req, res) {
     })
 })
 
-router.put('/:id/desativar', auth.verificaAcesso, function(req, res) {
+router.put('/users/:id/desativar', auth.verificaAcesso, function(req, res) {
   User.updateUserStatus(req.params.id, false)
     .then(dados => {
       res.jsonp(dados)
@@ -80,7 +79,7 @@ router.put('/:id/desativar', auth.verificaAcesso, function(req, res) {
     })
 })
 
-router.put('/:id/ativar', auth.verificaAcesso, function(req, res) {
+router.put('/users/:id/ativar', auth.verificaAcesso, function(req, res) {
   User.updateUserStatus(req.params.id, true)
     .then(dados => {
       res.jsonp(dados)
@@ -90,7 +89,7 @@ router.put('/:id/ativar', auth.verificaAcesso, function(req, res) {
     })
 })
 
-router.put('/:id/password', auth.verificaAcesso, function(req, res) {
+router.put('/users/:id/password', auth.verificaAcesso, function(req, res) {
   User.updateUserPassword(req.params.id, req.body)
     .then(dados => {
       res.jsonp(dados)
@@ -100,7 +99,7 @@ router.put('/:id/password', auth.verificaAcesso, function(req, res) {
     })
 })
 
-router.delete('/:id', auth.verificaAcesso, function(req, res) {
+router.delete('/users/:id', auth.verificaAcesso, function(req, res) {
   User.deleteUser(req.params.id)
     .then(dados => {
       res.jsonp(dados)

@@ -6,9 +6,9 @@ var jwt = require('jsonwebtoken')
 
 
 function verificaToken(req, res, next) {
-  if(req.cookies && req.cookies.token) next()
+  if(req.cookies && req.cookies.token && req.cookies.token!="revogado.revogado.revogado") next()
   else {
-    res.redirect("/login")
+    res.redirect("/")
   }
 }
 
@@ -16,13 +16,14 @@ function verificaToken(req, res, next) {
 router.get('/', function(req, res){
   if(req.cookies && req.cookies.token) {
     jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
+      console.log(payload)
       if(e){
         res.render('login')
       }
       else{
         axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
         .then(mapa =>(
-            res.render('lista', { streets: mapa.data,user: req.user})
+            res.render('lista', { streets: mapa.data,user: payload})
         )).catch(err => (
             res.render('error',{error: err})
         ))
@@ -35,47 +36,54 @@ router.get('/', function(req, res){
 
 /* GET home page. */
 router.get('/ruas',verificaToken,function(req, res, next) {
-  if(req.isAuthenticated()){
-  axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
-  .then(mapa =>(
-      res.render('lista', { streets: mapa.data,user: req.user})
-  )).catch(err => (
-      res.render('error',{error: err})
-  ))
-  }else{
-    res.render('error', {error:"Área restrita" ,message: "<p>Para aceder ao conteúdo da plataforma 'Braga Street View', efetue o <a href=\"/\">login</a>.</p><p>Se ainda não possui uma conta registe-se <a href=\"/register\">aqui.</a></p>"})
+  if(req.cookies && req.cookies.token) {
+    jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
+      console.log(payload)
+      if(e){
+        res.render('login')
+      }
+      else{
+        axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
+        .then(mapa =>(
+          axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
+          .then(mapa =>(
+              res.render('lista', { streets: mapa.data,user: payload})
+          )).catch(err => (
+              res.render('error',{error: err})
+          ))
+        )).catch(err => (
+            res.render('error',{error: err})
+        ))
+      }
+    })
   }
+  else res.render('login')
 });
 
 router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
-  if(req.isAuthenticated()){
   axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
   .then(rua =>(
-      axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua)
+      axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
       .then(related =>(
-          res.render('rua', { street: rua.data, relacionados: related.data,user:req.user})
+          res.render('rua', { street: rua.data, relacionados: related.data})
       )).catch(err => (
           res.render('error',{error: err})
       ))
   )).catch(err => (
       res.render('error',{error: err})
   ))
-  }
 });
 
 
-router.get("/login", function(req,res) {
-  res.render("login")
-})
-
-router.post("/login", (req, res) => {
+router.post("/", (req, res) => {
   console.log(req.body)
   axios.post(env.authAccessPoint + "/login", req.body)
     .then(response => {
       res.cookie("token", response.data.token)
-      res.redirect('/')
+      res.redirect('/ruas')
     })
     .catch(err => {
+      console.log("AQUI")
       res.render('error', {error: err})
     })
 })
@@ -83,15 +91,19 @@ router.post("/login", (req, res) => {
 
 router.get("/logout", verificaToken, (req,res) => {
   res.cookie('token', "revogado.revogado.revogado")
+  res.cookie.token="revogado.revogado.revogado"
   res.redirect('/')
 })
 
+router.get("/login",verificaToken, function(req,res) {
+  res.render("login")
+})
 
 router.get("/register",verificaToken, function(req,res) {
   res.render("register")
 })
 
-router.post("/register", verificaToken, (req, res) => {
+router.post("/register", (req, res) => {
   axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body)
     .then(response => {
       res.redirect('/')
