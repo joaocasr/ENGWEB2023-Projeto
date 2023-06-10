@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Mapa = require('../controllers/mapa')
 var Related = require('../controllers/relations')
+var relatedpara  = require('../public/javascripts/para')
 
 router.get('/api/ruas', function(req, res, next) {
   Mapa.list()
@@ -9,7 +10,7 @@ router.get('/api/ruas', function(req, res, next) {
       res.jsonp(mapa)
     })
     .catch(erro => {
-      res.render('error', {error: erro, message: "Erro na obtenção da lista de ruas."})
+      console.log(erro)
     })
 });
 
@@ -18,27 +19,37 @@ router.get('/api/ruas/:idRua',function(req, res, next) {
           res.jsonp(rua);
         })
         .catch(erro => {
-          res.render('error', {error: erro, message: "Erro na obtenção da rua."})
+          console.log(erro)
     })
   
 });
 
 router.get('/api/ruas/related/:idRua',function(req, res, next) {
-        Related.getRelatedStreets(req.params.idRua).then(related => {
-          res.jsonp(related);
-        })
-  .catch(erro => {
-    res.render('error', {error: erro, message: "Erro na obtenção da rua."})
+  Related.getRelatedStreets(req.params.idRua).then(related => {
+    res.jsonp(related);
   })
+.catch(erro => {
+    console.log(erro)
+})
 });
 
-router.post('/api/addrua/', function(req, res, next) {
-  Mapa.addRua(req.body).then(dados =>{
-    console.log("Rua adicionado com sucesso :" + dados)
-    res.redirect("/");
+
+router.post('/api/addrua', function(req, res, next) {
+  Mapa.addRua(req.body).then(rua =>{
+    console.log("Rua adicionado com sucesso :" + rua)
+      relatedpara.getStreetspara(rua).then(relacionadas =>{
+        Related.addRelatedStreets(relacionadas).then(ok =>{
+          res.jsonp(ok)
+        }).catch(erro => {
+          console.log(erro)
+        })
+      })
+      .catch(erro => {
+        console.log(erro)
+      })
   })
   .catch(erro => {
-    res.render('error', {error: erro, message: "Erro a adicionar nova rua."})
+    console.log(erro)
   })
 });
 

@@ -74,6 +74,18 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   ))
 });
 
+router.get('/add',verificaToken , function(req, res, next) {
+  res.render('add')
+});
+
+router.post('/add',verificaToken , function(req, res, next) {
+  axios.post(env.apiAccessPoint + "/addrua",req.body)
+  .then(response => {
+    res.render('add') //adicionar arg extra a informar de que correu bem
+  }).catch(err => {
+    res.render('error', {error: err})
+  })
+});
 
 router.post("/", (req, res) => {
   console.log(req.body)
@@ -83,8 +95,8 @@ router.post("/", (req, res) => {
       res.redirect('/ruas')
     })
     .catch(err => {
-      console.log("AQUI")
-      res.render('error', {error: err})
+      let msg = "Dados incorretos, efetue novamente o login."
+      res.render('login', {message: msg })
     })
 })
 
