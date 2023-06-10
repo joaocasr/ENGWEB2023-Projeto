@@ -74,6 +74,16 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   ))
 });
 
+
+router.get('/delete/:idRua',verificaToken , function(req, res, next) {
+    axios.delete(env.apiAccessPoint+"/delete/"+req.params.idRua)
+    .then(ok =>{
+        res.redirect('/ruas')
+    }).catch(err => (
+      res.render('error',{error: err})
+  ))
+});
+
 router.get('/add',verificaToken , function(req, res, next) {
   res.render('add')
 });

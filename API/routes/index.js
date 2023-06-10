@@ -53,9 +53,12 @@ router.post('/api/addrua', function(req, res, next) {
   })
 });
 
-router.get('/api/delete/:id', function(req, res, next) {
-  Mapa.deleteRua(req.params.id)
-  res.redirect("/");
+router.delete('/api/delete/:id', function(req, res, next) {
+    Mapa.deleteRua(req.params.id).then(ok =>{
+      res.jsonp(ok)
+    }).catch(erro => {
+      console.log(erro)
+    })
 });
 
 module.exports = router;
