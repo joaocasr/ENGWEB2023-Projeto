@@ -57,7 +57,7 @@ module.exports.updateMapa = a => {
 module.exports.deleteRua = id => {
     return Mapa.deleteOne({_id: id})
             .then(resposta => {
-                return resposta.data
+                return resposta
             })
             .catch(erro => {
                 return erro

@@ -55,7 +55,17 @@ router.post('/api/addrua', function(req, res, next) {
 
 router.delete('/api/delete/:id', function(req, res, next) {
     Mapa.deleteRua(req.params.id).then(ok =>{
-      res.jsonp(ok)
+      Related.deleteRuaRelacionados(req.params.id)
+      .then(delok =>{
+          Related.deleteRelated(req.params.id)
+          .then(relok =>{
+              res.jsonp(relok)
+          }).catch(erro => {
+            console.log(erro)
+          })
+      }).catch(erro => {
+        console.log(erro)
+      })
     }).catch(erro => {
       console.log(erro)
     })

@@ -3,7 +3,10 @@ var router = express.Router();
 var env = require('../config/env')
 var axios = require('axios')
 var jwt = require('jsonwebtoken')
+var filesystem = require('fs')
 
+var multer = require('multer')
+var upload = multer({dest: 'uploads'})
 
 function verificaToken(req, res, next) {
   if(req.cookies && req.cookies.token && req.cookies.token!="revogado.revogado.revogado") next()
@@ -88,7 +91,16 @@ router.get('/add',verificaToken , function(req, res, next) {
   res.render('add')
 });
 
-router.post('/add',verificaToken , function(req, res, next) {
+router.post('/add',verificaToken ,upload.single('figura'), function(req, res, next) {
+  console.log(req.file.originalname)
+  let oldPath = __dirname + '/../'+ req.file.path
+  let newPath = __dirname + '/../public/images/dados/materialBase/atual/'+req.file.originalname
+  
+  filesystem.rename(oldPath,newPath,erro =>{
+    if(erro){
+      console.log("erro")
+    }
+  })
   axios.post(env.apiAccessPoint + "/addrua",req.body)
   .then(response => {
     res.render('add') //adicionar arg extra a informar de que correu bem

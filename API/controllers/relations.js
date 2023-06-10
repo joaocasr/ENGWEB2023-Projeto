@@ -54,3 +54,23 @@ module.exports.addInverseRelatedEntidades = obj => {
             return erro
         })
 }
+
+module.exports.deleteRuaRelacionados = idStreet => {
+    return Relations.updateMany({}, { $pull: { lugares: {'id':idStreet}, data: {'id':idStreet}, entidades:{'id':idStreet} } })
+            .then(resposta => {
+                return resposta
+            })
+            .catch(erro => {
+                return erro
+            })
+}
+
+module.exports.deleteRelated = idStreet => {
+    return Relations.deleteOne({'_id':idStreet})
+            .then(resposta => {
+                return resposta
+            })
+            .catch(erro => {
+                return erro
+            })
+}
