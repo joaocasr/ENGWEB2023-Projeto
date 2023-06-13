@@ -41,34 +41,54 @@ router.get('/', function(req, res){
 
 /* GET home page. */
 router.get('/ruas',verificaToken,function(req, res, next) {
-    axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
-        .then(mapa =>(
-          axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
-          .then(mapa =>(
-              res.render('lista', { streets: mapa.data,user: current_user})
-          )).catch(err => (
-              res.render('error',{error: err})
-          ))
-          )).catch(err => (
-            res.render('error',{error: err})
-    ))
-     
+  if(req.cookies && req.cookies.token) {
+    jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
+      console.log(payload)
+      if(e){
+        res.render('login')
+      }
+      else{
+        current_user=payload
+        axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
+            .then(mapa =>(
+              axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
+              .then(mapa =>(
+                  res.render('lista', { streets: mapa.data,user: current_user})
+              )).catch(err => (
+                  res.render('error',{error: err})
+              ))
+              )).catch(err => (
+                res.render('error',{error: err})
+              ))
+          }
+    })}
+  else res.render('login')
 });
 
 /* GET street page. */
 router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
-  console.log(current_user)
-  axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
-  .then(rua =>(
-      axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
-      .then(related =>(
-          res.render('rua', { street: rua.data, relacionados: related.data,user: current_user})
-      )).catch(err => (
-          res.render('error',{error: err})
-      ))
-  )).catch(err => (
-      res.render('error',{error: err})
-  ))
+  if(req.cookies && req.cookies.token) {
+    jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
+      console.log(payload)
+      if(e){
+        res.render('login')
+      }
+      else{
+        current_user=payload
+        axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
+        .then(rua =>(
+            axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
+            .then(related =>(
+                res.render('rua', { street: rua.data, relacionados: related.data,user: current_user})
+            )).catch(err => (
+                res.render('error',{error: err})
+            ))
+        )).catch(err => (
+            res.render('error',{error: err})
+        ))
+      }
+    })}
+  else res.render('login')
 });
 
 
@@ -141,7 +161,7 @@ router.post("/register",upload.single('myphoto'), (req, res) => {
       console.log("erro")
     }
   })
-  req.body['myphoto']='\\images\\imagensdeperfil\\'+req.file.originalname
+  req.body['myphoto']=req.file.originalname
   axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body)
     .then(response => {
       res.redirect('/')
