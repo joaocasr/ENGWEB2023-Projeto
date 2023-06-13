@@ -7,6 +7,7 @@ var filesystem = require('fs')
 
 var multer = require('multer')
 var upload = multer({dest: 'uploads'})
+var current_user = null;
 
 function verificaToken(req, res, next) {
   if(req.cookies && req.cookies.token && req.cookies.token!="revogado.revogado.revogado") next()
@@ -24,6 +25,7 @@ router.get('/', function(req, res){
         res.render('login')
       }
       else{
+        current_user=payload
         axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
         .then(mapa =>(
             res.render('lista', { streets: mapa.data,user: payload})
@@ -39,36 +41,27 @@ router.get('/', function(req, res){
 
 /* GET home page. */
 router.get('/ruas',verificaToken,function(req, res, next) {
-  if(req.cookies && req.cookies.token) {
-    jwt.verify(req.cookies.token, "EngWeb2023", function(e, payload){
-      console.log(payload)
-      if(e){
-        res.render('login')
-      }
-      else{
-        axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
+    axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
         .then(mapa =>(
           axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
           .then(mapa =>(
-              res.render('lista', { streets: mapa.data,user: payload})
+              res.render('lista', { streets: mapa.data,user: current_user})
           )).catch(err => (
               res.render('error',{error: err})
           ))
-        )).catch(err => (
+          )).catch(err => (
             res.render('error',{error: err})
-        ))
-      }
-    })
-  }
-  else res.render('login')
+    ))
+     
 });
 
 router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
+  console.log(current_user)
   axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
   .then(rua =>(
       axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
       .then(related =>(
-          res.render('rua', { street: rua.data, relacionados: related.data})
+          res.render('rua', { street: rua.data, relacionados: related.data,user: current_user})
       )).catch(err => (
           res.render('error',{error: err})
       ))

@@ -7,7 +7,6 @@ var userSchema = new mongoose.Schema({
     name:String,
     email:String,
     dateCreated:String,
-    //profilepicture:String,
     role:String,
     active:Boolean,
     myphoto:String
