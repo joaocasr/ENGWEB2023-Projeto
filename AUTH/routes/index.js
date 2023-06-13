@@ -28,9 +28,8 @@ router.post('/users', auth.verificaAcesso, function(req, res){
 router.post('/users/register', auth.verificaAcesso, function(req, res) {
   var d = new Date().toISOString().substring(0,19)
   console.log(req.body)
-  console.log(req.file)
   userModel.register(new userModel({ username: req.body.username, name: req.body.name, email: req.body.email,
-                                      role: req.body.role, active: true, dateCreated: d }), 
+                                      role: req.body.role, active: true,myphoto: req.body.myphoto, dateCreated: d }), 
                 req.body.password, 
                 function(err, user) {
                   if (err) 

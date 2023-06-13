@@ -9,7 +9,8 @@ var userSchema = new mongoose.Schema({
     dateCreated:String,
     //profilepicture:String,
     role:String,
-    active:Boolean
+    active:Boolean,
+    myphoto:String
 })
 userSchema.plugin(passportLocalMongoose);
 
