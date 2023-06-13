@@ -55,6 +55,7 @@ router.get('/ruas',verificaToken,function(req, res, next) {
      
 });
 
+/* GET street page. */
 router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   console.log(current_user)
   axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
@@ -119,6 +120,7 @@ router.post("/", (req, res) => {
 router.get("/logout", verificaToken, (req,res) => {
   res.cookie('token', "revogado.revogado.revogado")
   res.cookie.token="revogado.revogado.revogado"
+  current_user = null
   res.redirect('/')
 })
 
