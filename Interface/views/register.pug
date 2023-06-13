@@ -16,7 +16,7 @@ block content
 							h3.text-uppercase
 								u REGISTER 
 								p Braga Street View
-							form.w3-container(action="/register" method="POST" enctype="multipart/form-data")
+							form.w3-container(action="/register" method="POST")
 								label(style="margin-left: -600px;") Username
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" placeholder="your-username" name="username")
 								label(style="margin-left: -600px;") Password
@@ -27,8 +27,6 @@ block content
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" placeholder="your-name" name="name")
 								label(style="margin-left: -600px;") Role
 								input.w3-input.w3-panel.w3-round.w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="text" name="role")
-								label(style="margin-left: -440px;") Selecione imagem de perfil
-								input.w3-input.w3-border.w3-round.w3-margin-w3-light-grey(style="height:40px;width:400px;margin-left:45px;" type="file" name="myphoto")
 								button.w3-button.w3-round.w3-brown(type="submit" style="height:50px;width: 400px;margin-top: 40px;" value="Send") Register
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")

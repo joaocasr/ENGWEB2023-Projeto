@@ -137,16 +137,7 @@ router.get("/register",verificaToken, function(req,res) {
   res.render("register")
 })
 
-router.post("/register",upload.single('myphoto'), (req, res) => {
-  let oldPath = __dirname + '/../'+ req.file.path
-  let newPath = __dirname + '/../public/images/imagensdeperfil/'+req.file.originalname
-
-  filesystem.rename(oldPath,newPath,erro =>{
-    if(erro){
-      console.log("erro")
-    }
-  })
-  req.body['myphoto']=newPath
+router.post("/register", (req, res) => {
   axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body)
     .then(response => {
       res.redirect('/')
