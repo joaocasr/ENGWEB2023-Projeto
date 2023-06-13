@@ -36,7 +36,7 @@ router.post('/users/register', auth.verificaAcesso, function(req, res) {
                     res.jsonp({error: err, message: "Register error: " + err})
                   else{
                     passport.authenticate("local")(req,res,function(){
-                      jwt.sign({ username: req.user.username, role: req.user.role, 
+                      jwt.sign({ username: req.user.username, role: req.user.role,name:req.user.name, myphoto:req.user.myphoto,
                         sub: 'aula de EngWeb2023'}, 
                         "EngWeb2023",
                         {expiresIn: 3600},
@@ -50,7 +50,7 @@ router.post('/users/register', auth.verificaAcesso, function(req, res) {
 })
   
 router.post('/users/login', passport.authenticate('local'), function(req, res){
-  jwt.sign({ username: req.user.username, role: req.user.role, name:req.user.name, 
+  jwt.sign({ username: req.user.username, role: req.user.role, name:req.user.name, myphoto:req.user.myphoto,
     sub: 'aula de EngWeb2023'}, 
     "EngWeb2023",
     {expiresIn: 3600},
