@@ -141,7 +141,7 @@ router.post("/register",upload.single('myphoto'), (req, res) => {
       console.log("erro")
     }
   })
-  req.body['myphoto']='\\images\\imagensdeperfil\\'+req.file.originalname
+  req.body['myphoto']=req.file.originalname
   axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body)
     .then(response => {
       res.redirect('/')
