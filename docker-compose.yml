@@ -1,0 +1,55 @@
+version: "3"
+services:
+  app:
+    container_name: MapaApp
+    build: ./Interface
+    restart: always
+    ports:
+      - "7778:7778"
+    networks:
+      - MapaBraga
+
+  data_server:
+    container_name: Aplication_data_server
+    build: ./API
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
+    ports:
+      - "7777:7777"
+    depends_on:
+      - mongodb
+    networks:
+      - MapaBraga
+
+  mongodb:
+    container_name: Mapa-mongodb
+    image: mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - comprasData:/data/db
+    networks:
+      - MapaBraga
+
+  auth_server:
+    container_name: Mapa_auth_server
+    build: ./AUTH
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
+    ports:
+      - "7779:7779"
+    depends_on:
+      - mongodb
+    networks:
+      - MapaBraga
+      
+networks:
+  MapaBraga:
+    name: MapaBraga
+    driver: bridge
+volumes:
+  comprasData:
+  
