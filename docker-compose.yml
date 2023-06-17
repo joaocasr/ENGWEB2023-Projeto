@@ -14,22 +14,22 @@ services:
     build: ./API
     restart: always
     environment:
-      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
+      - MONGODB_URL=mongodb://mongoserv:27017/MapaBraga
     ports:
       - "7777:7777"
     depends_on:
-      - mongodb
+      - mongoserv
     networks:
       - MapaBraga
 
-  mongodb:
+  mongoserv:
     container_name: Mapa-mongodb
     image: mongo
     restart: always
     ports:
       - '27017:27017'
     volumes:
-      - comprasData:/data/db
+      - MapaBraga:/data/db
     networks:
       - MapaBraga
 
@@ -38,11 +38,11 @@ services:
     build: ./AUTH
     restart: always
     environment:
-      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
+      - MONGODB_URL=mongodb://mongoserv:27017/MapaBraga
     ports:
       - "7779:7779"
     depends_on:
-      - mongodb
+      - mongoserv
     networks:
       - MapaBraga
       
@@ -51,5 +51,5 @@ networks:
     name: MapaBraga
     driver: bridge
 volumes:
-  comprasData:
+  MapaBraga:
   
