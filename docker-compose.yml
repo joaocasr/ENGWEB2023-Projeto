@@ -4,8 +4,27 @@ services:
     container_name: MapaApp
     build: ./Interface
     restart: always
+    environment:
+      - API_URL=http://data_server:7777/api
+      - AUTH_URL=http://auth_server:7779/users
     ports:
       - "7778:7778"
+    depends_on:
+      - data_server
+      - auth_server
+    networks:
+      - MapaBraga
+
+  data_server:
+    container_name: Aplication_data_server
+    build: ./API
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
+    ports:
+      - "7777:7777"
+    depends_on:
+      - mongodb
     networks:
       - MapaBraga
 
@@ -20,19 +39,6 @@ services:
     networks:
       - MapaBraga
       
-  data_server:
-    container_name: Aplication_data_server
-    build: ./API
-    restart: always
-    environment:
-      - MONGODB_URL=mongodb://mongodb:27017/MapaBraga
-    ports:
-      - "7777:7777"
-    depends_on:
-      - mongodb
-    networks:
-      - MapaBraga
-
   auth_server:
     container_name: Mapa_auth_server
     build: ./AUTH
