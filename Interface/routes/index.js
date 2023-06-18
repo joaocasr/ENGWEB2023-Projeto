@@ -128,7 +128,7 @@ router.get("/login",verificaToken, function(req,res) {
   res.render("login")
 })
 
-router.get("/register",verificaToken, function(req,res) {
+router.get("/register", function(req,res) {
   res.render("register")
 })
 
