@@ -48,8 +48,9 @@ router.post('/users/register', auth.verificaAcesso, function(req, res) {
                   }     
   })
 })
-  
+
 router.post('/users/login', passport.authenticate('local'), function(req, res){
+  console.log(req.user)
   jwt.sign({ username: req.user.username, role: req.user.role, name:req.user.name, myphoto:req.user.myphoto,
     sub: 'aula de EngWeb2023'}, 
     "EngWeb2023",

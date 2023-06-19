@@ -4,10 +4,12 @@ var env = require('../config/env')
 var axios = require('axios')
 var jwt = require('jsonwebtoken')
 var filesystem = require('fs')
+const path = require('path');
 
 var multer = require('multer')
 var upload = multer({dest: 'uploads'})
 var current_user = null;
+var current_dir = null;
 
 function verificaToken(req, res, next) {
   if(req.cookies && req.cookies.token && req.cookies.token!="revogado.revogado.revogado") next()
@@ -87,8 +89,8 @@ router.get('/add',verificaToken , function(req, res, next) {
 
 router.post('/add',verificaToken ,upload.single('figura'), function(req, res, next) {
   console.log(req.file.originalname)
-  let oldPath = __dirname + '/../'+ req.file.path
-  let newPath = __dirname + '/../public/images/dados/materialBase/atual/'+req.file.originalname
+  let oldPath = path.resolve(__dirname, '..', req.file.path);
+  let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.file.originalname);
   
   filesystem.rename(oldPath,newPath,erro =>{
     if(erro){
@@ -128,17 +130,16 @@ router.get("/login",verificaToken, function(req,res) {
   res.render("login")
 })
 
-router.get("/register",verificaToken, function(req,res) {
+router.get("/register",verificaToken,function(req,res) {
   res.render("register")
 })
 
 router.post("/register",upload.single('myphoto'), (req, res) => {
-  let oldPath = __dirname + '\\..\\'+ req.file.path
-  let newPath = __dirname + '\\..\\public\\images\\imagensdeperfil\\'+req.file.originalname
-
+  let oldPath = path.resolve(__dirname, '..', req.file.path);
+  let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
   filesystem.rename(oldPath,newPath,erro =>{
     if(erro){
-      console.log("erro")
+      console.log("erro:"+erro+"\nNew Path:"+newPath+"\nOld Path:"+oldPath)
     }
   })
   req.body['myphoto']=req.file.originalname
