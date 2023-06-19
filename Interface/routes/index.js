@@ -12,7 +12,9 @@ var current_user = null;
 var current_dir = null;
 
 function verificaToken(req, res, next) {
-  if(req.cookies && req.cookies.token && req.cookies.token!="revogado.revogado.revogado") next()
+  if(req.cookies && req.cookies.token 
+    && req.cookies.token!="revogado.revogado.revogado" && current_user!=null) 
+    next()
   else {
     res.redirect("/")
   }
@@ -30,7 +32,7 @@ router.get('/', function(req, res){
         current_user=payload
         axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
         .then(mapa =>(
-            res.render('lista', { streets: mapa.data,user: payload})
+            res.render('lista', { streets: mapa.data,user: current_user})
         )).catch(err => (
             res.render('error',{error: err})
         ))
@@ -43,6 +45,7 @@ router.get('/', function(req, res){
 
 /* GET home page. */
 router.get('/ruas',verificaToken,function(req, res, next) {
+    console.log(current_user)
     axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
         .then(mapa =>(
           axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
@@ -135,6 +138,8 @@ router.get("/register",verificaToken,function(req,res) {
 })
 
 router.post("/register",upload.single('myphoto'), (req, res) => {
+  console.log("here")
+  console.log(req.body)
   let oldPath = path.resolve(__dirname, '..', req.file.path);
   let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
   filesystem.rename(oldPath,newPath,erro =>{
