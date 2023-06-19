@@ -138,8 +138,6 @@ router.get("/register",verificaToken,function(req,res) {
 })
 
 router.post("/register",upload.single('myphoto'), (req, res) => {
-  console.log("here")
-  console.log(req.body)
   let oldPath = path.resolve(__dirname, '..', req.file.path);
   let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
   filesystem.rename(oldPath,newPath,erro =>{
