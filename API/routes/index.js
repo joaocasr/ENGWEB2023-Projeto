@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Mapa = require('../controllers/mapa')
 var Related = require('../controllers/relations')
+var Comentario = require('../controllers/comentarios')
 var relatedpara  = require('../public/javascripts/para')
 
 router.get('/api/ruas', function(req, res, next) {
@@ -33,6 +34,23 @@ router.get('/api/ruas/related/:idRua',function(req, res, next) {
 })
 });
 
+router.post('/api/ruas/comentarios/:idRua',function(req, res, next) {
+  Comentario.addComment(req.body).then(ok => {
+    res.jsonp(ok);
+  })
+.catch(erro => {
+    console.log(erro)
+})
+});
+
+router.get('/api/ruas/comentarios/:idRua',function(req, res, next) {
+  Comentario.getComments(req.params.idRua).then(comentarios => {
+    res.jsonp(comentarios);
+  })
+.catch(erro => {
+    console.log(erro)
+})
+});
 
 router.post('/api/addrua', function(req, res, next) {
   Mapa.addRua(req.body).then(rua =>{

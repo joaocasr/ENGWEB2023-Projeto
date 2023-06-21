@@ -93,18 +93,18 @@ block content
 								|  (#{rel.atributo.tipo}: #{rel.atributo.text})
 		
 		// os novos comentários são feitos aqui:
-		form#commentForm.w3-container.w3-center(action='', style="padding-left:8px; padding-right:8px;")
+		form.w3-container.w3-center(style="padding-left:8px; padding-right:8px;" id="commentForm")
 			fieldset.w3-container.w3-margin
 				legend Novo Comentário
 				br
 				.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden;")
-					input#commentText(type='w3-input w3-round' name='nome' style="width: 100%;height: 100%;")
+					input(type='w3-input w3-round' name='nome' style="width: 100%;height: 100%;" id="commentText")
 				br
-				input#addComment.w3-btn.w3-black.w3-mb-2(type='button' value='Adicionar Comentário' style="margin-bottom:10px;")
+				input.w3-btn.w3-black.w3-mb-2(type='button' data-username=user.username data-photo=user.myphoto value='Adicionar Comentário' style="margin-bottom:10px;" id="addComment")
 		
 		// a lista de comentários irá estar aqui:
 		.w3-container.w3-border.w3-margin
-			ul#commentList.w3-ul
+			ul.w3-ul(id="commentList")
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		p Made by Group XX - EngWeb2023
