@@ -21,9 +21,7 @@ block content
 			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1") #{street.nome}
 			a.w3-button.w3-black(href="/delete/"+street._id) Delete
 
-
 		.w3-row-padding
-
 			.l3.m6.w3-margin-bottom
 				.w3-row-padding
 					each pastimage in street.figura
@@ -60,11 +58,8 @@ block content
 										else
 											button(onclick=`showDesc(${JSON.stringify(null)});`)= "Descrição"
 
-
 			.l3.m6.w3-margin-bottom
-
 				.w3-row-padding
-
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
 						.w3-display-topleft.w3-black.w3-padding Agora
@@ -96,12 +91,21 @@ block content
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome}
 								|  (#{rel.atributo.tipo}: #{rel.atributo.text})
-								
-									
-								
+		
+		// os novos comentários são feitos aqui:
+		form#commentForm.w3-container.w3-center(action='', style="padding-left:8px; padding-right:8px;")
+			fieldset.w3-container.w3-margin
+				legend Novo Comentário
+				br
+				.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden;")
+					input#commentText(type='w3-input w3-round' name='nome' style="width: 100%;height: 100%;")
+				br
+				input#addComment.w3-btn.w3-black.w3-mb-2(type='button' value='Adicionar Comentário' style="margin-bottom:10px;")
+		
+		// a lista de comentários irá estar aqui:
+		.w3-container.w3-border.w3-margin
+			ul#commentList.w3-ul
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		p Made by Group XX - EngWeb2023
 		p ©2023 All Rights Reserved
-
-

@@ -57,7 +57,6 @@ router.get('/ruas',verificaToken,function(req, res, next) {
           )).catch(err => (
             res.render('error',{error: err})
     ))
-     
 });
 
 /* GET street page. */
@@ -154,6 +153,5 @@ router.post("/register",upload.single('myphoto'), (req, res) => {
       res.render('error', {error: err})
     })
 })
-
 
 module.exports = router;
