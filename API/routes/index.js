@@ -55,6 +55,15 @@ router.post('/api/ruas/comentarios/:idRua',function(req, res, next) {
 })
 });
 
+router.get('/api/ruas/comentarios/',function(req, res, next) {
+  console.log("entrou no sitio certo")
+  Comentario.getAllComments().then(comentarios => {
+    res.jsonp(comentarios);
+  })
+.catch(erro => {
+    console.log(erro)
+})
+});
 
 router.post('/api/addrua', function(req, res, next) {
   Mapa.addRua(req.body).then(rua =>{

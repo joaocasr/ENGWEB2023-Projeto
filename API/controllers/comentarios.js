@@ -19,3 +19,13 @@ module.exports.getComments = id => {
             return erro
         })
 }
+
+module.exports.getAllComments = () => {
+    return Comentario.find()
+        .then(resposta => {
+            return resposta
+        })
+        .catch(erro => {
+            return erro
+        })
+}
