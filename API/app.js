@@ -4,7 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
 var mongoose = require('mongoose')
 /*
 mongoose.connect(process.env.MONGODB_URL, 
@@ -25,6 +24,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+// isto é preciso para resolver o problema do GET nos comentários, basicamente o browser não deixa fazer GETs a outros servidores
+const cors = require('cors');
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

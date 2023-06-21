@@ -45,7 +45,8 @@ router.get('/api/ruas/comentarios/:idRua',function(req, res, next) {
 })
 });
 
-router.post('/api/ruas/comentarios/:idRua',function(req, res, next) {
+router.post('/api/ruas/comentarios',function(req, res, next) {
+  console.log("Fez um post de um comentário!")
   console.log(req.body)
   Comentario.addComment(req.body).then(ok => {
     res.jsonp(ok);

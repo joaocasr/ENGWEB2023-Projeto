@@ -19,7 +19,7 @@ block content
 	.w3-content.w3-padding(style="max-width:1564px")
 		.w3-container.w3-padding-32(id="rua" style="display:flex; justify-content:space-between; align-items:left;align-items:center;")
 			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1; font-weight: 600 !important;") #{street.nome}
-			a.w3-button.w3-black(href="/delete/"+street._id) Delete
+			a.w3-button.w3-black.w3-round(href="/delete/"+street._id) Delete
 
 		.w3-row-padding
 			.l3.m6.w3-margin-bottom
@@ -32,14 +32,15 @@ block content
 						.w3-col.l6.w3-margin-bottom
 						.w3-display-container
 							if i == 1
-								.w3-display-topleft.w3-black.w3-padding Antigamente
+								.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border Antigamente
 							img.w3-round.w3-border(src="/images/dados/materialBase/"+ pastimage.path alt="House" style="width:100%;object-fit: cover;")
 				br
 				br
 
 				// Lista de Casas
-				.w3-container.w3-padding-32.w3-grey.w3-round.w3-border(style="margin-left:10px;margin-right:10px;")
-					h4(style="font-weight: 600 !important;") Lista de Casas da Rua: #{street.nome}
+				.w3-container.w3-padding-32.w3-light-grey.w3-round.w3-border(style="margin-left:10px;margin-right:10px;")
+					//h3(style="font-weight: 600 !important;") Lista de Casas da #{street.nome}:
+					h3(style="font-weight: 600 !important;") Lista de Casas:
 					table.w3-table-all
 						thead 
 							tr.w3-brown
@@ -73,7 +74,7 @@ block content
 				.w3-row-padding
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
-						.w3-display-topleft.w3-black.w3-padding Atualmente
+						.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border Atualmente
 						img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
 
 					.w3-col.l6.w3-margin-bottom
@@ -111,25 +112,28 @@ block content
 
 		
 		// Comentários
-		.w3-container.w3-padding-32.w3-round.w3-border(style="margin-left:14px;margin-right:14px;")
+		.w3-container.w3-padding-32.w3-round.w3-border(style="margin-left:15px;margin-right:15px;")
 
 			// Lista de Comentários
 			.w3-container(style="padding-left:8px; padding-right:8px;")
 				ul.w3-ul(id="commentList")
 
 			// Novos Comentários
-			form.w3-container.w3-center(style="padding-left:8px; padding-right:8px;" id="commentForm", autocomplete="off")
+			form.w3-container(style="padding-left:8px; padding-right:8px;" id="commentForm", autocomplete="off")
 				fieldset.w3-container.w3-margin
-					legend Novo Comentário
+					legend(style="font-weight: 600 !important;") Novo Comentário
 					br
 					.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden; display:flex; justify-content:center; align-items:center;")
 						image.w3-left(style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;", src="/images/imagensdeperfil/"+user.myphoto)
-						input(type='w3-input w3-round' id="commentText" name='nome' style="width: 80%;height: 100%;")
+						input(type='w3-input w3-round' id="commentText" name='nome' style="width: 85%;height: 100%;")
 					br
-					//primeiro botao é para passar os valores do user que fez o comentario ao fazer o post em jquery
-					input.w3-btn.w3-black.w3-mb-2(type='hidden' id="buttonvalue" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
-					input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value="Postar" style="margin-bottom:10px;")
-					//tentar um botão com um formato diferente se tivermos tempo
+					input.w3-btn.w3-black.w3-mb-2.w3-round(type='button' id="addComment" value="Postar" style="margin-bottom:10px; display:block; margin: 0 auto;")
+					br
+
+					// Para passar os valores do user que fez o comentario ao fazer o post em jquery
+					input(type='hidden' id="buttonvalue" value=user.username+";"+user.myphoto)
+		br
+
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		p Made by Group XX - EngWeb2023

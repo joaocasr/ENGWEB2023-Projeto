@@ -1,31 +1,48 @@
-$(function() {    
-    var commentCount = 0;
+$(function() {
+    console.log("TEST")
+    //var commentCount = 0;
     var url = window.location.href;
     var id = url.substring(url.lastIndexOf("/") + 1);
+    console.log("ID: " + id);
     $.get("http://localhost:7777/api/ruas/comentarios/" + id, function(data) { // GET dos comentarios da rua com o id=id
+        console.log("COMENTÁRIOS DO GET:")
         console.log(data)
         data.forEach(p => {
             console.log(">>")
             console.log(p)
-            $("#commentList").append("<li><b>" + p.dateTime + "</b>: " + p.p + "</li>");
-            commentCount += 1;
+            var content = `
+            <li style="min-height: 50px;display: flex;display: flex;flex-direction: column;">
+                <img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + p.photo + `">` +
+            `<b>` + p.username + " at " + p.dateTime.substring(0, 10) + ":</b>" + `<p style="margin-left: 16px;margin-top: 6px;">` + p.p + "</p>" +
+            `</li>`;
+
+            $("#commentList").append(content);
+            //commentCount += 1;
         });
     })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("GET request failed:", textStatus, errorThrown);
+    });
 
     $("#addComment").click(function() {
         var d = new Date();
-        var timeStamp = d.toISOString().substring(0, 16);
-        var contents = "<li><b>" + timeStamp + "</b>: " + $("#commentText").val() + "</li>";
-        commentCount += 1;
-        $("#commentList").append(contents);
+        var dateTime = d.toISOString().substring(0, 16);
 
         var user = $("#buttonvalue").val().split(";",2)[0]
         var myphoto = $("#buttonvalue").val().split(";",2)[1]
-        
-        newComment = { _id: commentCount, dateTime: timeStamp, username:user,photo : myphoto, rua:id, p: $("#commentText").val() };
+
+        var content = `
+            <li style="min-height: 50px;display: flex;display: flex;flex-direction: column;">
+                <img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + myphoto + `">` +
+            `<b>` + user + " at " + dateTime.substring(0, 10) + ":</b> " + `<p style="margin-left: 16px;margin-top: 6px;">` + $("#commentText").val() + "</p>" + 
+            `</li>`;
+        //commentCount += 1;
+        $("#commentList").append(content);
+
+        newComment = { dateTime: dateTime, username:user,photo : myphoto, rua:id, p: $("#commentText").val() };
 
         // post newComment
-        $.post("http://localhost:7777/api/ruas/comentarios/" + id, newComment, function(data) {
+        $.post("http://localhost:7777/api/ruas/comentarios", newComment, function(data) {
             alert("Comentário adicionado com sucesso.");
         })
         $("#commentText").val("");
