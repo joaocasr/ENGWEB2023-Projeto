@@ -18,19 +18,28 @@ block content
 
 	.w3-content.w3-padding(style="max-width:1564px")
 		.w3-container.w3-padding-32(id="rua" style="display:flex; justify-content:space-between; align-items:left;align-items:center;")
-			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1") #{street.nome}
+			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1; font-weight: 600 !important;") #{street.nome}
 			a.w3-button.w3-black(href="/delete/"+street._id) Delete
 
 		.w3-row-padding
 			.l3.m6.w3-margin-bottom
+				
+				// Fotos Antigas
 				.w3-row-padding
+					- var i = 0
 					each pastimage in street.figura
+						- i++
 						.w3-col.l6.w3-margin-bottom
 						.w3-display-container
-							.w3-display-topleft.w3-black.w3-padding Antigamente
-							img(src="/images/dados/materialBase/"+ pastimage.path alt="House" style="width:100%;object-fit: cover;")
-				.w3-container.w3-padding-32.w3-grey.w3-round(style="margin-left:10px;margin-right:10px;")
-					h4 Lista de Casas da rua: #{street.nome}
+							if i == 1
+								.w3-display-topleft.w3-black.w3-padding Antigamente
+							img.w3-round.w3-border(src="/images/dados/materialBase/"+ pastimage.path alt="House" style="width:100%;object-fit: cover;")
+				br
+				br
+
+				// Lista de Casas
+				.w3-container.w3-padding-32.w3-grey.w3-round.w3-border(style="margin-left:10px;margin-right:10px;")
+					h4(style="font-weight: 600 !important;") Lista de Casas da Rua: #{street.nome}
 					table.w3-table-all
 						thead 
 							tr.w3-brown
@@ -57,54 +66,69 @@ block content
 											button(onclick=`showDesc(${JSON.stringify(house.desc.para)});`)= "Descrição"
 										else
 											button(onclick=`showDesc(${JSON.stringify(null)});`)= "Descrição"
+			br
 
+			// Fotos Atuais
 			.l3.m6.w3-margin-bottom
 				.w3-row-padding
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
-						.w3-display-topleft.w3-black.w3-padding Agora
-						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
+						.w3-display-topleft.w3-black.w3-padding Atualmente
+						img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
 
 					.w3-col.l6.w3-margin-bottom
 					.w3-display-container
-						.w3-display-topleft.w3-black.w3-padding Agora
-						img(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista2.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
+						img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista2.JPG" alt="House" style="width:100%;height:600px;object-fit: cover;")
 
+				br
+				br
+
+				// Lugares Relacionados e Curiosidades
 				if street.para
-					.w3-container.w3-padding-32.w3-light-grey.w3-round(style="margin-left:16px;margin-right:16px;")
-						h3 Lugares relacionados e curiosidades:
+					.w3-container.w3-padding-32.w3-light-grey.w3-round.w3-border(style="margin-left:8px;margin-right:8px;")
+						h3(style="font-weight: 600 !important;") Lugares Relacionados e Curiosidades:
 						each to in street.para
 							if to
 								p !{to.text}
-						h4 índice por Lugares
+						br
+						h4(style="font-weight: 600 !important;") Índice por Lugares:
 						each rel in relacionados.lugares
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome} 
 								|  (lugar: #{rel.atributo})
-						h4 índice por Datas
+						br
+						h4(style="font-weight: 600 !important;") Índice por Datas:
 						each rel in relacionados.data
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome} 
 								|  (data: #{rel.atributo})
-						h4 índice por Entidades
+						br
+						h4(style="font-weight: 600 !important;") Índice por Entidades:
 						each rel in relacionados.entidades
 							li 
 								a(href="/ruas/"+rel.id) #{rel.nome}
 								|  (#{rel.atributo.tipo}: #{rel.atributo.text})
+
 		
-		// os novos comentários são feitos aqui:
-		form.w3-container.w3-center(style="padding-left:8px; padding-right:8px;" id="commentForm")
-			fieldset.w3-container.w3-margin
-				legend Novo Comentário
-				br
-				.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden;")
-					input(type='w3-input w3-round' id="commentText" name='nome' style="width: 100%;height: 100%;")
-				br
-				input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
+		// Comentários
+		.w3-container.w3-padding-32.w3-round.w3-border(style="margin-left:14px;margin-right:14px;")
+
+			// Lista de Comentários
+			.w3-container(style="padding-left:8px; padding-right:8px;")
+				ul.w3-ul(id="commentList")
+
+			// Novos Comentários
+			form.w3-container.w3-center(style="padding-left:8px; padding-right:8px;" id="commentForm", autocomplete="off")
+				fieldset.w3-container.w3-margin
+					legend Novo Comentário
+					br
+					.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden; display:flex; justify-content:center; align-items:center;")
+						image.w3-left(style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;", src="/images/imagensdeperfil/"+user.myphoto)
+						input(type='w3-input w3-round' id="commentText" name='nome' style="width: 80%;height: 100%;")
+					br
+					//input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
+					input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value="Postar" style="margin-bottom:10px;")
 		
-		// a lista de comentários irá estar aqui:
-		.w3-container.w3-border.w3-margin
-			ul.w3-ul(id="commentList")
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		p Made by Group XX - EngWeb2023
