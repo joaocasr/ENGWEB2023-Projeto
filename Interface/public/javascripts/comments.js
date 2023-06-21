@@ -19,8 +19,8 @@ $(function() {
         commentCount += 1;
         $("#commentList").append(contents);
 
-        var user = $("#addComment").val().split(";",2)[0]
-        var myphoto = $("#addComment").val().split(";",2)[1]
+        var user = $("#buttonvalue").val().split(";",2)[0]
+        var myphoto = $("#buttonvalue").val().split(";",2)[1]
         
         newComment = { _id: commentCount, dateTime: timeStamp, username:user,photo : myphoto, rua:id, p: $("#commentText").val() };
 

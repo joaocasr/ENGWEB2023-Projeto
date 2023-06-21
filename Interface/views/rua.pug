@@ -126,9 +126,10 @@ block content
 						image.w3-left(style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;", src="/images/imagensdeperfil/"+user.myphoto)
 						input(type='w3-input w3-round' id="commentText" name='nome' style="width: 80%;height: 100%;")
 					br
-					//input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
+					//primeiro botao é para passar os valores do user que fez o comentario ao fazer o post em jquery
+					input.w3-btn.w3-black.w3-mb-2(type='hidden' id="buttonvalue" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
 					input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value="Postar" style="margin-bottom:10px;")
-		
+					//tentar um botão com um formato diferente se tivermos tempo
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		p Made by Group XX - EngWeb2023
