@@ -4,7 +4,7 @@ module.exports.addComment = c => {
     return Comentario.find()
         .then(resposta => {
             id=parseInt(resposta.sort((a, b) => (parseInt(a['_id']) > parseInt(b['_id'])) ? 1 : -1)[resposta.length-1]['_id'])+1
-            c['_id']=id.toString()
+            c['_id']=id
 
             return Comentario.create(c)
                 .then(resposta => {
