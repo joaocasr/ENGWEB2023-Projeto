@@ -12,8 +12,8 @@ $(function() {
             console.log(p)
             var content = `
             <li style="min-height: 50px;display: flex;display: flex;flex-direction: column;">
-                <img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + p.photo + `">` +
-            `<b>` + p.username + " at " + p.dateTime.substring(0, 10) + ":</b>" + `<p style="margin-left: 16px;margin-top: 6px;">` + p.p + "</p>" +
+                <div style="display: flex;align-items: center;margin-top: 6px;margin-bottom: 6px;"><img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + p.photo + `">` +
+                `<b>` + p.username + " at " + p.dateTime.substring(0, 10) + ":</b></div>" + `<p style="margin-left: 16px;margin-top: 6px;">` + p.p + "</p>" +
             `</li>`;
 
             $("#commentList").append(content);
@@ -33,8 +33,8 @@ $(function() {
 
         var content = `
             <li style="min-height: 50px;display: flex;display: flex;flex-direction: column;">
-                <img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + myphoto + `">` +
-            `<b>` + user + " at " + dateTime.substring(0, 10) + ":</b> " + `<p style="margin-left: 16px;margin-top: 6px;">` + $("#commentText").val() + "</p>" + 
+                <div style="display: flex;align-items: center;margin-top: 6px;margin-bottom: 6px;"><img class="w3-left" style="width: 30px; height:30px; border-radius: 50%; margin-right:14px;" src="/images/imagensdeperfil/` + myphoto + `">` +
+                `<b>` + user + " at " + dateTime.substring(0, 10) + ":</b></div> " + `<p style="margin-left: 16px;margin-top: 6px;">` + $("#commentText").val() + "</p>" + 
             `</li>`;
         //commentCount += 1;
         $("#commentList").append(content);
