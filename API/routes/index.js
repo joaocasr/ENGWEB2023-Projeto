@@ -34,6 +34,17 @@ router.get('/api/ruas/related/:idRua',function(req, res, next) {
 })
 });
 
+router.get('/api/ruas/comentarios/:idRua',function(req, res, next) {
+  Comentario.getComments(req.params.idRua).then(comentarios => {
+    console.log("comentarios")
+    console.log(comentarios)
+    res.jsonp(comentarios);
+  })
+.catch(erro => {
+    console.log(erro)
+})
+});
+
 router.post('/api/ruas/comentarios/:idRua',function(req, res, next) {
   Comentario.addComment(req.body).then(ok => {
     res.jsonp(ok);
@@ -43,14 +54,6 @@ router.post('/api/ruas/comentarios/:idRua',function(req, res, next) {
 })
 });
 
-router.get('/api/ruas/comentarios/:idRua',function(req, res, next) {
-  Comentario.getComments(req.params.idRua).then(comentarios => {
-    res.jsonp(comentarios);
-  })
-.catch(erro => {
-    console.log(erro)
-})
-});
 
 router.post('/api/addrua', function(req, res, next) {
   Mapa.addRua(req.body).then(rua =>{

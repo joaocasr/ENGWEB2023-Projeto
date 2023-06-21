@@ -1,4 +1,4 @@
-extends layout
+extends layoutrua
 
 block content
 	.modal(id="modaldesc")
@@ -98,9 +98,9 @@ block content
 				legend Novo Comentário
 				br
 				.w3-container(style="float: none; width: auto; height: 100%; overflow: hidden;")
-					input(type='w3-input w3-round' name='nome' style="width: 100%;height: 100%;" id="commentText")
+					input(type='w3-input w3-round' id="commentText" name='nome' style="width: 100%;height: 100%;")
 				br
-				input.w3-btn.w3-black.w3-mb-2(type='button' data-username=user.username data-photo=user.myphoto value='Adicionar Comentário' style="margin-bottom:10px;" id="addComment")
+				input.w3-btn.w3-black.w3-mb-2(type='button' id="addComment" value=user.username+";"+user.myphoto style="margin-bottom:10px;")
 		
 		// a lista de comentários irá estar aqui:
 		.w3-container.w3-border.w3-margin

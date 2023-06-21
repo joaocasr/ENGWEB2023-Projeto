@@ -1,16 +1,11 @@
 var mongoose = require('mongoose')
 
-
-var userSchema = new mongoose.Schema({
-    username: String,
-    photo: String 
-})
-
 var commentSchema = new mongoose.Schema({
     _id : Number,
     dateTime: String,
-    autor: userSchema,
-    rua: String,
+    username: String,
+    photo: String,
+    rua: Number,
     p: String
 })
 

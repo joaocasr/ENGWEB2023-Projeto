@@ -10,8 +10,8 @@ module.exports.addComment = c => {
         })
 }
 
-module.exports.getComentarios = id => {
-    return Comentario.find({rua: id})
+module.exports.getComments = id => {
+    return Comentario.find({"rua": id})
         .then(resposta => {
             return resposta
         })
