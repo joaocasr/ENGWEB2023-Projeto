@@ -37,12 +37,17 @@ var figuraSchema = new mongoose.Schema({
     path: String
 })
 
+var figurasAtuaisSchema = new mongoose.Schema({
+    nome: String
+})
+
 var mapaSchema = new mongoose.Schema({
     _id : String,
     nome: String,
     para: [paraSchema],
     listacasas: [casaSchema],
-    figura: [figuraSchema]
+    figura: [figuraSchema],
+    figurasAtuais:[figurasAtuaisSchema]
 })
 
 module.exports = mongoose.model('streets',mapaSchema)

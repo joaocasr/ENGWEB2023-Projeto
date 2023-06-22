@@ -93,23 +93,24 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
   console.log("***DEBUG IMAGENS")
   console.log(req.files)
   console.log(req.body)
+  req.body.figura=[]
+  req.body.figurasAtuais=[]
 
   for (let i = 0; i < req.files.antigas.length; i++) {
     console.log(req.files.antigas[i].originalname)
     let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
     let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
-    req.body.figura=[]
-    req.body.figura[i]={
-      "legenda": req.files.antigas[i].originalname,
-      "path": newPath,
-      "id": req.files.antigas[i].originalname
-    }
     filesystem.rename(oldPath,newPath,erro =>{
       if(erro){
         console.log("erro")
       }
     })
-  
+    
+    req.body.figura[i]={
+        "legenda": req.files.antigas[i].originalname,
+        "path": "imagem/"+req.files.antigas[i].originalname,
+        "id": req.files.antigas[i].originalname
+    }    
   } 
 
   for (let i = 0; i < req.files.atuais.length; i++) {
@@ -117,16 +118,15 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
 
     let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
     let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
-    req.body.figurasAtuais=[]
-    req.body.figurasAtuais[i]={
-      "name": req.files.antigas[i].originalname
-    }
     filesystem.rename(oldPath,newPath,erro =>{
       if(erro){
         console.log("erro")
       }
     })
-  
+    
+    req.body.figurasAtuais[i]={
+    "nome": req.files.atuais[i].originalname
+    }
   } 
   console.log("HERE IT ISSS")
   console.log(req.body)
