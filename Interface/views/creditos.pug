@@ -13,7 +13,7 @@ html
                     a.w3-bar-item.w3-button.w3-padding-large(href="/") LOGIN
                 p(style="display:flex;justify-content:flex-end;margin-right:30px;")
                     a.w3-bar-item.w3-button.w3-padding-large(href="/logout") LOGOUT
-    
+
         header.w3-display-container.w3-content.w3-wide(style="height: 50px;", id="home")
 
         .w3-content.w3-padding(style="max-width:1564px")
@@ -50,13 +50,13 @@ html
                         #{JSON.stringify(a, null, 2)}
                 | Como podemos ver cada uma das ruas terá três lista de ruas relacionadas por lugar, entidade e data.     
 
-            li 
-                <b>Dataset de Comentarios</b> 
-            | O modelo do dataset é constituído por uma data,um parágrafo, um identificador da rua correspondente ao comentário, assim como informação respetiva ao utilizador desse comentário.
-            | O POST e o GET de comentários são feitos com o auxílio do JQuery. A informação do utilizador encontra-se no value de um input com type hidden (username e imagem de perfil). 
-            li 
-                <b>Dataset de Utilizadores</b> 
-            | O modelo do dataset é constituído por um username,password, email, nome, data de criação da conta, imagem de perfil, o papel do utilizador no sistema, e se este se encontra ativo.
+                li 
+                    p(style="font-weight: 600 !important;") Dataset de Comentarios: 
+                | O modelo do dataset é constituído por uma data,um parágrafo, um identificador da rua correspondente ao comentário, assim como informação respetiva ao utilizador desse comentário.
+                | O POST e o GET de comentários são feitos com o auxílio do JQuery. A informação do utilizador encontra-se no value de um input com type hidden (username e imagem de perfil). 
+                li 
+                    p(style="font-weight: 600 !important;") Dataset de Utilizadores: 
+                | O modelo do dataset é constituído por um username,password, email, nome, data de criação da conta, imagem de perfil, o papel do utilizador no sistema, e se este se encontra ativo.
         
         h6 Serviços implementados
         ul 
@@ -75,10 +75,13 @@ html
             br
             b POST /api/ruas/comentarios
             br
-            b POST /api/addrua
+            b POST /api/ruas
             br
-            b DELETE /api/delete/:id
+            b DELETE /api/ruas/:id
             br
             li Interface
             li Autenticação
-        
+            br
+    footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
+        a(href="/creditos") Créditos
+        p ©2023 All Rights Reserved
