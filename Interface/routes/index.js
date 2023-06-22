@@ -168,6 +168,10 @@ router.get("/register",verificaToken,function(req,res) {
   res.render("register")
 })
 
+router.get("/creditos", function(req,res) {
+  res.render("creditos")
+})
+
 router.post("/register",upload.single('myphoto'), (req, res) => {
   let oldPath = path.resolve(__dirname, '..', req.file.path);
   let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
