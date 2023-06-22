@@ -72,14 +72,11 @@ block content
 			// Fotos Atuais
 			.l3.m6.w3-margin-bottom
 				.w3-row-padding
-					.w3-col.l6.w3-margin-bottom
-					.w3-display-container
-						.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border Atualmente
-						img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ street.nome +"-Vista1.JPG" alt="House" style="width:100%;min-height:600px;object-fit: cover;")
-
-					.w3-col.l6.w3-margin-bottom
-					.w3-display-container
-						img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ street.figurasAtuais.vista2 alt="House" style="width:100%;min-height:600px;object-fit: cover;")
+					each atual in street.figurasAtuais
+						.w3-col.l6.w3-margin-bottom
+						.w3-display-container
+							.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border Atualmente
+							img.w3-round.w3-border(src="/images/dados/materialBase/atual/"+ atual.name alt="House" style="width:100%;min-height:600px;object-fit: cover;")
 
 				br
 				br

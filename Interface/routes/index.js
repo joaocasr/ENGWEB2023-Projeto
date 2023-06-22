@@ -89,22 +89,30 @@ router.get('/add',verificaToken , function(req, res, next) {
   res.render('add')
 });
 
-router.post('/add',verificaToken ,upload.single('figura'), function(req, res, next) {
-  console.log(req.file.originalname)
-  let oldPath = path.resolve(__dirname, '..', req.file.path);
-  let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.file.originalname);
+router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10 }, { name: 'atuais', maxCount: 10 }]), function(req, res, next) {
+  console.log("***DEBUG IMAGENS")
+  console.log(req.files)
+  console.log(req.body)
+
+  for (let i = 0; i < req.files.length; i++) {
+    let oldPath = path.resolve(__dirname, '..', req.files[i].path);
+    let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files[i].originalname);
+    
+    filesystem.rename(oldPath,newPath,erro =>{
+      if(erro){
+        console.log("erro")
+      }
+    })
   
-  filesystem.rename(oldPath,newPath,erro =>{
-    if(erro){
-      console.log("erro")
-    }
-  })
+  } 
+  
   axios.post(env.apiAccessPoint + "/addrua",req.body)
   .then(response => {
     res.render('add') //adicionar arg extra a informar de que correu bem
   }).catch(err => {
     res.render('error', {error: err})
   })
+  
 });
 
 router.post("/", (req, res) => {

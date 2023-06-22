@@ -135,10 +135,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua do Campo-Vista1.JPG",
-               "vista2": "Rua do Campo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua do Campo-Vista1.JPG"
+               },
+               {
+                    "name": "Rua do Campo-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -511,10 +515,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Nova-Vista1.JPG",
-               "vista2": "Rua Nova-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Nova-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Nova-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -675,10 +683,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Açougues velhos-Vista1.JPG",
-               "vista2": "Rua dos Açougues velhos-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Açougues velhos-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Açougues velhos-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -948,10 +960,14 @@
                     "foro": "260 reis e 1 capão"
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Praça do Pão-Vista1.JPG",
-               "vista2": "Praça do Pão-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Praça do Pão-Vista1.JPG"
+               },
+               {
+                    "name": "Praça do Pão-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -1259,10 +1275,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua das Oucias-Vista1.JPG",
-               "vista2": "Rua das Oucias-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua das Oucias-Vista1.JPG"
+               },
+               {
+                    "name": "Rua das Oucias-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -2088,10 +2108,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua do Souto Porta do Souto-Vista1.JPG",
-               "vista2": "Rua do Souto Porta do Souto-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua do Souto Porta do Souto-Vista1.JPG"
+               },
+               {
+                    "name": "Rua do Souto Porta do Souto-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -2231,10 +2255,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Loura e Terreiro do Castelo-Vista1.JPG",
-               "vista2": "Loura e Terreiro do Castelo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Loura e Terreiro do Castelo-Vista1.JPG"
+               },
+               {
+                    "name": "Loura e Terreiro do Castelo-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -2522,10 +2550,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Janes-Vista1.JPG",
-               "vista2": "Rua de Janes-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Janes-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Janes-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -2606,10 +2638,14 @@
           ],
           "_id": "9",
           "nome": "Rua de S.João",
-          "figurasAtuais": {
-               "vista1": "Rua de S.João-Vista1.JPG",
-               "vista2": "Rua de S.João-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S.João-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S.João-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -2874,10 +2910,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Travessa da Rua de S. João para a do Forno-Vista1.JPG",
-               "vista2": "Travessa da Rua de S. João para a do Forno-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Travessa da Rua de S. João para a do Forno-Vista1.JPG"
+               },
+               {
+                    "name": "Travessa da Rua de S. João para a do Forno-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -3245,10 +3285,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Cegos ou do Forno-Vista1.JPG",
-               "vista2": "Rua dos Cegos ou do Forno-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Cegos ou do Forno-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Cegos ou do Forno-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -3488,10 +3532,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Travessa Da Rua Do Forno Para A Do Poco-Vista1.JPG",
-               "vista2": "Travessa Da Rua Do Forno Para A Do Poco-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Travessa Da Rua Do Forno Para A Do Poco-Vista1.JPG"
+               },
+               {
+                    "name": "Travessa Da Rua Do Forno Para A Do Poco-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -3699,10 +3747,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Pequena-Vista1.JPG",
-               "vista2": "Rua Pequena-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Pequena-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Pequena-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -4209,10 +4261,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Sta. Maria ou do Poço-Vista1.JPG",
-               "vista2": "Rua de Sta. Maria ou do Poço-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Sta. Maria ou do Poço-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Sta. Maria ou do Poço-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -4374,10 +4430,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Travessa da Rua do Poço para a de D.Gualdim-Vista1.JPG",
-               "vista2": "Travessa da Rua do Poço para a de D.Gualdim-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Travessa da Rua do Poço para a de D.Gualdim-Vista1.JPG"
+               },
+               {
+                    "name": "Travessa da Rua do Poço para a de D.Gualdim-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -4855,10 +4915,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de D. Gualdim-Vista1.JPG",
-               "vista2": "Rua de D. Gualdim-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de D. Gualdim-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de D. Gualdim-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -4967,10 +5031,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo-Vista1.JPG",
-               "vista2": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo-Vista1.JPG"
+               },
+               {
+                    "name": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -5176,10 +5244,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua das Chagas-Vista1.JPG",
-               "vista2": "Rua das Chagas-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua das Chagas-Vista1.JPG"
+               },
+               {
+                    "name": "Rua das Chagas-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -5433,10 +5505,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Sto. António-Vista1.JPG",
-               "vista2": "Rua de Sto. António-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Sto. António-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Sto. António-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -5615,10 +5691,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Terreiro de Sto. António e Postigo-Vista1.JPG",
-               "vista2": "Terreiro de Sto. António e Postigo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Terreiro de Sto. António e Postigo-Vista1.JPG"
+               },
+               {
+                    "name": "Terreiro de Sto. António e Postigo-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -5910,10 +5990,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Verde-Vista1.JPG",
-               "vista2": "Rua Verde-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Verde-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Verde-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -6455,10 +6539,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Maximinos-Vista1.JPG",
-               "vista2": "Rua de Maximinos-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Maximinos-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Maximinos-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -6804,10 +6892,14 @@
                     "vista": "Poente"
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Sapateiros e Rossio da Praça-Vista1.JPG",
-               "vista2": "Rua dos Sapateiros e Rossio da Praça-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Sapateiros e Rossio da Praça-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Sapateiros e Rossio da Praça-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -6956,10 +7048,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua da Vielinha-Vista1.JPG",
-               "vista2": "Rua da Vielinha-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua da Vielinha-Vista1.JPG"
+               },
+               {
+                    "name": "Rua da Vielinha-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -7138,10 +7234,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Campo de S. Sebastião e em Frente do Açougue-Vista1.JPG",
-               "vista2": "Campo de S. Sebastião e em Frente do Açougue-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Campo de S. Sebastião e em Frente do Açougue-Vista1.JPG"
+               },
+               {
+                    "name": "Campo de S. Sebastião e em Frente do Açougue-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -7348,10 +7448,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de S.Miguel O Anjo-Vista1.JPG",
-               "vista2": "Rua de S.Miguel O Anjo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S.Miguel O Anjo-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S.Miguel O Anjo-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -8091,10 +8195,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Da Cruz De Pedra-Vista1.JPG",
-               "vista2": "Rua Da Cruz De Pedra-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Da Cruz De Pedra-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Da Cruz De Pedra-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -8146,10 +8254,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Direita-Vista1.JPG",
-               "vista2": "Rua Direita-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Direita-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Direita-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -8213,10 +8325,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua do Beco-Vista1.JPG",
-               "vista2": "Rua do Beco-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua do Beco-Vista1.JPG"
+               },
+               {
+                    "name": "Rua do Beco-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -8380,10 +8496,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Cangosta De S. Sebastião-Vista1.JPG",
-               "vista2": "Cangosta De S. Sebastião-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Cangosta De S. Sebastião-Vista1.JPG"
+               },
+               {
+                    "name": "Cangosta De S. Sebastião-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -8547,10 +8667,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua do Alcaide-Vista1.JPG",
-               "vista2": "Rua do Alcaide-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua do Alcaide-Vista1.JPG"
+               },
+               {
+                    "name": "Rua do Alcaide-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -9019,10 +9143,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Pelames-Vista1.JPG",
-               "vista2": "Rua dos Pelames-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Pelames-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Pelames-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -9730,10 +9858,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Campo de S. Tiago-Vista1.JPG",
-               "vista2": "Campo de S. Tiago-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Campo de S. Tiago-Vista1.JPG"
+               },
+               {
+                    "name": "Campo de S. Tiago-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -9870,10 +10002,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Cangosta das Cruzes-Vista1.JPG",
-               "vista2": "Cangosta das Cruzes-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Cangosta das Cruzes-Vista1.JPG"
+               },
+               {
+                    "name": "Cangosta das Cruzes-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -10144,10 +10280,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de S. Marcos-Vista1.JPG",
-               "vista2": "Rua de S. Marcos-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S. Marcos-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S. Marcos-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -10599,10 +10739,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua das Águas-Vista1.JPG",
-               "vista2": "Rua das Águas-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua das Águas-Vista1.JPG"
+               },
+               {
+                    "name": "Rua das Águas-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -11528,10 +11672,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de S. Lázaro-Vista1.JPG",
-               "vista2": "Rua de S. Lázaro-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S. Lázaro-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S. Lázaro-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -13241,10 +13389,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua da Ponte de Guimarães-Vista1.JPG",
-               "vista2": "Rua da Ponte de Guimarães-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua da Ponte de Guimarães-Vista1.JPG"
+               },
+               {
+                    "name": "Rua da Ponte de Guimarães-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -13691,10 +13843,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Ponte de Guimarães-Vista1.JPG",
-               "vista2": "Ponte de Guimarães-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Ponte de Guimarães-Vista1.JPG"
+               },
+               {
+                    "name": "Ponte de Guimarães-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -14063,10 +14219,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua do Paymanta-Vista1.JPG",
-               "vista2": "Rua do Paymanta-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua do Paymanta-Vista1.JPG"
+               },
+               {
+                    "name": "Rua do Paymanta-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -14350,10 +14510,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Campo de Santa Ana-Vista1.JPG",
-               "vista2": "Campo de Santa Ana-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Campo de Santa Ana-Vista1.JPG"
+               },
+               {
+                    "name": "Campo de Santa Ana-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -14942,10 +15106,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Campo e Calçada de Nossa Senhora a Branca-Vista1.JPG",
-               "vista2": "Campo e Calçada de Nossa Senhora a Branca-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Campo e Calçada de Nossa Senhora a Branca-Vista1.JPG"
+               },
+               {
+                    "name": "Campo e Calçada de Nossa Senhora a Branca-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -15798,10 +15966,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara-Vista1.JPG",
-               "vista2": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara-Vista1.JPG"
+               },
+               {
+                    "name": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -16287,10 +16459,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua da Fonte da Carcova-Vista1.JPG",
-               "vista2": "Rua da Fonte da Carcova-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua da Fonte da Carcova-Vista1.JPG"
+               },
+               {
+                    "name": "Rua da Fonte da Carcova-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -17266,10 +17442,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Chãos de Baixo-Vista1.JPG",
-               "vista2": "Rua dos Chãos de Baixo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Chãos de Baixo-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Chãos de Baixo-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -18010,10 +18190,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Santo André-Vista1.JPG",
-               "vista2": "Rua de Santo André-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Santo André-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Santo André-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -18340,10 +18524,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de S. Barnabé-Vista1.JPG",
-               "vista2": "Rua de S. Barnabé-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S. Barnabé-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S. Barnabé-Vista2.JPG"
+               }
+          ]
      },
      {
           "figura": [
@@ -18590,10 +18778,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Praça do Gavião-Vista1.JPG",
-               "vista2": "Praça do Gavião-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Praça do Gavião-Vista1.JPG"
+               },
+               {
+                    "name": "Praça do Gavião-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -19125,10 +19317,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de S. Gonçalo-Vista1.JPG",
-               "vista2": "Rua de S. Gonçalo-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de S. Gonçalo-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de S. Gonçalo-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -19385,10 +19581,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Nossa Senhora de Guadalupe-Vista1.JPG",
-               "vista2": "Rua de Nossa Senhora de Guadalupe-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Nossa Senhora de Guadalupe-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Nossa Senhora de Guadalupe-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -19896,10 +20096,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua Da Oliveira-Vista1.JPG",
-               "vista2": "Rua Da Oliveira-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua Da Oliveira-Vista1.JPG"
+               },
+               {
+                    "name": "Rua Da Oliveira-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -20226,10 +20430,14 @@
                     "vista": "Norte"
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua em Frente de Nossa Senhora de Guadalupe-Vista1.JPG",
-               "vista2": "Rua em Frente de Nossa Senhora de Guadalupe-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua em Frente de Nossa Senhora de Guadalupe-Vista1.JPG"
+               },
+               {
+                    "name": "Rua em Frente de Nossa Senhora de Guadalupe-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -22368,10 +22576,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Chãos de Cima-Vista1.JPG",
-               "vista2": "Rua dos Chãos de Cima-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Chãos de Cima-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Chãos de Cima-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -23316,10 +23528,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua das Palhotas-Vista1.JPG",
-               "vista2": "Rua das Palhotas-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua das Palhotas-Vista1.JPG"
+               },
+               {
+                    "name": "Rua das Palhotas-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -23972,10 +24188,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua de Infias-Vista1.JPG",
-               "vista2": "Rua de Infias-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua de Infias-Vista1.JPG"
+               },
+               {
+                    "name": "Rua de Infias-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -24405,10 +24625,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Cangosta da Escoura-Vista1.JPG",
-               "vista2": "Cangosta da Escoura-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Cangosta da Escoura-Vista1.JPG"
+               },
+               {
+                    "name": "Cangosta da Escoura-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -24488,10 +24712,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Estrada de Real-Vista1.JPG",
-               "vista2": "Estrada de Real-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Estrada de Real-Vista1.JPG"
+               },
+               {
+                    "name": "Estrada de Real-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -25217,10 +25445,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua da Cónega-Vista1.JPG",
-               "vista2": "Rua da Cónega-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua da Cónega-Vista1.JPG"
+               },
+               {
+                    "name": "Rua da Cónega-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -25307,10 +25539,14 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Rua dos Biscaínhos-Vista1.JPG",
-               "vista2": "Rua dos Biscaínhos-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Rua dos Biscaínhos-Vista1.JPG"
+               },
+               {
+                    "name": "Rua dos Biscaínhos-Vista2.JPG"
+               }
+          ]
      },
      {
           "para": [
@@ -25372,9 +25608,13 @@
                     }
                }
           ],
-          "figurasAtuais": {
-               "vista1": "Cangosta da Rua das Águas-Vista1.JPG",
-               "vista2": "Cangosta da Rua das Águas-Vista2.JPG"
-          }
+          "figurasAtuais": [
+               {
+                    "name": "Cangosta da Rua das Águas-Vista1.JPG"
+               },
+               {
+                    "name": "Cangosta da Rua das Águas-Vista2.JPG"
+               }
+          ]
      }
 ]

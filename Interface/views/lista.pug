@@ -38,7 +38,7 @@ block content
 						.w3-display-container
 							.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border 
 								a(href="/ruas/"+streets[r]._id) #{streets[r].nome}
-							img.w3-round(src="/images/dados/materialBase/atual/"+ streets[r].figurasAtuais.vista1 ,alt="House", style="width:100%;height:400px;object-fit: cover;")
+							img.w3-round(src="/images/dados/materialBase/atual/"+ streets[r].figurasAtuais[0].name ,alt="House", style="width:100%;height:400px;object-fit: cover;")
 							- n = n+1
 	
 	br
