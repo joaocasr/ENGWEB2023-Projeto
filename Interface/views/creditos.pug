@@ -38,4 +38,31 @@ html
                 <b>Dataset de Comentarios</b> 
             | O modelo do dataset é constituído por uma data,um parágrafo, um identificador da rua correspondente ao comentário, assim como informação respetiva ao utilizador desse comentário.
             | O POST e o GET de comentários são feitos com o auxílio do JQuery. A informação do utilizador encontra-se no value de um input com type hidden (username e imagem de perfil). 
-    
+            li 
+                <b>Dataset de Utilizadores</b> 
+            | O modelo do dataset é constituído por um username,password, email, nome, data de criação da conta, imagem de perfil, o papel do utilizador no sistema, e se este se encontra ativo.
+        
+        h6 Serviços implementados
+        ul 
+            li Api de dados
+            | A api de dados responde na porta 7777 e responde às seguintes rotas: 
+            br
+            b GET /api/ruas 
+            br
+            b GET /api/ruas/:idRua
+            br
+            b GET /api/ruas/related/:idRua
+            br
+            b GET /api/ruas/comentarios/:idRua
+            br
+            b GET /api/ruas/comentarios
+            br
+            b POST /api/ruas/comentarios
+            br
+            b POST /api/addrua
+            br
+            b DELETE /api/delete/:id
+            br
+            li Interface
+            li Autenticação
+        

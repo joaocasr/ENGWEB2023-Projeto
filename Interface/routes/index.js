@@ -77,7 +77,7 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
 
 
 router.get('/delete/:idRua',verificaToken , function(req, res, next) {
-    axios.delete(env.apiAccessPoint+"/delete/"+req.params.idRua)
+    axios.delete(env.apiAccessPoint+"/ruas/"+req.params.idRua)
     .then(ok =>{
         res.redirect('/ruas')
     }).catch(err => (
@@ -130,7 +130,7 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
   } 
   console.log("HERE IT ISSS")
   console.log(req.body)
-  axios.post(env.apiAccessPoint + "/addrua",req.body)
+  axios.post(env.apiAccessPoint + "/ruas",req.body)
   .then(response => {
     res.render('add') //adicionar arg extra a informar de que correu bem
   }).catch(err => {

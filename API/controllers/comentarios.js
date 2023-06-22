@@ -47,3 +47,14 @@ module.exports.getAllComments = () => {
             return erro
         })
 }
+
+
+module.exports.deleteAllComments =idRua => {
+    return Comentario.deleteMany({"rua":idRua})
+        .then(resposta => {
+            return resposta
+        })
+        .catch(erro => {
+            return erro
+        })
+}

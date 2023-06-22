@@ -66,7 +66,7 @@ router.get('/api/ruas/comentarios/',function(req, res, next) {
 })
 });
 
-router.post('/api/addrua', function(req, res, next) {
+router.post('/api/ruas', function(req, res, next) {
   Mapa.addRua(req.body).then(rua =>{
     console.log("Rua adicionado com sucesso :" + rua)
       relatedpara.getStreetspara(rua).then(relacionadas =>{
@@ -85,13 +85,19 @@ router.post('/api/addrua', function(req, res, next) {
   })
 });
 
-router.delete('/api/delete/:id', function(req, res, next) {
+router.delete('/api/ruas/:id', function(req, res, next) {
     Mapa.deleteRua(req.params.id).then(ok =>{
       Related.deleteRuaRelacionados(req.params.id)
       .then(delok =>{
           Related.deleteRelated(req.params.id)
           .then(relok =>{
-              res.jsonp(relok)
+            Comentario.deleteAllComments(req.params.id)
+            .then(del =>{
+                res.jsonp(del)
+            }).catch(erro => {
+              console.log(erro)
+            })
+  
           }).catch(erro => {
             console.log(erro)
           })
