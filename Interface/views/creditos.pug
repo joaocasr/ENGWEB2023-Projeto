@@ -1,17 +1,41 @@
 doctype html
 html
-  head
-    title Relatório
-  body
-    h1 Relatório do Projeto de Ruas de Braga
-    p Data de entrega: 2023-06-24 
-    p UC: Engenharia Web - 2023
-    p O projeto foi desenvolvido pelos seguintes elementos:
-    p 
-      ul
-        li
-          a(href="https://github.com/0HenriqueFernandes0") 0HenriqueFernandes0
-        li 
-          a(href="https://github.com/joaocasr") joaocasr 
-        li 
-          a(href="https://github.com/Cavalex") Cavalex
+    head
+        title Relatório
+        link(rel='stylesheet', type='text/css', href='/stylesheets/w3.css')
+    body.w3-container
+        h1.w3-card.w3-black Relatório do Projeto de Ruas de Braga
+        fieldset 
+            p.w3-panel Data de entrega: 2023-06-24
+            p.w3-panel UC: Engenharia Web - 2023
+            p.w3-panel O projeto foi desenvolvido pelos seguintes elementos:
+            ul.w3-ul
+                li
+                    a(href="https://github.com/0HenriqueFernandes0", class="w3-hover-text-blue") 0HenriqueFernandes0
+                li
+                    a(href="https://github.com/joaocasr", class="w3-hover-text-blue") João Paulo Peixoto Castro, A97223 - joaocasr
+                li
+                    a(href="https://github.com/Cavalex", class="w3-hover-text-blue") Cavalex
+        ul 
+            li 
+                <b>Dataset de Ruas</b> 
+            | O dataset principal era  constituído por 60 Ficheiros XML, sendo que cada um possuía informações de cada uma das ruas de Braga, nomeadamente, casas,imagens, descrição, proprietários, rendas, etc...
+            | Como ponto de partida foi desenvolvido um script em python que vai iterar por cada um dos ficheiros presentes na diretoria dos dados e irá converté-los para um formato json. Para isso recorremos a 
+            | um módulo python 'xmltodict'. Foi feito um tratamento adicional como a inserção de identificadores _id, alteracao da algumas estruturas de dados de certos campos, adição de expressões regulares de
+            | substituição, de forma a permitir a interpolação de tags em pug, entre outros procedimentos.
+
+            li 
+                <b>Dataset de Ruas Relacionadas</b>
+            | O dataset de ruas relacionadas foi construído com o auxílio do script python 'ruas_relacionadas.py' que tem como entrada o streetdb.json (dataset das ruas). Para cada uma das ruas verificámos se existia 
+            | uma rua com a mesma palavra-chave de um dado tipo. Logo, cada uma das ruas terá um dicionário semelhante a:
+            - var a= "{ _id: xxx, nome: xxx,lugares : [{id:...,nome:....,atributo:....},...] ,entidades=[{id:...,nome:....,atributo:....},...], data=[{id:...,nome:....,atributo:....},...] }"
+            pre
+                code.
+                    #{JSON.stringify(a, null, 2)}
+            | Como podemos ver cada uma das ruas terá três lista de ruas relacionadas por lugar, entidade e data.     
+
+            li 
+                <b>Dataset de Comentarios</b> 
+            | O modelo do dataset é constituído por uma data,um parágrafo, um identificador da rua correspondente ao comentário, assim como informação respetiva ao utilizador desse comentário.
+            | O POST e o GET de comentários são feitos com o auxílio do JQuery. A informação do utilizador encontra-se no value de um input com type hidden (username e imagem de perfil). 
+    
