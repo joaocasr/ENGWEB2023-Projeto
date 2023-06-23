@@ -11,63 +11,74 @@ block content
 			p(style="display:flex;justify-content:flex-end;margin-right:30px;")
 				a.w3-bar-item.w3-button.w3-padding-large(href="/logout") LOGOUT
 				
-	.w3-card-4(style='max-width:1564px; margin-top:100px; margin-left: 10%; margin-right: 10%;')
+	br
+
+	.w3-card-4.w3-round(style='max-width:1564px; margin-top:100px; margin-left: 10%; margin-right: 10%;')
+		
+		
 		header.w3-container
-			h2.w3-center Nova Rua
+			h2.w3-center(style="font-weight: 600 !important;") Nova Rua
 		form.w3-container.w3-center(method='POST' enctype="multipart/form-data")
+
 			fieldset
 				legend Nome da Rua
 				input#nomeRua(type='w3-input w3-round' name='nome')
 				br
 				br
+
 			fieldset
-				legend Descriçao da rua
+				legend Descrição da rua
 				input#para(type='w3-input w3-round' name='para' size="50")
 				br
 				br
-			label.w3-text-black
-				b Selecione imagens antigas da rua
-			input.w3-input.w3-border.w3-round.w3-margin-w3-light-grey(type="file" name="antigas" multiple)
-			label.w3-text-black
-				b Selecione imagens atuais da rua
-			input.w3-input.w3-border.w3-round.w3-margin-w3-light-grey(type="file" name="atuais" multiple)
+			
+			fieldset.w3-center
+				legend Selecione imagens antigas da rua
+				input.w3-input.w3-round(style="border:none; display:initial; width:auto;" type="file" name="antigas" multiple)
+
+			fieldset.w3-center
+				legend Selecione imagens atuais da rua
+				input.w3-input.w3-round(style="border:none; display:initial; width:auto;" type="file" name="atuais" multiple)
+				
 			fieldset
-				legend Atributos importantes a destacar da desccriçao
+				legend Atributos importantes a destacar da descrição
 				div(style='display:flex; justify-content:center;')
 					div
 						table#lugaresTabela
 							thead
 								th Lugar
-								th Tipo de entidade
-								th entidade
+								th Descrição
+								th Tipo de Entidade
+								th Entidade
 								th Data
 							tbody
 								tr
 									td
 										input(type='text' name='lugar')
 									td
+										input(type='text' name='descricao_lugar')
+									td
 										select#tipo(name='tipo' style='width: 203px;')
-											option(value='') Nenhuma op&ccedil;&atilde;o
-											option(value='pessoa') pessoa
-											option(value='inst') institui&ccedil;&atilde;o
-											option(value='inst') fam&iacute;lia
+											option(value='') Nenhuma Opção
+											option(value='pessoa') Pessoa
+											option(value='inst') Instituição
+											option(value='inst') Família
 									td
 										input(type='text' name='entidade')
 									td
 										input(type='number' name='data')
-						button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar mais atributos
+						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar mais atributos
 			fieldset
 				legend Casas da Rua
 				div(style='display:flex; justify-content:center;')
 					div
 						table#casasTabela
 							thead
-								tr
-								th Descri&ccedil;&atilde;o
+								th Descrição
 								th Enfiteuta
 								th Foro
 								th Data
-								th Numero da Porta
+								th Número da Porta
 							tbody
 								tr
 								td
@@ -80,9 +91,12 @@ block content
 									input(type='number' name='data_casa')
 								td
 									input(type='number' name='numero')
-						button.w3-btn.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
+						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
 			br
-			button.w3-btn.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar
+			button.w3-btn.w3-round.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar
+	
+	br
+	br
 
 	footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
 		a(href="/creditos") Créditos

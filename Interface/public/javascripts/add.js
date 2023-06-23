@@ -11,15 +11,17 @@ function addRowCasa() {
     foroCell.innerHTML = '<input type="text" name="foro" />';
     dataCell.innerHTML = '<input type="number" name="data_casa"/>';
     numeroCell.innerHTML = '<input type="number" name="numero"/>';
-    }
+}
 
 function addRowLugar() {
     var table = document.getElementById("lugaresTabela");
     var row = table.insertRow(-1);;
-    var lugarCell = row.insertCell(0);
-    var tipoCell = row.insertCell(1);
-    var entidadeCell = row.insertCell(2);
-    var dataCell = row.insertCell(3);
+    var descricaoCell = row.insertCell(0);
+    var lugarCell = row.insertCell(1);
+    var tipoCell = row.insertCell(2);
+    var entidadeCell = row.insertCell(3);
+    var dataCell = row.insertCell(4);
+    descricaoCell.innerHTML = '<input type="text" name="descricao_lugar" />';
     lugarCell.innerHTML = '<input type="text" name="lugar" />';
     tipoCell.innerHTML = `<select name="tipo" id="tipo" style="width: 203px;">
     <option value="">Nenhuma opção</option>
