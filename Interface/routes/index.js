@@ -77,7 +77,6 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
 
 
 router.get('/delete/:idRua',verificaToken , function(req, res, next) {
-  console.log("entrouu no deleteee")
     axios.delete(env.apiAccessPoint+"/ruas/"+req.params.idRua)
     .then(ok =>{
         res.redirect('/ruas')
@@ -139,6 +138,16 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
   })
   
 });
+
+router.get('/ruas/edit/:idRua',verificaToken , function(req, res, next) {
+    axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
+    .then(rua =>{
+        res.render('edit',{street:rua.data})
+    }).catch(err => (
+      res.render('error',{error: err})
+  ))
+});
+
 
 router.post("/", (req, res) => {
   console.log(req.body)

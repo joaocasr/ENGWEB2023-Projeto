@@ -2,7 +2,6 @@ extends layoutrua
 
 block content
 	.modal(id="modaldesc")
-	.modal(id="modalconfirm")
 	.w3-top
 		.w3-bar.w3-black.w3-card(style="height:100%;")
 			p.w3-bar-item.w3-padding-large(style="font-size:16px;") BRAGA STREET VIEW
@@ -21,6 +20,7 @@ block content
 		.w3-container.w3-padding-32(id="rua" style="display:flex; justify-content:space-between; align-items:left;align-items:center;")
 			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1; font-weight: 600 !important;") #{street.nome}
 			//a.w3-button.w3-black.w3-round(href="/delete/"+street._id) Eliminar
+			a.w3-button.w3-black.w3-round(margin-right:30px; href="/ruas/edit/"+street._id)= "Editar"
 			.w3-button.w3-black.w3-round(onclick=`showConfirm(${JSON.stringify({nome:street.nome,id:street._id})});`)= "Eliminar"
 
 		.w3-row-padding
