@@ -77,6 +77,7 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
 
 
 router.get('/delete/:idRua',verificaToken , function(req, res, next) {
+  console.log("entrouu no deleteee")
     axios.delete(env.apiAccessPoint+"/ruas/"+req.params.idRua)
     .then(ok =>{
         res.redirect('/ruas')

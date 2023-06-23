@@ -90,7 +90,7 @@ html
             | {"listacasas": {"$elemMatch": {"desc.para.lugar": {"$in": [lugar]}}}}]}), ou seja, procurou-se a presença de 'lugar' na 'lista de casas',nomeadamente na descrição das casas do para.lugar (lista) e no 'para' 
             | na descrição da rua na lista lugar . No entanto ao adicionarmos uma nova rua, também temos de ter em atenção que as restantes ruas já existentes têm que ter em conta a presença desta nova rua no seu índice de
             | ruas relacionadas, pelo que fizemos push da rua em questão no sentido reverso, como se mostra no exemplo seguinte: Relations.updateOne({"_id":obj.id},{$push:{lugares:{id:obj.nid,nome:obj.nome,atributo:obj.atributo}}}).
-            | Como este processo é feito de forma assíncrona, em que temos de esperar pela resposta das queries sobre a base de dados de ruas relacionadas, este processo pode ser um pouco lento, no entanto, como esse registo passa 
+            | Como este processo é feito de forma assíncrona, em que temos de esperar pela resposta das queries sobre a base de dados das coleções relations e streets, este processo pode ser um pouco lento, no entanto, como esse registo passa 
             | a ser inserido no final no dataset de relations, este processo só se realiza uma vez na criação.
             br
             b DELETE /api/ruas/:id
