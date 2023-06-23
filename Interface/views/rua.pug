@@ -17,8 +17,8 @@ block content
 	header.w3-display-container.w3-content.w3-wide(style="height: 50px;", id="home")
 
 	.w3-content.w3-padding(style="max-width:1564px")
-		.w3-container.w3-padding-32(id="rua" style="display:flex; justify-content:space-between; align-items:left;align-items:center;")
-			h3.w3-border-bottom.w3-border-light-grey.w3-padding-16(style="flex-grow:1; font-weight: 600 !important;") #{street.nome}
+		.w3-container.w3-padding-32.w3-border-bottom(id="rua" style="padding-bottom:0px !important; padding-left:0px !important; paddig-right:16px !important; margin-bottom:24px; margin-left:16px; margin-right:16px; display:flex; justify-content:space-between; align-items:left;align-items:center;")
+			h3.w3-padding-16(style="flex-grow:1; font-weight: 600 !important;") #{street.nome}
 			//a.w3-button.w3-black.w3-round(href="/delete/"+street._id) Eliminar
 			a.w3-button.w3-black.w3-round(style="margin-right:12px;", href="/ruas/edit/"+street._id)= "Editar"
 			.w3-button.w3-black.w3-round(onclick=`showConfirm(${JSON.stringify({nome:street.nome,id:street._id})});`)= "Eliminar"
