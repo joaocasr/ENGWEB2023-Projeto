@@ -32,6 +32,9 @@ html
                         a(href="https://github.com/joaocasr", class="w3-hover-text-blue") João Paulo Peixoto Castro, A97223 - joaocasr
                     li
                         a(href="https://github.com/Cavalex", class="w3-hover-text-blue") Mateus Pereira, A91924 - Cavalex
+
+            // Descrição dos Datasets
+            h5.w3-margin(style="font-weight: 600 !important;") Descrição dos Datasets:
             ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
                 li
                     p(style="font-weight: 600 !important;") Dataset de Ruas:
@@ -57,50 +60,56 @@ html
                 li 
                     p(style="font-weight: 600 !important;") Dataset de Utilizadores: 
                 | O modelo do dataset é constituído por um username,password, email, nome, data de criação da conta, imagem de perfil, o papel do utilizador no sistema, e se este se encontra ativo.
-        p
-            h6 Serviços implementados
-        ul 
-            li Api de dados
-            | A api de dados responde na porta 7777 e às seguintes rotas: 
-            br
-            b GET /api/ruas 
-            | - devolve uma lista com todas as ruas
-            br
-            b GET /api/ruas/:idRua
-            | - devolve o registo da rua com o identificador :idRua
-            br
-            b GET /api/ruas/related/:idRua
-            | - devolve um registo de ruas relacionadas com a rua de identificador :idRua
-            br
-            b GET /api/ruas/comentarios/:idRua
-            | - devolve uma lista de comentários respetivos à rua de identificador :idRua
-            br
-            b GET /api/ruas/comentarios
-            | - devolve uma lista de todos os comentários
-            br
-            b POST /api/ruas/comentarios
-            | - acrescenta um registo de um comentário à coleção de comentarios
-            br
-            b POST /api/ruas
-            | - acrescenta um registo de um rua à coleção streets
-            | No que toca à resposta a esta rota criou-se uma função auxiliar que vai percorrer as listas de para.lugar, para.data, e para.entidades da respetiva rua e verificar com queries definidas no controller
-            | a lista de ruas que possuem as palavras-chave em comum. Logo, este método teve que ser assíncrono de forma a esperar(await) que os dados da query realizada fossem obtidos em primeiro lugar. Estes dados foram 
-            | sendo armazenados num dicionário do tipo : const related ={"_id":rua._id,nome:rua.nome,lugares: [], data: [], entidades: [] }.
-            | Por exemplo,no que toca a procurar as ruas que possuem o mesmo lugar, foi desenvolvida a seguinte query: Mapa.find({"$or":[{"para": {"$elemMatch": {"lugar": {"$in": [lugar]}}}},
-            | {"listacasas": {"$elemMatch": {"desc.para.lugar": {"$in": [lugar]}}}}]}), ou seja, procurou-se a presença de 'lugar' na 'lista de casas',nomeadamente na descrição das casas do para.lugar (lista) e no 'para' 
-            | na descrição da rua na lista lugar . No entanto ao adicionarmos uma nova rua, também temos de ter em atenção que as restantes ruas já existentes têm que ter em conta a presença desta nova rua no seu índice de
-            | ruas relacionadas, pelo que fizemos push da rua em questão no sentido reverso, como se mostra no exemplo seguinte: Relations.updateOne({"_id":obj.id},{$push:{lugares:{id:obj.nid,nome:obj.nome,atributo:obj.atributo}}}).
-            | Como este processo é feito de forma assíncrona, em que temos de esperar pela resposta das queries sobre a base de dados das coleções relations e streets, este processo pode ser um pouco lento, no entanto, como esse registo passa 
-            | a ser inserido no final no dataset de relations, este processo só se realiza uma vez na criação.
-            br
-            b DELETE /api/ruas/:id
-            | - elimina um registo à coleção streets
-            | Nesta rota foi necessário ter o cuidado de remover as ruas relacionadas à rua com identificador :id, assim como eliminar os seus comentários respetivos de modo a termos consistência na base de dados.
-            br
-            li Interface
-            | Este serviço responde na porta 7778 e às seguintes rotas:
-            li Autenticação
-            br
+            
+            // Serviços implementados
+            h5.w3-margin(style="font-weight: 600 !important;") Serviços implementados:
+            ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
+                //p
+                //ul 
+                li
+                    p(style="font-weight: 600 !important;") Api de dados
+                | A api de dados responde na porta 7777 e às seguintes rotas: 
+                br
+                b GET /api/ruas 
+                | - devolve uma lista com todas as ruas
+                br
+                b GET /api/ruas/:idRua
+                | - devolve o registo da rua com o identificador :idRua
+                br
+                b GET /api/ruas/related/:idRua
+                | - devolve um registo de ruas relacionadas com a rua de identificador :idRua
+                br
+                b GET /api/ruas/comentarios/:idRua
+                | - devolve uma lista de comentários respetivos à rua de identificador :idRua
+                br
+                b GET /api/ruas/comentarios
+                | - devolve uma lista de todos os comentários
+                br
+                b POST /api/ruas/comentarios
+                | - acrescenta um registo de um comentário à coleção de comentarios
+                br
+                b POST /api/ruas
+                | - acrescenta um registo de um rua à coleção streets
+                | No que toca à resposta a esta rota criou-se uma função auxiliar que vai percorrer as listas de para.lugar, para.data, e para.entidades da respetiva rua e verificar com queries definidas no controller
+                | a lista de ruas que possuem as palavras-chave em comum. Logo, este método teve que ser assíncrono de forma a esperar(await) que os dados da query realizada fossem obtidos em primeiro lugar. Estes dados foram 
+                | sendo armazenados num dicionário do tipo : const related ={"_id":rua._id,nome:rua.nome,lugares: [], data: [], entidades: [] }.
+                | Por exemplo,no que toca a procurar as ruas que possuem o mesmo lugar, foi desenvolvida a seguinte query: Mapa.find({"$or":[{"para": {"$elemMatch": {"lugar": {"$in": [lugar]}}}},
+                | {"listacasas": {"$elemMatch": {"desc.para.lugar": {"$in": [lugar]}}}}]}), ou seja, procurou-se a presença de 'lugar' na 'lista de casas',nomeadamente na descrição das casas do para.lugar (lista) e no 'para' 
+                | na descrição da rua na lista lugar . No entanto ao adicionarmos uma nova rua, também temos de ter em atenção que as restantes ruas já existentes têm que ter em conta a presença desta nova rua no seu índice de
+                | ruas relacionadas, pelo que fizemos push da rua em questão no sentido reverso, como se mostra no exemplo seguinte: Relations.updateOne({"_id":obj.id},{$push:{lugares:{id:obj.nid,nome:obj.nome,atributo:obj.atributo}}}).
+                | Como este processo é feito de forma assíncrona, em que temos de esperar pela resposta das queries sobre a base de dados das coleções relations e streets, este processo pode ser um pouco lento, no entanto, como esse registo passa 
+                | a ser inserido no final no dataset de relations, este processo só se realiza uma vez na criação.
+                br
+                b DELETE /api/ruas/:id
+                | - elimina um registo à coleção streets
+                | Nesta rota foi necessário ter o cuidado de remover as ruas relacionadas à rua com identificador :id, assim como eliminar os seus comentários respetivos de modo a termos consistência na base de dados.
+                br
+                li
+                    p(style="font-weight: 600 !important;") Interface
+                | Este serviço responde na porta 7778 e às seguintes rotas:
+                li
+                    p(style="font-weight: 600 !important;") Autenticação
+                br
     footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
         a(href="/creditos") Créditos
         p ©2023 All Rights Reserved
