@@ -26,11 +26,11 @@ block content
 				br
 				br
 
-			fieldset
-				legend Descrição da rua
-				input#para(type='w3-input w3-round' name='para' size="50")
-				br
-				br
+			//fieldset
+			//	legend Descrição da rua
+			//	input#para(type='w3-input w3-round' name='para' size="50")
+			//	br
+			//	br
 			
 			fieldset.w3-center
 				legend Selecione imagens antigas da rua
@@ -46,17 +46,17 @@ block content
 					div
 						table#lugaresTabela
 							thead
-								th Lugar
 								th Descrição
+								th Lugar
 								th Tipo de Entidade
 								th Entidade
 								th Data
 							tbody
 								tr
 									td
-										input(type='text' name='lugar')
-									td
 										input(type='text' name='descricao_lugar')
+									td
+										input(type='text' name='lugar')
 									td
 										select#tipo(name='tipo' style='width: 203px;')
 											option(value='') Nenhuma Opção

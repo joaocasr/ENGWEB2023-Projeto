@@ -57,7 +57,6 @@ router.post('/api/ruas/comentarios',function(req, res, next) {
 });
 
 router.get('/api/ruas/comentarios/',function(req, res, next) {
-  console.log("entrou no sitio certo")
   Comentario.getAllComments().then(comentarios => {
     res.jsonp(comentarios);
   })
@@ -67,6 +66,8 @@ router.get('/api/ruas/comentarios/',function(req, res, next) {
 });
 
 router.post('/api/ruas', function(req, res, next) {
+  console.log("here")
+  console.log(req.body)
   Mapa.addRua(req.body).then(rua =>{
     console.log("Rua adicionado com sucesso :" + rua)
       relatedpara.getStreetspara(rua).then(relacionadas =>{

@@ -84,8 +84,8 @@ exports.format = function (rua){
                 'text':rua['entidade'][i]
                 }
         }
-    }
-
+    } 
+    
     if(typeof(rua['para'])=='string'){
         rua['para']=[{
             lugar: rua['lugar'],

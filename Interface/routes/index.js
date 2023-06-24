@@ -91,7 +91,6 @@ router.get('/add',verificaToken , function(req, res, next) {
 
 router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10 }, { name: 'atuais', maxCount: 10 }]), function(req, res, next) {
   console.log("***DEBUG IMAGENS")
-  console.log(req.files)
   console.log(req.body)
   req.body.figura=[]
   req.body.figurasAtuais=[]
@@ -128,6 +127,31 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
     "nome": req.files.atuais[i].originalname
     }
   } 
+
+  if(Array.isArray(req.body['tipo'])){
+    entidades=[]
+    for (let i = 0; i < req.body['entidade'].length; i++){
+      entidades[i]={
+          'tipo':req.body['tipo'][i],
+          'text':req.body['entidade'][i]
+      }
+    }
+  }
+  if(Array.isArray(req.body['descricao_lugar'])){
+    req.body['para']=[]
+    for (let i = 0; i < req.body['descricao_lugar'].length; i++){
+      if(!req.body['lugar'][i]) req.body['lugar'][i]=""
+      if(!req.body['data'][i]) req.body['data'][i]=""
+      if(!req.body['descricao_lugar'][i]) req.body['descricao_lugar'][i]=""
+      req.body['para'][i]={
+        "lugar": req.body['lugar'][i],
+        "data": req.body['data'][i],
+        "entidade": entidades[i],
+        "text": req.body['descricao_lugar'][i],
+        }
+    }
+  }
+
   console.log("HERE IT ISSS")
   console.log(req.body)
   axios.post(env.apiAccessPoint + "/ruas",req.body)
