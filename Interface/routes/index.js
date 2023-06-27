@@ -131,6 +131,11 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
           'text':req.body['entidade'][i]
       }
     }
+  }else{
+    single_entidade={
+      'tipo':req.body['tipo'],
+      'text':req.body['entidade']
+    }
   }
   if(Array.isArray(req.body['descricao_lugar'])){
     req.body['para']=[]
@@ -142,9 +147,20 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
         "lugar": req.body['lugar'][i],
         "data": req.body['data'][i],
         "entidade": entidades[i],
-        "text": req.body['descricao_lugar'][i],
+        "text": req.body['descricao_lugar'][i]
         }
     }
+  }else{
+    req.body['para']=[]
+    if(!req.body['lugar']) req.body['lugar']=""
+    if(!req.body['data']) req.body['data']=""
+    if(!req.body['descricao_lugar']) req.body['descricao_lugar']=""
+      req.body['para'][0]={
+        "lugar": req.body['lugar'],
+        "data": req.body['data'],
+        "entidade": single_entidade,
+        "text": req.body['descricao_lugar']
+        }
   }
 
   console.log("HERE IT ISSS")

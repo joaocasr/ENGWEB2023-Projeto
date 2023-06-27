@@ -70,23 +70,30 @@ html
                     p(style="font-weight: 600 !important;") Api de dados
                 | A api de dados responde na porta 7777 e às seguintes rotas: 
                 br
+                br
                 b GET /api/ruas 
                 | - devolve uma lista com todas as ruas
+                br
                 br
                 b GET /api/ruas/:idRua
                 | - devolve o registo da rua com o identificador :idRua
                 br
+                br
                 b GET /api/ruas/related/:idRua
                 | - devolve um registo de ruas relacionadas com a rua de identificador :idRua
+                br
                 br
                 b GET /api/ruas/comentarios/:idRua
                 | - devolve uma lista de comentários respetivos à rua de identificador :idRua
                 br
+                br
                 b GET /api/ruas/comentarios
                 | - devolve uma lista de todos os comentários
                 br
+                br
                 b POST /api/ruas/comentarios
                 | - acrescenta um registo de um comentário à coleção de comentarios
+                br
                 br
                 b POST /api/ruas
                 | - acrescenta um registo de um rua à coleção streets
@@ -100,13 +107,16 @@ html
                 | Como este processo é feito de forma assíncrona, em que temos de esperar pela resposta das queries sobre a base de dados das coleções relations e streets, este processo pode ser um pouco lento, no entanto, como esse registo passa 
                 | a ser inserido no final no dataset de relations, este processo só se realiza uma vez na criação.
                 br
+                br
                 b DELETE /api/ruas/:id
                 | - elimina um registo à coleção streets
                 | Nesta rota foi necessário ter o cuidado de remover as ruas relacionadas à rua com identificador :id, assim como eliminar os seus comentários respetivos de modo a termos consistência na base de dados.
                 br
+                br
                 li
                     p(style="font-weight: 600 !important;") Interface
                 | Este serviço responde na porta 7778 e irá responder aos seguintes endereços e rotas:
+                br
                 br
                 b http://localhost:7778/
                 | - Este endereço corresponde à página de autenticação de conta. Na rota GET / há uma verificação da existencia da token que vem nos cookies com o auxilio da libraria jsonwebtoken. Caso exista e a autenticação seja efetuada com sucesso
@@ -115,11 +125,13 @@ html
                 | dados das ruas realiza um método GET com o auxílio da libraria axios. Para este efeito foi realizado um axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token), em que 
                 | apiAccessPoint é uma variável correspondente ao ponto de acesso para obter os dados em json igual a http://localhost:7777/api .
                 br
+                br
                 b http://localhost:7778/ruas/
                 | - Este endereço corresponde à página da listagem de ruas. Como a página das ruas se trata de uma zona protegida é feita a verificação do token. Caso exista a token e não seja revogado
                 | é feito o next() sendo feito o próxima linha de execução, visto que estamos perante uma execução em pipeline. Caso contrário o utilizador é redirecionado para a página de autenticação.
                 | Os dados são obtidos com o método GET do axios do seguinte modo axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token). O resultado do callback passamos para fazer a renderização da 
                 | página com esses dados.
+                br
                 br
                 b http://localhost:7778/ruas/:idRua
                 | - Este endereço corresponde à página com informação da rua selecionada presenta na lista de ruas. À semelança da rota anterior há verificação do token, e depois 
@@ -127,10 +139,23 @@ html
                 | Dentro do método then é feita outra promessa que irá devolver as ruas relacionadas com a rua em questão axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token).
                 | Por fim, é feita a renderização da página da rua com essa informação.
                 br
+                br
                 b GET /delete/:idRua
                 | - É feita a verificação do token e de seguida é feito pedido DELETE do axios com o id da rua a eliminar: axios.delete(env.apiAccessPoint+"/ruas/"+req.params.idRua).
                 | Após este processo o utilizador é redirecionado para a página das ruas.
                 br
+                br
+                b GET /add
+                | - Este endereço corresponde à página para a adição de uma nova rua.
+                br
+                br                
+                b POST /add
+                | - Nesta rota é feita uma verificação do token, depois com o auxílio da libraria multer especificámos os campos de adição de imagens da rua nova a adicionar. Existem dois campos/fields, um é o 'antigas'
+                | e o outro é atuais (correspondem aos nomes dos inputs file). Por sua vez definimos um número máximo de 10 imagens em cada campo. No request files obtivemos o path destes ficheiros,e com a libraria filesystem 
+                | alteramos o path destas, de forma a ficarem hospedadas na diretoria public do serviço da interface. De seguida, procedeu-se à manipulacao do body do request, para obtermos as imagens com este novo path. Por último,
+                | fizemos uma travessia por cada uma das descrição lugar,data,entidade novas da rua a inserir, colocando-as numa lista de dicionários no body.
+                br
+                br                
                 li
                     p(style="font-weight: 600 !important;") Autenticação
                 br
