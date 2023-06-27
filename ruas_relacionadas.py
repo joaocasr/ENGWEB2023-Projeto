@@ -44,8 +44,7 @@ def estradas_rel(estradas):
                         break
             if 'entidades' in estradas[i] and 'entidades' in estradas[j] and i != j:
                 for entidade_i in estradas[i]['entidades'] :
-                    for entidade_j in estradas[j]['entidades'] :
-                        if entidade_i['text'] == entidade_j['text'] and entidade_i['tipo'] == entidade_j['tipo']:
+                    if entidade_i in estradas[j]['entidades'] :
                             estradas_relacionadas[i]['entidades'].append({'id':estradas_relacionadas[j]['_id'],'nome':estradas_relacionadas[j]['nome'],'atributo':entidade_i})
                             estradas_relacionadas[j]['entidades'].append({'id':estradas_relacionadas[i]['_id'],'nome':estradas_relacionadas[i]['nome'],'atributo':entidade_i})
                             break
