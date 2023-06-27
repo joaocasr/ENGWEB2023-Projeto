@@ -703,38 +703,6 @@
                 }
             },
             {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "6",
-                "nome": "Rua do Souto Porta do Souto",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "6",
-                "nome": "Rua do Souto Porta do Souto",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "6",
                 "nome": "Rua do Souto Porta do Souto",
                 "atributo": {
@@ -745,38 +713,6 @@
             {
                 "id": "8",
                 "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "8",
-                "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "8",
-                "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "9",
-                "nome": "Rua de S.João",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "9",
-                "nome": "Rua de S.João",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -847,30 +783,6 @@
                 }
             },
             {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "17",
                 "nome": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo",
                 "atributo": {
@@ -903,51 +815,11 @@
                 }
             },
             {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "25",
                 "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -999,30 +871,6 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
                 "atributo": {
@@ -1036,30 +884,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -1100,14 +924,6 @@
                 "atributo": {
                     "text": "André Soares",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "41",
-                "nome": "Campo de Santa Ana",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -2191,40 +2007,8 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "6",
                 "nome": "Rua do Souto Porta do Souto",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "6",
-                "nome": "Rua do Souto Porta do Souto",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "8",
-                "nome": "Rua de Janes",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -2247,32 +2031,8 @@
                 }
             },
             {
-                "id": "9",
-                "nome": "Rua de S.João",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "16",
                 "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -2295,32 +2055,8 @@
                 }
             },
             {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "33",
                 "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -2557,30 +2293,6 @@
             {
                 "id": "2",
                 "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -2872,30 +2584,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "5",
                 "nome": "Rua das Oucias",
                 "atributo": {
@@ -3032,30 +2720,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "5",
                 "nome": "Rua das Oucias",
                 "atributo": {
@@ -3088,22 +2752,6 @@
                 }
             },
             {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "20",
                 "nome": "Terreiro de Sto. António e Postigo",
                 "atributo": {
@@ -3120,32 +2768,8 @@
                 }
             },
             {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "33",
                 "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -4377,32 +4001,8 @@
                 }
             },
             {
-                "id": "14",
-                "nome": "Rua de Sta. Maria ou do Poço",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "15",
                 "nome": "Travessa da Rua do Poço para a de D.Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "15",
-                "nome": "Travessa da Rua do Poço para a de D.Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4425,32 +4025,8 @@
                 }
             },
             {
-                "id": "17",
-                "nome": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "18",
                 "nome": "Rua das Chagas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "18",
-                "nome": "Rua das Chagas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "19",
-                "nome": "Rua de Sto. António",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4473,32 +4049,8 @@
                 }
             },
             {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "26",
                 "nome": "Rua de S.Miguel O Anjo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "26",
-                "nome": "Rua de S.Miguel O Anjo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "27",
-                "nome": "Rua Da Cruz De Pedra",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4521,32 +4073,8 @@
                 }
             },
             {
-                "id": "29",
-                "nome": "Rua do Beco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "30",
                 "nome": "Cangosta De S. Sebastião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "30",
-                "nome": "Cangosta De S. Sebastião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "32",
-                "nome": "Rua dos Pelames",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4569,32 +4097,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "34",
-                "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4617,32 +4121,8 @@
                 }
             },
             {
-                "id": "36",
-                "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "37",
                 "nome": "Rua de S. Lázaro",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "37",
-                "nome": "Rua de S. Lázaro",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "39",
-                "nome": "Ponte de Guimarães",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4665,32 +4145,8 @@
                 }
             },
             {
-                "id": "40",
-                "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "41",
                 "nome": "Campo de Santa Ana",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "41",
-                "nome": "Campo de Santa Ana",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "42",
-                "nome": "Campo e Calçada de Nossa Senhora a Branca",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4713,32 +4169,8 @@
                 }
             },
             {
-                "id": "43",
-                "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "44",
                 "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4761,22 +4193,6 @@
                 }
             },
             {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "49",
                 "nome": "Rua de S. Gonçalo",
                 "atributo": {
@@ -4793,32 +4209,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -4988,14 +4380,6 @@
             {
                 "id": "12",
                 "nome": "Travessa Da Rua Do Forno Para A Do Poco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "13",
-                "nome": "Rua Pequena",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -5313,14 +4697,6 @@
             {
                 "id": "12",
                 "nome": "Travessa Da Rua Do Forno Para A Do Poco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "13",
-                "nome": "Rua Pequena",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -5855,30 +5231,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "3",
                 "nome": "Rua dos Açougues velhos",
                 "atributo": {
@@ -5892,14 +5244,6 @@
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
                 }
             },
             {
@@ -5935,14 +5279,6 @@
                 }
             },
             {
-                "id": "9",
-                "nome": "Rua de S.João",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "10",
                 "nome": "Travessa da Rua de S. João para a do Forno",
                 "atributo": {
@@ -5961,14 +5297,6 @@
             {
                 "id": "12",
                 "nome": "Travessa Da Rua Do Forno Para A Do Poco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "13",
-                "nome": "Rua Pequena",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -6031,35 +5359,11 @@
                 }
             },
             {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "25",
                 "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -6111,22 +5415,6 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
                 "atributo": {
@@ -6140,22 +5428,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -6380,14 +5652,6 @@
             {
                 "id": "12",
                 "nome": "Travessa Da Rua Do Forno Para A Do Poco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "13",
-                "nome": "Rua Pequena",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -6910,14 +6174,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -7246,14 +6502,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -7506,30 +6754,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "5",
                 "nome": "Rua das Oucias",
                 "atributo": {
@@ -7562,22 +6786,6 @@
                 }
             },
             {
-                "id": "9",
-                "nome": "Rua de S.João",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "16",
                 "nome": "Rua de D. Gualdim",
                 "atributo": {
@@ -7598,14 +6806,6 @@
                 "nome": "Campo de S. Tiago",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Frei Bartolomeu dos Mártires",
                     "tipo": "pessoa"
                 }
             },
@@ -8714,30 +7914,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "3",
                 "nome": "Rua dos Açougues velhos",
                 "atributo": {
@@ -8762,14 +7938,6 @@
                 }
             },
             {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "6",
                 "nome": "Rua do Souto Porta do Souto",
                 "atributo": {
@@ -8780,14 +7948,6 @@
             {
                 "id": "8",
                 "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "9",
-                "nome": "Rua de S.João",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -8834,14 +7994,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -8863,22 +8015,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -8922,32 +8058,8 @@
                 }
             },
             {
-                "id": "26",
-                "nome": "Rua de S.Miguel O Anjo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "27",
                 "nome": "Rua Da Cruz De Pedra",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "27",
-                "nome": "Rua Da Cruz De Pedra",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "29",
-                "nome": "Rua do Beco",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -8970,22 +8082,6 @@
                 }
             },
             {
-                "id": "30",
-                "nome": "Cangosta De S. Sebastião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "32",
-                "nome": "Rua dos Pelames",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "32",
                 "nome": "Rua dos Pelames",
                 "atributo": {
@@ -8999,38 +8095,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "34",
-                "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -9050,48 +8114,8 @@
                 }
             },
             {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "36",
                 "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "36",
-                "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "37",
-                "nome": "Rua de S. Lázaro",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -9114,32 +8138,8 @@
                 }
             },
             {
-                "id": "39",
-                "nome": "Ponte de Guimarães",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "40",
                 "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "40",
-                "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "41",
-                "nome": "Campo de Santa Ana",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -9162,32 +8162,8 @@
                 }
             },
             {
-                "id": "42",
-                "nome": "Campo e Calçada de Nossa Senhora a Branca",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "43",
                 "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "43",
-                "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -9210,32 +8186,8 @@
                 }
             },
             {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -9258,32 +8210,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -9567,14 +8495,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -9617,14 +8537,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -10069,14 +8981,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -10119,14 +9023,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -10580,14 +9476,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -10630,14 +9518,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -10904,14 +9784,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -10954,14 +9826,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -11602,14 +10466,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -11652,14 +10508,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12048,30 +10896,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "3",
                 "nome": "Rua dos Açougues velhos",
                 "atributo": {
@@ -12096,14 +10920,6 @@
                 }
             },
             {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "6",
                 "nome": "Rua do Souto Porta do Souto",
                 "atributo": {
@@ -12114,14 +10930,6 @@
             {
                 "id": "8",
                 "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "9",
-                "nome": "Rua de S.João",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -12168,14 +10976,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -12197,22 +10997,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -12248,43 +11032,11 @@
                 }
             },
             {
-                "id": "20",
-                "nome": "Terreiro de Sto. António e Postigo",
-                "atributo": {
-                    "text": "D. Frei Bartolomeu dos Mártires",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "25",
                 "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -12336,14 +11088,6 @@
                 }
             },
             {
-                "id": "34",
-                "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "35",
                 "nome": "Rua de S. Marcos",
                 "atributo": {
@@ -12352,64 +11096,8 @@
                 }
             },
             {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Câmara",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Câmara",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "36",
                 "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "36",
-                "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "37",
-                "nome": "Rua de S. Lázaro",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12432,32 +11120,8 @@
                 }
             },
             {
-                "id": "39",
-                "nome": "Ponte de Guimarães",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "40",
                 "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "40",
-                "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "41",
-                "nome": "Campo de Santa Ana",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12480,32 +11144,8 @@
                 }
             },
             {
-                "id": "42",
-                "nome": "Campo e Calçada de Nossa Senhora a Branca",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "43",
                 "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "43",
-                "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12528,32 +11168,8 @@
                 }
             },
             {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12576,32 +11192,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -12860,14 +11452,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -12924,14 +11508,6 @@
                 }
             },
             {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "26",
                 "nome": "Rua de S.Miguel O Anjo",
                 "atributo": {
@@ -12966,14 +11542,6 @@
             {
                 "id": "32",
                 "nome": "Rua dos Pelames",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -13374,30 +11942,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "3",
                 "nome": "Rua dos Açougues velhos",
                 "atributo": {
@@ -13422,14 +11966,6 @@
                 }
             },
             {
-                "id": "5",
-                "nome": "Rua das Oucias",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
                 "id": "6",
                 "nome": "Rua do Souto Porta do Souto",
                 "atributo": {
@@ -13440,14 +11976,6 @@
             {
                 "id": "8",
                 "nome": "Rua de Janes",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "9",
-                "nome": "Rua de S.João",
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
@@ -13494,14 +12022,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -13523,22 +12043,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "16",
-                "nome": "Rua de D. Gualdim",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -13579,30 +12083,6 @@
                 "atributo": {
                     "text": "D. Diogo de Sousa",
                     "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
                 }
             },
             {
@@ -13654,46 +12134,6 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Câmara",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "D. Diogo de Sousa",
-                    "tipo": "pessoa"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Câmara",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
                 "atributo": {
@@ -13710,32 +12150,8 @@
                 }
             },
             {
-                "id": "36",
-                "nome": "Rua das Águas",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "37",
                 "nome": "Rua de S. Lázaro",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "37",
-                "nome": "Rua de S. Lázaro",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "39",
-                "nome": "Ponte de Guimarães",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -13758,32 +12174,8 @@
                 }
             },
             {
-                "id": "40",
-                "nome": "Rua do Paymanta",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "41",
                 "nome": "Campo de Santa Ana",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "41",
-                "nome": "Campo de Santa Ana",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "42",
-                "nome": "Campo e Calçada de Nossa Senhora a Branca",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -13806,32 +12198,8 @@
                 }
             },
             {
-                "id": "43",
-                "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "44",
                 "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -13854,22 +12222,6 @@
                 }
             },
             {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "49",
                 "nome": "Rua de S. Gonçalo",
                 "atributo": {
@@ -13886,32 +12238,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -14220,14 +12548,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -14270,14 +12590,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -14340,24 +12652,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -14740,14 +13036,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -14790,14 +13078,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -14860,24 +13140,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -15309,14 +13573,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -15359,14 +13615,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -15429,24 +13677,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -15859,14 +14091,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -15909,14 +14133,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -15979,24 +14195,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -16321,14 +14521,6 @@
                 }
             },
             {
-                "id": "2",
-                "nome": "Rua Nova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "3",
                 "nome": "Rua dos Açougues velhos",
                 "atributo": {
@@ -16363,14 +14555,6 @@
             {
                 "id": "12",
                 "nome": "Travessa Da Rua Do Forno Para A Do Poco",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "13",
-                "nome": "Rua Pequena",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -16441,14 +14625,6 @@
                 }
             },
             {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "26",
                 "nome": "Rua de S.Miguel O Anjo",
                 "atributo": {
@@ -16497,24 +14673,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -16882,14 +15042,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -16932,14 +15084,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -17010,24 +15154,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -17461,14 +15589,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -17511,14 +15631,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -17581,24 +15693,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -17986,14 +16082,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -18036,14 +16124,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18106,24 +16186,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18202,56 +16266,8 @@
                 }
             },
             {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "47",
-                "nome": "Rua de S. Barnabé",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "48",
-                "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18274,56 +16290,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18727,14 +16695,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -18777,14 +16737,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18847,24 +16799,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -18929,22 +16865,6 @@
             {
                 "id": "43",
                 "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19168,14 +17088,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -19218,14 +17130,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19288,24 +17192,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19370,22 +17258,6 @@
             {
                 "id": "43",
                 "nome": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19730,14 +17602,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -19780,14 +17644,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19850,24 +17706,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -19946,22 +17786,6 @@
                 }
             },
             {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "47",
                 "nome": "Rua de S. Barnabé",
                 "atributo": {
@@ -19986,32 +17810,8 @@
                 }
             },
             {
-                "id": "50",
-                "nome": "Rua de Nossa Senhora de Guadalupe",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "51",
                 "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "51",
-                "nome": "Rua Da Oliveira",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "52",
-                "nome": "Rua em Frente de Nossa Senhora de Guadalupe",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20154,14 +17954,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -20204,14 +17996,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20274,24 +18058,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20370,22 +18138,6 @@
                 }
             },
             {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "47",
                 "nome": "Rua de S. Barnabé",
                 "atributo": {
@@ -20396,14 +18148,6 @@
             {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20562,14 +18306,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -20612,14 +18348,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20682,24 +18410,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20778,22 +18490,6 @@
                 }
             },
             {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "47",
                 "nome": "Rua de S. Barnabé",
                 "atributo": {
@@ -20804,14 +18500,6 @@
             {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -20962,14 +18650,6 @@
                 }
             },
             {
-                "id": "13",
-                "nome": "Rua Pequena",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "14",
                 "nome": "Rua de Sta. Maria ou do Poço",
                 "atributo": {
@@ -21012,14 +18692,6 @@
             {
                 "id": "19",
                 "nome": "Rua de Sto. António",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "25",
-                "nome": "Campo de S. Sebastião e em Frente do Açougue",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -21082,24 +18754,8 @@
                 }
             },
             {
-                "id": "33",
-                "nome": "Campo de S. Tiago",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "34",
                 "nome": "Cangosta das Cruzes",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "35",
-                "nome": "Rua de S. Marcos",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
@@ -21178,22 +18834,6 @@
                 }
             },
             {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "44",
-                "nome": "Rua da Fonte da Carcova",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
                 "id": "47",
                 "nome": "Rua de S. Barnabé",
                 "atributo": {
@@ -21204,14 +18844,6 @@
             {
                 "id": "48",
                 "nome": "Praça do Gavião",
-                "atributo": {
-                    "text": "Cabido",
-                    "tipo": "instituição"
-                }
-            },
-            {
-                "id": "49",
-                "nome": "Rua de S. Gonçalo",
                 "atributo": {
                     "text": "Cabido",
                     "tipo": "instituição"
