@@ -22,7 +22,7 @@ html
 
             //h1.w3-black.w3-margin.w3-padding Relatório do Projeto de Ruas de Braga
             fieldset.w3-margin.w3-center
-                p.w3-panel Data de entrega: 2023-06-24
+                p.w3-panel Data de entrega: 2023-07-02
                 p.w3-panel UC: Engenharia Web - 2023
                 p.w3-panel O projeto foi desenvolvido pelos seguintes elementos:
                 ul.w3-ul
@@ -155,7 +155,31 @@ html
                 | alteramos o path destas, de forma a ficarem hospedadas na diretoria public do serviço da interface. De seguida, procedeu-se à manipulacao do body do request, para obtermos as imagens com este novo path. Por último,
                 | fizemos uma travessia por cada uma das descrição lugar,data,entidade novas da rua a inserir, colocando-as numa lista de dicionários no body.
                 br
+                br 
+                b GET /ruas/edit/:idRua
+                | - Esta rota vai fazer um pedido GET do axios à API de forma a obter a rua pretendida. Essa informação será disponibilizada na página de edição de modo a proceder à alteração dos campos desejados.
+                br
                 br                
+                b POST /
+                | - Esta rota corresponde a fazer um pedido POST na página de autenticação. Logo, com o access point do serviço de autenticação, foi efetuado um pedido POST na rota /login. Por sua vez, a promessa devolvida contém o token
+                | que é colocada nos cookies. Por último, o utilizador caso tenha feito a autenticação com sucesso é redirecionado para a rota /ruas. Caso contrário, é feito o render da página login com uma mensagem informativa de que os dados 
+                | inseridos estão incorretos.
+                br
+                br                
+                b GET /login
+                | - Nesta rota é feito o render da página de autenticação após verificação do token. Ou seja, caso o utilizador queira ir para a página de autenticação, ora até para posteriormente registar uma nova conta, após estar conectado, esta 
+                | rota será utilizada.
+                br
+                br                 
+                b GET /register
+                | - Nesta rota é feito o render da página de registo de conta após verificação do token.
+                br
+                br                 
+                b POST /register
+                | - Nesta rota com o auxilio da libraria multer fazemos o upload de uma single image que corresponde à imagem do utilizador da conta criada. Por fim, é feito um pedido POST ao serviço de AUTH com o axios 
+                | da seguinte forma: axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body). No final, o utilizador é redirecionado novamente para a página de autenticação (res.redirect('/')).
+                br
+                br                 
                 li
                     p(style="font-weight: 600 !important;") Autenticação
                 br
