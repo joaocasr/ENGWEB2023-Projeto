@@ -51,10 +51,10 @@ html
                 pre
                     code.
                         #{JSON.stringify(a, null, 2)}
-                | Como podemos ver cada uma das ruas terá três lista de ruas relacionadas por lugar, entidade e data.     
+                | Como podemos ver cada uma das ruas terá três listas de ruas relacionadas, uma por lugar, outra por entidade e outra por data.     
 
                 li 
-                    p(style="font-weight: 600 !important;") Dataset de Comentarios: 
+                    p(style="font-weight: 600 !important;") Dataset de Comentários: 
                 | O modelo do dataset é constituído por uma data,um parágrafo, um identificador da rua correspondente ao comentário, assim como informação respetiva ao utilizador desse comentário.
                 | O POST e o GET de comentários são feitos com o auxílio do JQuery. A informação do utilizador encontra-se no value de um input com type hidden (username e imagem de perfil). 
                 li 
@@ -106,7 +106,31 @@ html
                 br
                 li
                     p(style="font-weight: 600 !important;") Interface
-                | Este serviço responde na porta 7778 e às seguintes rotas:
+                | Este serviço responde na porta 7778 e irá responder aos seguintes endereços e rotas:
+                br
+                b http://localhost:7778/
+                | - Este endereço corresponde à página de autenticação de conta. Na rota GET / há uma verificação da existencia da token que vem nos cookies com o auxilio da libraria jsonwebtoken. Caso exista e a autenticação seja efetuada com sucesso
+                | é colocada a token na query do URL e é feita a renderização da página de listas das ruas e passámos a informação do user que se encontra no payload do request, de forma a que
+                | quando seja apresentada a página, o utilizador tenha a garantia de que o processo foi bem sucedido e que está conectado ao sistema com a sua conta. A interface de modo a obter os
+                | dados das ruas realiza um método GET com o auxílio da libraria axios. Para este efeito foi realizado um axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token), em que 
+                | apiAccessPoint é uma variável correspondente ao ponto de acesso para obter os dados em json igual a http://localhost:7777/api .
+                br
+                b http://localhost:7778/ruas/
+                | - Este endereço corresponde à página da listagem de ruas. Como a página das ruas se trata de uma zona protegida é feita a verificação do token. Caso exista a token e não seja revogado
+                | é feito o next() sendo feito o próxima linha de execução, visto que estamos perante uma execução em pipeline. Caso contrário o utilizador é redirecionado para a página de autenticação.
+                | Os dados são obtidos com o método GET do axios do seguinte modo axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token). O resultado do callback passamos para fazer a renderização da 
+                | página com esses dados.
+                br
+                b http://localhost:7778/ruas/:idRua
+                | - Este endereço corresponde à página com informação da rua selecionada presenta na lista de ruas. À semelança da rota anterior há verificação do token, e depois 
+                | é feito um pedido axios GET que devolve uma promessa que terá os dados da rua em questão: axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua+"?token=" + req.cookies.token).
+                | Dentro do método then é feita outra promessa que irá devolver as ruas relacionadas com a rua em questão axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token).
+                | Por fim, é feita a renderização da página da rua com essa informação.
+                br
+                b GET /delete/:idRua
+                | - É feita a verificação do token e de seguida é feito pedido DELETE do axios com o id da rua a eliminar: axios.delete(env.apiAccessPoint+"/ruas/"+req.params.idRua).
+                | Após este processo o utilizador é redirecionado para a página das ruas.
+                br
                 li
                     p(style="font-weight: 600 !important;") Autenticação
                 br

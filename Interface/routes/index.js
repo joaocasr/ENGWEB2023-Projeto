@@ -47,22 +47,17 @@ router.get('/', function(req, res){
 router.get('/ruas',verificaToken,function(req, res, next) {
     console.log(current_user)
     axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
-        .then(mapa =>(
-          axios.get(env.apiAccessPoint+"/ruas"+"?token=" + req.cookies.token)
-          .then(mapa =>(
-              res.render('lista', { streets: mapa.data,user: current_user})
-          )).catch(err => (
-              res.render('error',{error: err})
-          ))
-          )).catch(err => (
-            res.render('error',{error: err})
+      .then(mapa =>(
+        res.render('lista', { streets: mapa.data,user: current_user})
+      )).catch(err => (
+        res.render('error',{error: err})
     ))
 });
 
 /* GET street page. */
 router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   console.log(current_user)
-  axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
+  axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua+"?token=" + req.cookies.token)
   .then(rua =>(
       axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
       .then(related =>(
