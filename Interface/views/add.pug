@@ -51,8 +51,9 @@ block content
 								th Tipo de Entidade
 								th Entidade
 								th Data
+								th Delete
 							tbody
-								tr
+								tr.row
 									td
 										input(type='text' name='descricao_lugar')
 									td
@@ -67,6 +68,8 @@ block content
 										input(type='text' name='entidade')
 									td
 										input(type='number' name='data')
+									td
+										button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar mais atributos
 			fieldset
 				legend Casas da Rua
@@ -79,8 +82,9 @@ block content
 								th Foro
 								th Data
 								th Número da Porta
+								th Delete
 							tbody
-								tr
+								tr.row
 								td
 									input(type='text' name='descricao')
 								td
@@ -91,6 +95,8 @@ block content
 									input(type='number' name='data_casa')
 								td
 									input(type='number' name='numero')
+								td
+									button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
 			br
 			button.w3-btn.w3-round.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar

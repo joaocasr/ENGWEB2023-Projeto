@@ -171,18 +171,124 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
   }).catch(err => {
     res.render('error', {error: err})
   })
-  
 });
 
 router.get('/ruas/edit/:idRua',verificaToken , function(req, res, next) {
     axios.get(env.apiAccessPoint+"/ruas/"+req.params.idRua)
     .then(rua =>{
-        res.render('edit',{street:rua.data})
+      //console.log(rua)
+      //console.log(rua.data)
+      res.render('edit',{street:rua.data})
     }).catch(err => (
       res.render('error',{error: err})
   ))
 });
 
+router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10 }, { name: 'atuais', maxCount: 10 }]),  function(req, res, next) {
+  
+  console.log("TEST do POST do edit")
+  console.log("req.files:", req.files)
+  
+  
+  // Initializing the arrays to store images data
+  req.body.figura=[]
+  req.body.figurasAtuais=[]
+
+  // Renaming and saving the path for antigas images
+  if (req.files && req.files.antigas && Object.keys(req.files.antigas).length === 0) {
+    for(let i = 0; i < req.files.antigas.length; i++){
+        let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
+        let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
+  
+        filesystem.rename(oldPath,newPath,erro =>{
+            if(erro){
+                console.log("erro")
+            }
+        })
+  
+        req.body.figura[i]={
+            "legenda": req.files.antigas[i].originalname,
+            "path": "imagem/"+req.files.antigas[i].originalname,
+            "id": req.files.antigas[i].originalname
+        }    
+    } 
+  }
+
+  // Renaming and saving the path for atuais images
+  if (req.files && req.files.atuais && Object.keys(req.files.atuais).length === 0) {
+    for(let i = 0; i < req.files.atuais.length; i++){
+        let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
+        let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
+        
+        filesystem.rename(oldPath,newPath,erro =>{
+            if(erro){
+                console.log("erro")
+            }
+        })
+
+        req.body.figurasAtuais[i]={
+            "nome": req.files.atuais[i].originalname
+        }
+    } 
+  }
+
+
+  req.body["_id"]=req.params.idRua
+  // Handle entidade, para and listacasas fields in a similar way as in /add
+  if(Array.isArray(req.body['tipo'])){
+    entidades=[]
+    for (let i = 0; i < req.body['entidade'].length; i++){
+      entidades[i]={
+          'tipo':req.body['tipo'][i],
+          'text':req.body['entidade'][i]
+      }
+    }
+  }else{
+    single_entidade={
+      'tipo':req.body['tipo'],
+      'text':req.body['entidade']
+    }
+  }
+  if(Array.isArray(req.body['descricao_lugar'])){
+    req.body['para']=[]
+    for (let i = 0; i < req.body['descricao_lugar'].length; i++){
+      if(!req.body['lugar'][i]) req.body['lugar'][i]=""
+      if(!req.body['data'][i]) req.body['data'][i]=""
+      if(!req.body['descricao_lugar'][i]) req.body['descricao_lugar'][i]=""
+      req.body['para'][i]={
+        "lugar": req.body['lugar'][i],
+        "data": req.body['data'][i],
+        "entidade": entidades[i],
+        "text": req.body['descricao_lugar'][i]
+        }
+    }
+  }else{
+    req.body['para']=[]
+    if(!req.body['lugar']) req.body['lugar']=""
+    if(!req.body['data']) req.body['data']=""
+    if(!req.body['descricao_lugar']) req.body['descricao_lugar']=""
+      req.body['para'][0]={
+        "lugar": req.body['lugar'],
+        "data": req.body['data'],
+        "entidade": single_entidade,
+        "text": req.body['descricao_lugar']
+        }
+  }
+
+  //console.log(req.body)
+  console.log("quase a acabar")
+
+  // Update the street info in the database
+  axios.put(env.apiAccessPoint + "/ruas", req.body)
+  .then(response => {
+      console.log("dentro do put")
+      res.redirect('/ruas'); //redirect to the list of streets
+  })
+  .catch(err => {
+      console.log("dentro do put, mas erro")
+      res.render('error', {error: err});
+  })
+});
 
 router.post("/", (req, res) => {
   console.log(req.body)

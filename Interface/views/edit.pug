@@ -18,7 +18,10 @@ block content
 		
 		header.w3-container
 			h2.w3-center(style="font-weight: 600 !important;") Nova Rua
-		form.w3-container.w3-center(method='POST' enctype="multipart/form-data")
+		form.w3-container.w3-center(method='POST' enctype="multipart/form-data" action="/ruas/edit/"+street._id)
+
+			// hidden por causa do street id
+			input(type='hidden' id='idRua' name='idRua' value=street._id)
 
 			fieldset
 				legend Nome da Rua
@@ -26,11 +29,6 @@ block content
 				br
 				br
 
-			//fieldset
-			//	legend Descrição da rua
-			//	input#para(type='w3-input w3-round' name='para' size="50")
-			//	br
-			//	br
 			
 			fieldset.w3-center
 				legend Selecione imagens antigas da rua
@@ -44,53 +42,74 @@ block content
 				legend Atributos importantes a destacar da descrição
 				div(style='display:flex; justify-content:center;')
 					div
-						table#lugaresTabela
+						table#lugaresTabela(style="border-spacing: 10px;")
 							thead
 								th Descrição
 								th Lugar
 								th Tipo de Entidade
 								th Entidade
 								th Data
+								th Delete
 							tbody
-								tr
-									td
-										input(type='text' name='descricao_lugar')
-									td
-										input(type='text' name='lugar')
-									td
-										select#tipo(name='tipo' style='width: 203px;')
-											option(value='') Nenhuma Opção
-											option(value='pessoa') Pessoa
-											option(value='inst') Instituição
-											option(value='inst') Família
-									td
-										input(type='text' name='entidade')
-									td
-										input(type='number' name='data')
+								each item, index in street.para
+									tr.row
+										td
+											input(type='text' name='descricao_lugar' value=item.text)
+										td
+											input(type='text' name='lugar' value=item.lugar.join(', '))
+										td
+											if Array.isArray(item.entidade) && item.entidade.length > 0
+												select#tipo(name='tipo' style='width: 203px;')
+													each entidade in item.entidade
+														if entidade.tipo
+															option(value=entidade.tipo) #{entidade.tipo}
+											else
+												select#tipo(name='tipo' style='width: 203px;')
+													option(value='') Nenhuma Opção
+										td
+											if Array.isArray(item.entidade) && item.entidade.length > 0
+												input(type='text' name='entidade' value=item.entidade[0].text)
+											else
+												input(type='text' name='entidade')
+										td
+											input(type='number' name='data' value=item.data.join(', '))
+										td
+											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar mais atributos
+
 			fieldset
 				legend Casas da Rua
 				div(style='display:flex; justify-content:center;')
 					div
-						table#casasTabela
+						table#casasTabela(style="border-spacing: 10px;")
 							thead
 								th Descrição
 								th Enfiteuta
 								th Foro
 								th Data
 								th Número da Porta
+								th Delete
 							tbody
-								tr
-								td
-									input(type='text' name='descricao')
-								td
-									input(type='text' name='enfiteuta')
-								td
-									input(type='text' name='foro')
-								td
-									input(type='number' name='data_casa')
-								td
-									input(type='number' name='numero')
+								each casa, index in street.listacasas
+									tr.row
+										td
+											if casa.desc.para
+												input(type='text' name='descricao' value=casa.desc.para.text)
+											else
+												input(type='text' name='descricao')
+										td
+											input(type='text' name='enfiteuta' value=casa.enfiteuta)
+										td
+											input(type='text' name='foro' value=casa.foro)
+										td
+											if casa.desc.para && casa.desc.para.data
+												input(type='number' name='data_casa' value=casa.desc.para.data.join(', '))
+											else
+												input(type='number' name='data_casa')
+										td
+											input(type='number' name='numero' value=casa.número)
+										td
+											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
 			br
 			button.w3-btn.w3-round.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar

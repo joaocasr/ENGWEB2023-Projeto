@@ -6,11 +6,14 @@ function addRowCasa() {
     var foroCell = row.insertCell(2);
     var dataCell = row.insertCell(3);
     var numeroCell = row.insertCell(4);
+    var deleteCell = row.insertCell(5);
+    row.className = 'row';
     descricaoCell.innerHTML = '<input type="text" name="descricao" />';
     enfiteutaCell.innerHTML = '<input type="text" name="enfiteuta" />';
     foroCell.innerHTML = '<input type="text" name="foro" />';
     dataCell.innerHTML = '<input type="number" name="data_casa"/>';
     numeroCell.innerHTML = '<input type="number" name="numero"/>';
+    deleteCell.innerHTML = '<button type="button" class="w3-btn w3-round w3-black w3-mb-2"  onclick="deleteRow(event)">Delete</button>';
 }
 
 function addRowLugar() {
@@ -21,6 +24,8 @@ function addRowLugar() {
     var tipoCell = row.insertCell(2);
     var entidadeCell = row.insertCell(3);
     var dataCell = row.insertCell(4);
+    var deleteCell = row.insertCell(5);
+    row.className = 'row';
     descricaoCell.innerHTML = '<input type="text" name="descricao_lugar" />';
     lugarCell.innerHTML = '<input type="text" name="lugar" />';
     tipoCell.innerHTML = `<select name="tipo" id="tipo" style="width: 203px;">
@@ -31,6 +36,15 @@ function addRowLugar() {
     </select>`;
     entidadeCell.innerHTML = '<input type="text" name="entidade" />';
     dataCell.innerHTML = '<input type="number" name="data"/>';
+    deleteCell.innerHTML = '<button type="button" class="w3-btn w3-round w3-black w3-mb-2"  onclick="deleteRow(event)">Delete</button>';
+}
+
+function deleteRow(event) {
+    let element = event.target;
+    while (element.className !== 'row') {
+        element = element.parentElement;
+    }
+    element.parentNode.removeChild(element);
 }
 
 exports.format = function (rua){
