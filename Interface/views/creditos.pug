@@ -182,7 +182,18 @@ html
                 br                 
                 li
                     p(style="font-weight: 600 !important;") Autenticação
+                | Este serviço responde na porta 7779 e responde às seguintes rotas:
                 br
+                br
+                b POST /users/register
+                | - Nesta rota é criado um novo utilizador, pelo que cria-se um objeto userModel com os campos que vêm no request body aquando a submissão do formulário de registrar uma conta.
+                br
+                br
+                b POST /users/login
+                | - Nesta rota é feito o sign de um utilizador com o jsonwebtoken, cujo segredo é EngWeb2023 e o tempo de expiração do token é de 3600 segundos, correspondente a 1 hora.
+                br
+                br
+
     footer.w3-center.w3-black.w3-padding-16.w3-container(style="margin-top: auto; width:100%;")
         a(href="/creditos") Créditos
         p ©2023 All Rights Reserved
