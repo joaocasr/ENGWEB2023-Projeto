@@ -252,23 +252,34 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   });
 
   req.body.descricao.forEach((item, i) => {
-  let casaObject = {
-    "desc": {
-      "para": {
-        "text": req.body.descricao[i],
-        "data": req.body.data_casa[i] ? req.body.data_casa[i].split(", ") : [],
-        "lugar": req.body.lugar_casa[i] ? req.body.lugar_casa[i].split(", ") : [],
-        "entidade": [{
-          "text": req.body.entidade_casa[i] ? req.body.entidade_casa[i].split(", ") : [],
-          "tipo": req.body.tipo_entidade_casa[i] ? req.body.tipo_entidade_casa[i].split(", ") : []
-        }]
-      }
-    },
-    "enfiteuta": req.body.enfiteuta[i],
-    "foro": req.body.foro[i],
-    "número": req.body.numero[i]
-  };
-  casaArray.push(casaObject);
+    
+    let entidadeTexts = req.body.entidade_casa[i] ? req.body.entidade_casa[i].split(", ") : [];
+    let entidadeTipos = req.body.tipo_entidade_casa[i] ? req.body.tipo_entidade_casa[i].split(", ") : [];
+    let entidades = [];
+
+    // Create an array of entidade objects
+    for (let j = 0; j < Math.min(entidadeTexts.length, entidadeTipos.length); j++) {
+      let entidade = {
+        text: entidadeTexts[j] || '',
+        tipo: entidadeTipos[j] || ''
+      };
+      entidades.push(entidade);
+    }
+  
+    let casaObject = {
+      "desc": {
+          "para": {
+            "text": req.body.descricao[i],
+            "data": req.body.data_casa[i] ? req.body.data_casa[i].split(", ") : [],
+            "lugar": req.body.lugar_casa[i] ? req.body.lugar_casa[i].split(", ") : [],
+            "entidade": entidades
+          }
+        },
+        "enfiteuta": req.body.enfiteuta[i],
+        "foro": req.body.foro[i],
+        "número": req.body.numero[i]
+    };
+    casaArray.push(casaObject);
   });
 
   let formattedBody = {
