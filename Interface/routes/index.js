@@ -238,25 +238,68 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   let paraArray = [];
   let casaArray = [];
   
-  req.body.descricao_lugar.forEach((item, i) => {
+  // Ensure that req.body.descricao_lugar is an array before using forEach
+  if (Array.isArray(req.body.descricao_lugar)) {
+    req.body.descricao_lugar.forEach((item, i) => {
+      let paraObject = {
+        "text": req.body.descricao_lugar[i],
+        "lugar": req.body.lugar[i] ? req.body.lugar[i].split(", ") : [],
+        "data": req.body.data[i] ? req.body.data[i].split(", ") : [],
+        "entidade": [{
+          "text": req.body.entidade[i],
+          "tipo": req.body.tipo[i]
+        }]
+      };
+      paraArray.push(paraObject);
+    });
+  } else {
     let paraObject = {
-      "text": req.body.descricao_lugar[i],
-      "lugar": req.body.lugar[i] ? req.body.lugar[i].split(", ") : [],
-      "data": req.body.data[i] ? req.body.data[i].split(", ") : [],
+      "text": req.body.descricao_lugar,
+      "lugar": req.body.lugar ? req.body.lugar.split(", ") : [],
+      "data": req.body.data ? req.body.data.split(", ") : [],
       "entidade": [{
-        "text": req.body.entidade[i],
-        "tipo": req.body.tipo[i]
+        "text": req.body.entidade,
+        "tipo": req.body.tipo
       }]
     };
     paraArray.push(paraObject);
-  });
+  }
 
-  req.body.descricao.forEach((item, i) => {
-    
-    let entidadeTexts = req.body.entidade_casa[i] ? req.body.entidade_casa[i].split(", ") : [];
-    let entidadeTipos = req.body.tipo_entidade_casa[i] ? req.body.tipo_entidade_casa[i].split(", ") : [];
+  if (Array.isArray(req.body.descricao)) {
+    req.body.descricao.forEach((item, i) => {
+      let entidadeTexts = req.body.entidade_casa[i] ? req.body.entidade_casa[i].split(", ") : [];
+      let entidadeTipos = req.body.tipo_entidade_casa[i] ? req.body.tipo_entidade_casa[i].split(", ") : [];
+      let entidades = [];
+  
+      // Create an array of entidade objects
+      for (let j = 0; j < Math.min(entidadeTexts.length, entidadeTipos.length); j++) {
+        let entidade = {
+          text: entidadeTexts[j] || '',
+          tipo: entidadeTipos[j] || ''
+        };
+        entidades.push(entidade);
+      }
+  
+      let casaObject = {
+        "desc": {
+          "para": {
+            "text": req.body.descricao[i],
+            "data": Array.isArray(req.body.data_casa) ? req.body.data_casa[i] : req.body.data_casa.split(", "),
+            "lugar": req.body.lugar_casa[i] ? req.body.lugar_casa[i].split(", ") : [],
+            "entidade": entidades
+          }
+        },
+        "enfiteuta": req.body.enfiteuta[i],
+        "foro": req.body.foro[i],
+        "número": req.body.numero[i]
+      };
+      casaArray.push(casaObject);
+    });
+  } else {
+    let entidadeTexts = req.body.entidade_casa ? req.body.entidade_casa.split(", ") : [];
+    let entidadeTipos = req.body.tipo_entidade_casa ? req.body.tipo_entidade_casa.split(", ") : [];
     let entidades = [];
-
+  
     // Create an array of entidade objects
     for (let j = 0; j < Math.min(entidadeTexts.length, entidadeTipos.length); j++) {
       let entidade = {
@@ -268,20 +311,20 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   
     let casaObject = {
       "desc": {
-          "para": {
-            "text": req.body.descricao[i],
-            "data": req.body.data_casa[i] ? req.body.data_casa[i].split(", ") : [],
-            "lugar": req.body.lugar_casa[i] ? req.body.lugar_casa[i].split(", ") : [],
-            "entidade": entidades
-          }
-        },
-        "enfiteuta": req.body.enfiteuta[i],
-        "foro": req.body.foro[i],
-        "número": req.body.numero[i]
+        "para": {
+          "text": req.body.descricao,
+          "data": Array.isArray(req.body.data_casa) ? req.body.data_casa : req.body.data_casa.split(", "),
+          "lugar": req.body.lugar_casa ? req.body.lugar_casa.split(", ") : [],
+          "entidade": entidades
+        }
+      },
+      "enfiteuta": req.body.enfiteuta,
+      "foro": req.body.foro,
+      "número": req.body.numero
     };
     casaArray.push(casaObject);
-  });
-
+  }
+  
   let formattedBody = {
     "_id": req.body.idRua,
     "nome": req.body.nome,

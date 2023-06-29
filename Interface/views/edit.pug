@@ -72,7 +72,7 @@ block content
 											else
 												input(type='text' name='entidade')
 										td
-											input(type='number' name='data' value=item.data.join(', '))
+											input(type='text' name='data' value=item.data.join(', '))
 										td
 											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowLugar()') Adicionar mais atributos
@@ -104,15 +104,15 @@ block content
 											input(type='text' name='foro' value=casa.foro)
 										td
 											if casa.desc.para && casa.desc.para.data
-												input(type='number' name='data_casa' value=casa.desc.para.data.join(', '))
+												input(type='text' name='data_casa' value=casa.desc.para.data.join(', '))
 											else
-												input(type='number' name='data_casa')
+												input(type='text' name='data_casa')
 										td
-											input(type='number' name='numero' value=casa.número)
+											input(type='text' name='numero' value=casa.número)
 										td
 											if casa.desc && casa.desc.para
 												if casa.desc.para.data
-													input(type='number' name='data_casa' value=casa.desc.para.data.join(', ') placeholder='Datas')
+													input(type='text' name='data_casa' value=casa.desc.para.data.join(', ') placeholder='Datas')
 												if casa.desc.para.lugar
 													input(type='text' name='lugar_casa' value=casa.desc.para.lugar.join(', ') placeholder='Lugares')
 												if casa.desc.para.entidade && casa.desc.para.entidade[0]
