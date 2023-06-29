@@ -88,6 +88,7 @@ block content
 								th Foro
 								th Data
 								th Número da Porta
+								th Informação Adicional
 								th Delete
 							tbody
 								each casa, index in street.listacasas
@@ -109,7 +110,28 @@ block content
 										td
 											input(type='number' name='numero' value=casa.número)
 										td
+											if casa.desc && casa.desc.para
+												if casa.desc.para.data
+													input(type='number' name='data_casa' value=casa.desc.para.data.join(', ') placeholder='Datas')
+												if casa.desc.para.lugar
+													input(type='text' name='lugar_casa' value=casa.desc.para.lugar.join(', ') placeholder='Lugares')
+												if casa.desc.para.entidade && casa.desc.para.entidade[0]
+													input(type='text' name='entidade_casa' value=casa.desc.para.entidade[0].text placeholder='Entidades')
+													input(type='text' name='tipo_entidade_casa' value=casa.desc.para.entidade[0].tipo placeholder='Tipos das Entidades')
+												else
+													input(type='text' name='entidade_casa' placeholder='Entidades')
+													input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades')
+											else
+												input(type='text' name='data_casa' placeholder='Datas')
+												input(type='text' name='lugar_casa' placeholder='Lugares')
+												input(type='text' name='entidade_casa' placeholder='Entidades')
+												input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades')
+
+										td
 											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
+									tr
+										td(colspan='7')
+											hr(style="background-color: black;padding: 0;padding-top: 1px;")
 						button.w3-btn.w3-round.w3-black.w3-mb-2(style='margin:10px;' type='button' onclick='addRowCasa()') Adicionar Casa
 			br
 			button.w3-btn.w3-round.w3-black.w3-mb-2(type='submit' style='margin-bottom:10px;') Guardar

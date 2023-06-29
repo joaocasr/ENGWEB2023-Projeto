@@ -1,4 +1,4 @@
-function addRowCasa() {
+function addRowCasa() { // ListaCasas
     var table = document.getElementById("casasTabela");
     var row = table.insertRow(-1);
     var descricaoCell = row.insertCell(0);
@@ -6,17 +6,28 @@ function addRowCasa() {
     var foroCell = row.insertCell(2);
     var dataCell = row.insertCell(3);
     var numeroCell = row.insertCell(4);
-    var deleteCell = row.insertCell(5);
+    var additionalInfoCell = row.insertCell(5);
+    var deleteCell = row.insertCell(6);
     row.className = 'row';
     descricaoCell.innerHTML = '<input type="text" name="descricao" />';
     enfiteutaCell.innerHTML = '<input type="text" name="enfiteuta" />';
     foroCell.innerHTML = '<input type="text" name="foro" />';
     dataCell.innerHTML = '<input type="number" name="data_casa"/>';
     numeroCell.innerHTML = '<input type="number" name="numero"/>';
+    additionalInfoCell.innerHTML = `
+    <input type="text" name="data_casa" placeholder="Datas">
+    <input type="text" name="lugar_casa" placeholder="Lugares">
+    <input type="text" name="entidade_casa" placeholder="Entidades">
+    <input type="text" name="tipo_entidade_casa" placeholder="Tipos das Entidades">`;
     deleteCell.innerHTML = '<button type="button" class="w3-btn w3-round w3-black w3-mb-2"  onclick="deleteRow(event)">Delete</button>';
+
+    var rowHr = table.insertRow(-1);
+    var hrCell = rowHr.insertCell(0);
+    hrCell.colSpan = 7;
+    hrCell.innerHTML = '<hr style="background-color: black;padding: 0;padding-top: 1px;">';
 }
 
-function addRowLugar() {
+function addRowLugar() { // Para
     var table = document.getElementById("lugaresTabela");
     var row = table.insertRow(-1);;
     var descricaoCell = row.insertCell(0);
@@ -32,8 +43,7 @@ function addRowLugar() {
     <option value="">Nenhuma opção</option>
     <option value="pessoa">pessoa</option>
     <option value="inst">instituição</option>
-    <option value="inst">família</option>
-    </select>`;
+    <option value="inst">família</option></select>`;
     entidadeCell.innerHTML = '<input type="text" name="entidade" />';
     dataCell.innerHTML = '<input type="number" name="data"/>';
     deleteCell.innerHTML = '<button type="button" class="w3-btn w3-round w3-black w3-mb-2"  onclick="deleteRow(event)">Delete</button>';

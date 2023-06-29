@@ -187,7 +187,8 @@ router.get('/ruas/edit/:idRua',verificaToken , function(req, res, next) {
 router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10 }, { name: 'atuais', maxCount: 10 }]),  function(req, res, next) {
   
   console.log("TEST do POST do edit")
-  console.log("req.files:", req.files)
+  //console.log("req.files:", req.files)
+  //console.log("req.body:", req.body)
   
   
   // Initializing the arrays to store images data
@@ -233,53 +234,58 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   }
 
 
-  req.body["_id"]=req.params.idRua
   // Handle entidade, para and listacasas fields in a similar way as in /add
-  if(Array.isArray(req.body['tipo'])){
-    entidades=[]
-    for (let i = 0; i < req.body['entidade'].length; i++){
-      entidades[i]={
-          'tipo':req.body['tipo'][i],
-          'text':req.body['entidade'][i]
-      }
-    }
-  }else{
-    single_entidade={
-      'tipo':req.body['tipo'],
-      'text':req.body['entidade']
-    }
-  }
-  if(Array.isArray(req.body['descricao_lugar'])){
-    req.body['para']=[]
-    for (let i = 0; i < req.body['descricao_lugar'].length; i++){
-      if(!req.body['lugar'][i]) req.body['lugar'][i]=""
-      if(!req.body['data'][i]) req.body['data'][i]=""
-      if(!req.body['descricao_lugar'][i]) req.body['descricao_lugar'][i]=""
-      req.body['para'][i]={
-        "lugar": req.body['lugar'][i],
-        "data": req.body['data'][i],
-        "entidade": entidades[i],
-        "text": req.body['descricao_lugar'][i]
-        }
-    }
-  }else{
-    req.body['para']=[]
-    if(!req.body['lugar']) req.body['lugar']=""
-    if(!req.body['data']) req.body['data']=""
-    if(!req.body['descricao_lugar']) req.body['descricao_lugar']=""
-      req.body['para'][0]={
-        "lugar": req.body['lugar'],
-        "data": req.body['data'],
-        "entidade": single_entidade,
-        "text": req.body['descricao_lugar']
-        }
-  }
+  let paraArray = [];
+  let casaArray = [];
+  
+  req.body.descricao_lugar.forEach((item, i) => {
+    let paraObject = {
+      "text": req.body.descricao_lugar[i],
+      "lugar": req.body.lugar[i] ? req.body.lugar[i].split(", ") : [],
+      "data": req.body.data[i] ? req.body.data[i].split(", ") : [],
+      "entidade": [{
+        "text": req.body.entidade[i],
+        "tipo": req.body.tipo[i]
+      }]
+    };
+    paraArray.push(paraObject);
+  });
 
-  //console.log(req.body)
+  req.body.descricao.forEach((item, i) => {
+  let casaObject = {
+    "desc": {
+      "para": {
+        "text": req.body.descricao[i],
+        "data": req.body.data_casa[i] ? req.body.data_casa[i].split(", ") : [],
+        "lugar": req.body.lugar_casa[i] ? req.body.lugar_casa[i].split(", ") : [],
+        "entidade": [{
+          "text": req.body.entidade_casa[i] ? req.body.entidade_casa[i].split(", ") : [],
+          "tipo": req.body.tipo_entidade_casa[i] ? req.body.tipo_entidade_casa[i].split(", ") : []
+        }]
+      }
+    },
+    "enfiteuta": req.body.enfiteuta[i],
+    "foro": req.body.foro[i],
+    "número": req.body.numero[i]
+  };
+  casaArray.push(casaObject);
+  });
+
+  let formattedBody = {
+    "_id": req.body.idRua,
+    "nome": req.body.nome,
+    "figura": req.body.figura,
+    "figurasAtuais": req.body.figurasAtuais,
+    "para": paraArray,
+    "listacasas": casaArray
+  };
+
+
+  console.log(formattedBody)
   console.log("quase a acabar")
 
   // Update the street info in the database
-  axios.put(env.apiAccessPoint + "/ruas", req.body)
+  axios.put(env.apiAccessPoint + "/ruas", formattedBody)
   .then(response => {
       console.log("dentro do put")
       res.redirect('/ruas'); //redirect to the list of streets
