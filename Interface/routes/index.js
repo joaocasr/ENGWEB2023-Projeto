@@ -3,7 +3,7 @@ var router = express.Router();
 var env = require('../config/env')
 var axios = require('axios')
 var jwt = require('jsonwebtoken')
-var filesystem = require('fs')
+var fs = require('fs')
 const path = require('path');
 
 var multer = require('multer')
@@ -94,7 +94,7 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
     console.log(req.files.antigas[i].originalname)
     let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
     let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
-    filesystem.rename(oldPath,newPath,erro =>{
+    fs.rename(oldPath,newPath,erro =>{
       if(erro){
         console.log("erro")
       }
@@ -112,7 +112,7 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
 
     let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
     let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
-    filesystem.rename(oldPath,newPath,erro =>{
+    fs.rename(oldPath,newPath,erro =>{
       if(erro){
         console.log("erro")
       }
@@ -201,7 +201,7 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
         let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
         let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
   
-        filesystem.rename(oldPath,newPath,erro =>{
+        fs.rename(oldPath,newPath,erro =>{
             if(erro){
                 console.log("erro")
             }
@@ -221,7 +221,7 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
         let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
         let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
         
-        filesystem.rename(oldPath,newPath,erro =>{
+        fs.rename(oldPath,newPath,erro =>{
             if(erro){
                 console.log("erro")
             }
@@ -281,11 +281,11 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   };
 
 
-  console.log(formattedBody)
+  //console.log(formattedBody)
   console.log("quase a acabar")
 
   // Update the street info in the database
-  axios.put(env.apiAccessPoint + "/ruas", formattedBody)
+  axios.put(env.apiAccessPoint + "/ruas/" + req.params.idRua, formattedBody)
   .then(response => {
       console.log("dentro do put")
       res.redirect('/ruas'); //redirect to the list of streets
@@ -332,7 +332,7 @@ router.get("/creditos", function(req,res) {
 router.post("/register",upload.single('myphoto'), (req, res) => {
   let oldPath = path.resolve(__dirname, '..', req.file.path);
   let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
-  filesystem.rename(oldPath,newPath,erro =>{
+  fs.rename(oldPath,newPath,erro =>{
     if(erro){
       console.log("erro:"+erro+"\nNew Path:"+newPath+"\nOld Path:"+oldPath)
     }

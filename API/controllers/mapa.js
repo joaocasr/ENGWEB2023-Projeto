@@ -44,6 +44,19 @@ module.exports.addRua = a => {
         })
 }
 
+module.exports.updateRua = (id, data) => {
+    return Mapa.findOneAndUpdate({ _id: id }, data, { new: true })
+      .then(rua => {
+        console.log("Rua atualizada com sucesso: " + rua);
+        return rua;
+      })
+      .catch(erro => {
+        console.log(erro);
+        throw erro;
+      });
+  };
+  
+
 module.exports.updateMapa = a => {
     return Mapa.updateOne({_id: a._id}, a)
             .then(resposta => {

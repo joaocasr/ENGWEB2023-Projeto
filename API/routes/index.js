@@ -66,10 +66,31 @@ router.get('/api/ruas/comentarios/',function(req, res, next) {
 });
 
 router.post('/api/ruas', function(req, res, next) {
-  console.log("here")
-  console.log(req.body)
+  console.log("no post de uma rua em /api/ruas")
+  //console.log(req.body)
   Mapa.addRua(req.body).then(rua =>{
-    console.log("Rua adicionado com sucesso :" + rua)
+    console.log("Rua adicionada com sucesso :" + rua)
+      relatedpara.getStreetspara(rua).then(relacionadas =>{
+        Related.addRelatedStreets(relacionadas).then(ok =>{
+          res.jsonp(ok)
+        }).catch(erro => {
+          console.log(erro)
+        })
+      })
+      .catch(erro => {
+        console.log(erro)
+      })
+  })
+  .catch(erro => {
+    console.log(erro)
+  })
+});
+
+router.put('/api/ruas/:id', function(req, res, next) {
+  console.log("no put de uma rua em /api/ruas/:id")
+  //console.log(req.body)
+  Mapa.updateRua(req.params.id,req.body).then(rua =>{
+    console.log("Rua modificada com sucesso :" + rua)
       relatedpara.getStreetspara(rua).then(relacionadas =>{
         Related.addRelatedStreets(relacionadas).then(ok =>{
           res.jsonp(ok)
