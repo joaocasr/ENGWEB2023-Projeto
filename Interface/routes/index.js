@@ -221,18 +221,18 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
             }
         })
   
-        req.body.figura[i]={
-            "legenda": req.files.antigas[i].originalname,
-            "path": "imagem/"+req.files.antigas[i].originalname,
-            "id": req.files.antigas[i].originalname
-        }    
+        req.body.figura.push({
+          "legenda": req.files.antigas[i].originalname,
+          "path": "imagem/" + req.files.antigas[i].originalname,
+          "id": req.files.antigas[i].originalname
+        });
     } 
   }else{
-    req.body.figura[0]={
+    req.body.figura.push({
       "legenda": "placeholder.png",
       "path": "imagem/placeholder.png",
       "id": "placeholder.png"
-    }
+    });
   }
 
   // Renaming and saving the path for atuais images
@@ -247,14 +247,14 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
             }
         })
 
-        req.body.figurasAtuais[i]={
-            "nome": req.files.atuais[i].originalname
-        }
+        req.body.figurasAtuais.push({
+          "nome": req.files.atuais[i].originalname
+        });
     } 
   }else{
-    req.body.figurasAtuais[0]={
+    req.body.figurasAtuais.push({
       "nome": "placeholder.png"
-    }
+    });
   }
 
 
