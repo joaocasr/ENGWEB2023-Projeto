@@ -90,38 +90,52 @@ router.post('/add',verificaToken ,upload.fields([{ name: 'antigas', maxCount: 10
   req.body.figura=[]
   req.body.figurasAtuais=[]
 
-  for (let i = 0; i < req.files.antigas.length; i++) {
-    console.log(req.files.antigas[i].originalname)
-    let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
-    let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
-    fs.rename(oldPath,newPath,erro =>{
-      if(erro){
-        console.log("erro")
-      }
-    })
-    
-    req.body.figura[i]={
-        "legenda": req.files.antigas[i].originalname,
-        "path": "imagem/"+req.files.antigas[i].originalname,
-        "id": req.files.antigas[i].originalname
-    }    
-  } 
-
-  for (let i = 0; i < req.files.atuais.length; i++) {
-    console.log(req.files.atuais[i].originalname)
-
-    let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
-    let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
-    fs.rename(oldPath,newPath,erro =>{
-      if(erro){
-        console.log("erro")
-      }
-    })
-    
-    req.body.figurasAtuais[i]={
-    "nome": req.files.atuais[i].originalname
+  if (req.files.antigas) {
+    for(let i = 0; i < req.files.antigas.length; i++){
+        let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
+        let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
+  
+        fs.rename(oldPath,newPath,erro =>{
+            if(erro){
+                console.log("erro")
+            }
+        })
+  
+        req.body.figura[i]={
+            "legenda": req.files.antigas[i].originalname,
+            "path": "imagem/"+req.files.antigas[i].originalname,
+            "id": req.files.antigas[i].originalname
+        }    
+    } 
+  }else{
+    req.body.figura[0]={
+      "legenda": "placeholder.png",
+      "path": "imagem/placeholder.png",
+      "id": "placeholder.png"
     }
-  } 
+  }
+
+  // Renaming and saving the path for atuais images
+  if (req.files.atuais) {
+    for(let i = 0; i < req.files.atuais.length; i++){
+        let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
+        let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
+        
+        fs.rename(oldPath,newPath,erro =>{
+            if(erro){
+                console.log("erro")
+            }
+        })
+
+        req.body.figurasAtuais[i]={
+            "nome": req.files.atuais[i].originalname
+        }
+    } 
+  }else{
+    req.body.figurasAtuais[0]={
+      "nome": "placeholder.png"
+    }
+  }
 
   if(Array.isArray(req.body['tipo'])){
     entidades=[]
@@ -196,7 +210,7 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
   req.body.figurasAtuais=[]
 
   // Renaming and saving the path for antigas images
-  if (req.files && req.files.antigas && Object.keys(req.files.antigas).length === 0) {
+  if (req.files.antigas) {
     for(let i = 0; i < req.files.antigas.length; i++){
         let oldPath = path.resolve(__dirname, '..', req.files.antigas[i].path);
         let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','imagem', req.files.antigas[i].originalname);
@@ -213,10 +227,16 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
             "id": req.files.antigas[i].originalname
         }    
     } 
+  }else{
+    req.body.figura[0]={
+      "legenda": "placeholder.png",
+      "path": "imagem/placeholder.png",
+      "id": "placeholder.png"
+    }
   }
 
   // Renaming and saving the path for atuais images
-  if (req.files && req.files.atuais && Object.keys(req.files.atuais).length === 0) {
+  if (req.files.atuais) {
     for(let i = 0; i < req.files.atuais.length; i++){
         let oldPath = path.resolve(__dirname, '..', req.files.atuais[i].path);
         let newPath = path.resolve(__dirname, '..', 'public', 'images','dados', 'materialBase','atual', req.files.atuais[i].originalname);
@@ -231,6 +251,10 @@ router.post('/ruas/edit/:idRua', verificaToken ,upload.fields([{ name: 'antigas'
             "nome": req.files.atuais[i].originalname
         }
     } 
+  }else{
+    req.body.figurasAtuais[0]={
+      "nome": "placeholder.png"
+    }
   }
 
 

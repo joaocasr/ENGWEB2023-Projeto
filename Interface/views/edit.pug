@@ -95,40 +95,40 @@ block content
 									tr.row
 										td
 											if casa.desc.para
-												input(type='text' name='descricao' value=casa.desc.para.text)
+												input(type='text' name='descricao' value=casa.desc.para.text style='width: 100px;')
 											else
-												input(type='text' name='descricao')
+												input(type='text' name='descricao' style='width: 100px;')
 										td
-											input(type='text' name='enfiteuta' value=casa.enfiteuta)
+											input(type='text' name='enfiteuta' value=casa.enfiteuta style='width: 100px;')
 										td
-											input(type='text' name='foro' value=casa.foro)
+											input(type='text' name='foro' value=casa.foro style='width: 100px;')
 										td
 											if casa.desc.para && casa.desc.para.data
-												input(type='text' name='data_casa' value=casa.desc.para.data.join(', '))
+												input(type='text' name='data_casa' value=casa.desc.para.data.join(', ') style='width: 100px;')
 											else
-												input(type='text' name='data_casa')
+												input(type='text' name='data_casa' style='width: 100px;')
 										td
-											input(type='text' name='numero' value=casa.número)
+											input(type='text' name='numero' value=casa.número style='width: 100px;')
 										td
 											if casa.desc && casa.desc.para
 												if casa.desc.para.data
-													input(type='text' name='data_casa' value=casa.desc.para.data.join(', ') placeholder='Datas')
+													input(type='text' name='data_casa' value=casa.desc.para.data.join(', ') placeholder='Datas' style='width: 100px;')
 												if casa.desc.para.lugar
-													input(type='text' name='lugar_casa' value=casa.desc.para.lugar.join(', ') placeholder='Lugares')
+													input(type='text' name='lugar_casa' value=casa.desc.para.lugar.join(', ') placeholder='Lugares' style='width: 100px;')
 												if casa.desc.para.entidade && casa.desc.para.entidade[0]
-													input(type='text' name='entidade_casa' value=casa.desc.para.entidade[0].text placeholder='Entidades')
-													input(type='text' name='tipo_entidade_casa' value=casa.desc.para.entidade[0].tipo placeholder='Tipos das Entidades')
+													input(type='text' name='entidade_casa' value=casa.desc.para.entidade[0].text placeholder='Entidades' style='width: 100px;')
+													input(type='text' name='tipo_entidade_casa' value=casa.desc.para.entidade[0].tipo placeholder='Tipos das Entidades' style='width: 100px;')
 												else
-													input(type='text' name='entidade_casa' placeholder='Entidades')
-													input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades')
+													input(type='text' name='entidade_casa' placeholder='Entidades' style='width: 100px;')
+													input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades' style='width: 100px;')
 											else
-												input(type='text' name='data_casa' placeholder='Datas')
-												input(type='text' name='lugar_casa' placeholder='Lugares')
-												input(type='text' name='entidade_casa' placeholder='Entidades')
-												input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades')
+												input(type='text' name='data_casa' placeholder='Datas' style='width: 100px;')
+												input(type='text' name='lugar_casa' placeholder='Lugares' style='width: 100px;')
+												input(type='text' name='entidade_casa' placeholder='Entidades' style='width: 100px;')
+												input(type='text' name='tipo_entidade_casa' placeholder='Tipos das Entidades' style='width: 100px;')
 
 										td
-											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)') Delete
+											button.w3-btn.w3-round.w3-black.w3-mb-2(type='button', class='delete-btn', onclick='deleteRow(event)' ,style="margin-right:10px") Delete
 									tr
 										td(colspan='7')
 											hr(style="background-color: black;padding: 0;padding-top: 1px;")
