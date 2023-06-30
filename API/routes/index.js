@@ -92,11 +92,17 @@ router.put('/api/ruas/:id', function(req, res, next) {
   Mapa.updateRua(req.params.id,req.body).then(rua =>{
     console.log("Rua modificada com sucesso :" + rua)
       relatedpara.getStreetspara(rua).then(relacionadas =>{
-        Related.addRelatedStreets(relacionadas).then(ok =>{
-          res.jsonp(ok)
-        }).catch(erro => {
-          console.log(erro)
-        })
+        Related.deleteRelated(req.params.id)
+        .then(relok =>{
+            Related.addRelatedStreets(relacionadas).then(ok =>{
+              res.jsonp(ok)
+            }).catch(erro => {
+              console.log(erro)
+            })
+          }).catch(erro => {
+            console.log(erro)
+          })
+
       })
       .catch(erro => {
         console.log(erro)
