@@ -1,0 +1,9 @@
+FROM mongo 
+
+COPY Data /Data
+
+CMD mongoimport --host Mapa-mongodb:27017 --db MapaBraga --collection user --type json --file Data/user.json --jsonArray
+
+CMD mongoimport --host Mapa-mongodb:27017 --db MapaBraga --collection streets --type json --file Data/streetdb.json --jsonArray
+
+CMD mongoimport --host Mapa-mongodb:27017 --db MapaBraga --collection relations --type json --file Data/relations.json --jsonArray
