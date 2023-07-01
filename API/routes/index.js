@@ -86,16 +86,15 @@ router.post('/api/ruas', function(req, res, next) {
   })
 });
 
+
 router.put('/api/ruas/:id', function(req, res, next) {
   console.log("no put de uma rua em /api/ruas/:id")
   //console.log(req.body)
   Mapa.updateRua(req.params.id,req.body).then(rua =>{
     console.log("Rua modificada com sucesso :" + rua)
-      relatedpara.getStreetspara(rua).then(relacionadas =>{
-      Related.deleteRuaRelacionados(req.params.id)
-        .then(delok =>{
-        Related.deleteRelated(req.params.id)
-        .then(relok =>{
+      Related.deleteRuaRelacionados(req.params.id).then(delok =>{
+        Related.deleteRelated(req.params.id).then(relok =>{
+          relatedpara.getStreetspara(rua).then(relacionadas =>{
             Related.addRelatedStreets(relacionadas).then(ok =>{
               res.jsonp(ok)
             }).catch(erro => {

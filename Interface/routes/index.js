@@ -408,14 +408,19 @@ router.get("/creditos", function(req,res) {
 })
 
 router.post("/register",upload.single('myphoto'), (req, res) => {
-  let oldPath = path.resolve(__dirname, '..', req.file.path);
-  let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
-  fs.rename(oldPath,newPath,erro =>{
-    if(erro){
-      console.log("erro:"+erro+"\nNew Path:"+newPath+"\nOld Path:"+oldPath)
-    }
-  })
-  req.body['myphoto']=req.file.originalname
+  if(req.file){
+    let oldPath = path.resolve(__dirname, '..', req.file.path);
+    let newPath = path.resolve(__dirname, '..', 'public', 'images', 'imagensdeperfil', req.file.originalname);
+    fs.rename(oldPath,newPath,erro =>{
+      if(erro){
+        console.log("erro:"+erro+"\nNew Path:"+newPath+"\nOld Path:"+oldPath)
+      }
+    })
+    req.body['myphoto']=req.file.originalname
+  }else{
+    console.log(req.body)
+    req.body['myphoto']="noprofile.jpg"
+  }
   axios.post(env.authAccessPoint + "/register?token=" + req.cookies.token, req.body)
     .then(response => {
       res.redirect('/')
