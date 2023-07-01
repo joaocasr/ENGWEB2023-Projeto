@@ -4,7 +4,7 @@ $(function() {
     var url = window.location.href;
     var id = url.substring(url.lastIndexOf("/") + 1);
     console.log("ID: " + id);
-    $.get("http://localhost:7777/api/ruas/comentarios/" + id, function(data) { // GET dos comentarios da rua com o id=id
+    $.get(process.env.API_URL+"/ruas/comentarios/" + id, function(data) { // GET dos comentarios da rua com o id=id
         console.log("COMENTÁRIOS DO GET:")
         console.log(data)
         data.forEach(p => {
@@ -42,7 +42,7 @@ $(function() {
         newComment = { dateTime: dateTime, username:user,photo : myphoto, rua:id, p: $("#commentText").val() };
 
         // post newComment
-        $.post("http://localhost:7777/api/ruas/comentarios", newComment, function(data) {
+        $.post(process.env.API_URL+"/ruas/comentarios", newComment, function(data) {
             alert("Comentário adicionado com sucesso.");
         })
         $("#commentText").val("");
