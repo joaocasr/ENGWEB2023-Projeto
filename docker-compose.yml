@@ -38,11 +38,6 @@ services:
       - MapaData:/data/db
     networks:
       - MapaBraga
-
-  mongodb-data:
-    build: ./DB-data
-    links:
-        - mongodb
       
   auth_server:
     container_name: Mapa_auth_server

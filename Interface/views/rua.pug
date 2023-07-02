@@ -50,20 +50,12 @@ block content
 								th Enfiteuta
 								th Foro
 								th Descrição
+						tbody
 							each house in street.listacasas
 								tr
-									if house.número
-										td=house.número
-									else 
-										td="NA"
-									if house.enfiteuta
-										td=house.enfiteuta
-									else 
-										td="NA"
-									if house.foro
-										td=house.foro
-									else 
-										td="NA"
+									td= house.número || "NA"
+									td= house.enfiteuta || "NA"
+									td= house.foro || "NA"
 									td
 										if house.desc && house.desc.para
 											button(onclick=`showDesc(${JSON.stringify(house.desc.para)});`)= "Descrição"
@@ -95,22 +87,26 @@ block content
 								p !{to.text}
 						br
 						h4(style="font-weight: 600 !important;") Índice por Lugares:
-						each rel in relacionados.lugares
-							li 
-								a(href="/ruas/"+rel.id) #{rel.nome} 
-								|  (lugar: #{rel.atributo})
+						if relacionados && relacionados.lugares
+							each rel in relacionados.lugares
+								li 
+									a(href="/ruas/"+rel.id) #{rel.nome} 
+									|  (lugar: #{rel.atributo})
 						br
 						h4(style="font-weight: 600 !important;") Índice por Datas:
-						each rel in relacionados.data
-							li 
-								a(href="/ruas/"+rel.id) #{rel.nome} 
-								|  (data: #{rel.atributo})
+						if relacionados && relacionados.data
+							each rel in relacionados.data
+								li 
+									a(href="/ruas/"+rel.id) #{rel.nome} 
+									|  (data: #{rel.atributo})
 						br
 						h4(style="font-weight: 600 !important;") Índice por Entidades:
-						each rel in relacionados.entidades
-							li 
-								a(href="/ruas/"+rel.id) #{rel.nome}
-								|  (#{rel.atributo.tipo}: #{rel.atributo.text})
+						if relacionados && relacionados.entidades
+							each rel in relacionados.entidades
+								li 
+									a(href="/ruas/"+rel.id) #{rel.nome}
+									|  (#{rel.atributo.tipo}: #{rel.atributo.text})
+
 
 		
 		// Comentários
