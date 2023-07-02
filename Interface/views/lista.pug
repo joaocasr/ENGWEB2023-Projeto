@@ -36,7 +36,7 @@ block content
 					.w3-col.l3.m6.w3-margin-bottom
 						.w3-display-container
 							.w3-display-topleft.w3-black.w3-padding.w3-round.w3-border 
-								a(href="/ruas/" + streets[r]._id) #{streets[r].nome}
+								a(href="/ruas/" + streets[r]._id) #{streets[r]._id} - #{streets[r].nome}
 							- if (streets[r].figurasAtuais.length > 0)
 								img.w3-round(src="/images/dados/materialBase/atual/" + streets[r].figurasAtuais[0].nome, alt="House", style="width:100%;height:400px;object-fit:cover;")
 							- else

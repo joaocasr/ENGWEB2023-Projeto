@@ -4,7 +4,8 @@ var addfunctions = require('../public/javascripts/add')
 // Mapa list
 module.exports.list = () => {
     return Mapa.find()
-        .sort({nome:1})
+        .sort({_id:1})
+        .collation({ locale: "en_US", numericOrdering: true })
         .then(resposta => {
             return resposta
         })
