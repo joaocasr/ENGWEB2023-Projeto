@@ -61,7 +61,7 @@ router.get('/ruas/:idRua',verificaToken , function(req, res, next) {
   .then(rua =>(
       axios.get(env.apiAccessPoint+"/ruas/related/"+req.params.idRua+ "?token=" + req.cookies.token)
       .then(related =>(
-          res.render('rua', { street: rua.data, relacionados: related.data,user: current_user})
+          res.render('rua', { street: rua.data, relacionados: related.data,user: current_user, envvar: process.env.API_URL})
       )).catch(err => (
           res.render('error',{error: err})
       ))
