@@ -104,6 +104,39 @@ Este serviço responde na porta 7779 e responde às seguintes rotas:
 - POST /users/login
   - Nesta rota é feito o sign (assinatura) de um utilizador com o `jsonwebtoken`, cujo segredo é "EngWeb2023" e o tempo de expiração do token é de 3600 segundos, correspondente a 1 hora.
 
+## Docker
+
+O Docker é uma plataforma de contêineres que permite criar e executar aplicativos de forma detalhada e escalável. A configuração do Docker é definida no arquivo docker-compose.yml e consiste em três serviços: app, data_server e auth_server. Vamos dar uma breve descrição de cada um deles:
+
+**App**
+
+Este serviço é responsável por construir e executar o servidor da interface do projeto,o código-fonte está localizado na diretória "./Interface".
+Ele reiniciava automaticamente em caso de falhas.
+Estabelece as variáveis ​​de ambiente API_URL e AUTH_URL para que este consiga estabelecer conexao com os outros servers.
+A porta 7778 do contêiner é mapeada para a porta 7778 do host, permitindo o acesso a aplicaçao por meio dessa porta.
+
+**Data_server**
+
+Este serviço garante e executa o servidor de dados do projeto, o código-fonte s está localizado na diretória "./API".
+Ele reiniciava automaticamente em caso de falhas.
+Estabeleça uma variável de ambiente MONGODB_URLpara estabelecer a conexão com a base de dados MongoDB.
+A porta 7777 do contêiner é mapeada para a porta 7777 do host, permitindo o acesso ao servidor de dados por meio dessa porta.
+Dependente do serviço mongodbpara para garantir que a base de dados esteja em execução antes do servidor de dados.
+
+**Auth_server**
+
+Este serviço garante e executa o servidor de autenticação do projeto,o código-fonte do servidor de autenticação está localizado no diretório "./AUTH".
+Ele reiniciava automaticamente em caso de falhas.
+Estabeleça uma variável de ambiente MONGODB_URLpara estabelecer a conexão com a base de dados MongoDB.
+A porta 7779 do contêiner é mapeada para a porta 7779 do host, permitindo o acesso ao servidor de autenticação por meio dessa porta.
+Dependente do serviço mongodbpara garantir que a base de dados esteja em execução antes do servidor de autenticação.
+
+
+Após testarmos nosso código-fonte com o Docker, notamos que ele não suporta uma funcionalidade da nossa aplicação: os comentários das ruas. Portanto, tomamos a decisão de desabilitar o código relacionado ao Docker e executar nossa aplicação sem o uso de contêineres.
+
+Ao desabilitar o código do Docker, nosso aplicativo funcionará corretamente e todas as suas funcionalidades, incluindo os comentários das ruas, estarão disponíveis. Essa abordagem nos permite garantir o pleno funcionamento da aplicação.
+
+
 ## Conclusão
 
 Em suma, o projeto de ruas de Braga consistiu no desenvolvimento de um website interativo, onde os utilizadores podem visualizar informações sobre as ruas da cidade e interagir com o sistema através de funcionalidades como adicionar comentários e ver ruas relacionadas. 
