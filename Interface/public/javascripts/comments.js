@@ -1,11 +1,10 @@
 $(function() {
     console.log("TEST")
     //var commentCount = 0;
-    var envvar = $("#envvarbutton").val()
     var url = window.location.href;
     var id = url.substring(url.lastIndexOf("/") + 1);
     console.log("ID: " + id);
-    $.get(envvar+"/ruas/comentarios/" + id, function(data) { // GET dos comentarios da rua com o id=id
+    $.get("http://localhost:7777/api/ruas/comentarios/" + id, function(data) { // GET dos comentarios da rua com o id=id
         console.log("COMENTÁRIOS DO GET:")
         console.log(data)
         data.forEach(p => {
@@ -44,7 +43,7 @@ $(function() {
         newComment = { dateTime: dateTime, username:user,photo : myphoto, rua:id, p: $("#commentText").val() };
 
         // post newComment
-        $.post(envvar+"/ruas/comentarios", newComment, function(data) {
+        $.post("http://localhost:7777/api/ruas/comentarios", newComment, function(data) {
             alert("Comentário adicionado com sucesso.");
         })
         $("#commentText").val("");
