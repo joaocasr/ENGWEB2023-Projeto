@@ -208,6 +208,32 @@ html
                 | - Nesta rota é feito o sign de um utilizador com o jsonwebtoken, cujo segredo é EngWeb2023 e o tempo de expiração do token é de 3600 segundos, correspondente a 1 hora.
                 br
                 br
+            h5.w3-margin(style="font-weight: 600 !important;") Docker
+            ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
+                br
+                br
+                b O Docker é uma plataforma de contêineres que permite criar e executar aplicativos de forma detalhada e escalável. A configuração do Docker é definida no arquivo docker-compose.yml e consiste em três serviços: app, data_server e auth_server. Vamos dar uma breve descrição de cada um deles:
+                li
+                    p(style="font-weight: 600 !important;") App
+                br
+                br
+                | Este serviço é responsável por construir e executar o servidor da interface do projeto,o código-fonte está localizado na diretória "./Interface". Ele reiniciava automaticamente em caso de falhas. Estabelece as variáveis ​​de ambiente API_URL e AUTH_URL para que este consiga estabelecer conexao com os outros servers. A porta 7778 do contêiner é mapeada para a porta 7778 do host, permitindo o acesso a aplicaçao por meio dessa porta.
+                li
+                    p(style="font-weight: 600 !important;") Data_server
+                br 
+                br
+                p Este serviço garante e executa o servidor de dados do projeto, o código-fonte s está localizado na diretória "./API". Ele reiniciava automaticamente em caso de falhas. Estabeleça uma variável de ambiente MONGODB_URLpara estabelecer a conexão com a base de dados MongoDB. A porta 7777 do contêiner é mapeada para a porta 7777 do host, permitindo o acesso ao servidor de dados por meio dessa porta. Dependente do serviço mongodbpara para garantir que a base de dados esteja em execução antes do servidor de dados
+                li
+                    p(style="font-weight: 600 !important;") Autenticação
+                br
+                br
+                p Este serviço garante e executa o servidor de autenticação do projeto,o código-fonte do servidor de autenticação está localizado no diretório "./AUTH". Ele reiniciava automaticamente em caso de falhas. Estabeleça uma variável de ambiente MONGODB_URLpara estabelecer a conexão com a base de dados MongoDB. A porta 7779 do contêiner é mapeada para a porta 7779 do host, permitindo o acesso ao servidor de autenticação por meio dessa porta. Dependente do serviço mongodbpara garantir que a base de dados esteja em execução antes do servidor de autenticação.
+                br
+                br
+                br
+                p Após testarmos nosso código-fonte com o Docker, notamos que ele não suporta uma funcionalidade da nossa aplicação: os comentários das ruas. Portanto, tomamos a decisão de desabilitar o código relacionado ao Docker e executar nossa aplicação sem o uso de contêineres.
+                br
+                p Ao desabilitar o código do Docker, nosso aplicativo funcionará corretamente e todas as suas funcionalidades, incluindo os comentários das ruas, estarão disponíveis. Essa abordagem nos permite garantir o pleno funcionamento da aplicação.
             // Conclusão
             h5.w3-margin(style="font-weight: 600 !important;") Conclusão:
             ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
