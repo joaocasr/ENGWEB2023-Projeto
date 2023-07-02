@@ -27,11 +27,22 @@ html
                 p.w3-panel O projeto foi desenvolvido pelos seguintes elementos:
                 ul.w3-ul
                     li
-                        a(href="https://github.com/0HenriqueFernandes0", class="w3-hover-text-blue") 0HenriqueFernandes0
+                        a(href="https://github.com/0HenriqueFernandes0", class="w3-hover-text-blue") Henrique Ribeiro Fernandes, A95323 - 0HenriqueFernandes0
                     li
                         a(href="https://github.com/joaocasr", class="w3-hover-text-blue") João Paulo Peixoto Castro, A97223 - joaocasr
                     li
                         a(href="https://github.com/Cavalex", class="w3-hover-text-blue") Mateus Pereira, A91924 - Cavalex
+
+            // Introdução
+            h5.w3-margin(style="font-weight: 600 !important;") Introdução:
+            ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
+                br
+                | Este relatório descreve o projeto desenvolvido no âmbito da disciplina de Engenharia Web - 2023, cujo objetivo foi a criação de um site sobre as estradas
+                | da cidade de Braga. O projeto foi implementado utilizando a framework Express e envolveu a construção de um sistema de gestão de dados, uma API de acesso
+                | a esses dados e uma interface interativa para os utilizadores. O site permite aos utilizadores visualizar informações sobre as ruas, ruas relacionadas,
+                | comentários e interagir com o sistema através de funcionalidades como adicionar comentários e ruas.
+                br
+                br
 
             // Descrição dos Datasets
             h5.w3-margin(style="font-weight: 600 !important;") Descrição dos Datasets:
@@ -157,7 +168,11 @@ html
                 br
                 br 
                 b GET /ruas/edit/:idRua
-                | - Esta rota vai fazer um pedido GET do axios à API de forma a obter a rua pretendida. Essa informação será disponibilizada na página de edição de modo a proceder à alteração dos campos desejados.
+                | - GET /ruas/edit/:idRua - Nesta rota, é realizado um pedido GET à API para obter as informações da rua desejada com base no parâmetro idRua. Essas informações serão disponibilizadas na página de edição para permitir a modificação dos campos desejados.
+                | Neste código, o router lida com um pedido GET para o endpoint /ruas/edit/:idRua. Dentro da função de tratamento da rota, é feito um pedido GET à API para obter as informações da rua utilizando o Axios. O idRua é extraído dos parâmetros da requisição e utilizado para construir a URL correta para o pedido à API.
+                | Após receber a resposta da API com os dados da rua, essas informações são armazenadas em uma variável chamada street. Em seguida, a página de edição é renderizada, passando o objeto street como contexto para a renderização. 
+                | Dessa forma, a página de edição terá acesso às informações da rua e poderá preencher os campos correspondentes com os dados corretos.
+                | Caso ocorra algum erro durante o pedido à API, a rota renderizará a página de erro, exibindo o erro ocorrido. Isso garante que qualquer problema na obtenção das informações da rua seja tratado adequadamente.
                 br
                 br                
                 b POST /
@@ -191,6 +206,31 @@ html
                 br
                 b POST /users/login
                 | - Nesta rota é feito o sign de um utilizador com o jsonwebtoken, cujo segredo é EngWeb2023 e o tempo de expiração do token é de 3600 segundos, correspondente a 1 hora.
+                br
+                br
+            // Conclusão
+            h5.w3-margin(style="font-weight: 600 !important;") Conclusão:
+            ul.w3-light-grey.w3-margin(style="padding-top:8px;padding-right:8px; padding-bottom:8px;")
+                br
+                | Neste projeto, foi possível aplicar conceitos e técnicas aprendidas na disciplina de Engenharia Web para desenvolver um site robusto e funcional 
+                | sobre as estradas de Braga. A utilização da framework Express facilitou a implementação da lógica de negócio e a criação da API de dados, permitindo uma 
+                | fácil comunicação entre o backend e a interface. Além disso, a separação das responsabilidades em módulos distintos tornou o desenvolvimento mais organizado 
+                | e escalável.
+                br
+                br
+                | O sistema de gestão de dados permitiu armazenar e recuperar informações sobre as ruas, ruas relacionadas e comentários, garantindo a integridade dos 
+                | dados e a consistência do sistema. A API de acesso a esses dados forneceu uma forma segura e eficiente de interagir com o sistema, disponibilizando endpoints 
+                | para obter informações específicas, adicionar comentários e ruas, e eliminar registos.
+                br
+                br
+                | A interface interativa proporcionou aos utilizadores uma experiência intuitiva e agradável, permitindo visualizar informações detalhadas sobre as ruas, 
+                | consultar ruas relacionadas, ler e adicionar comentários. A autenticação de utilizadores e as funcionalidades de edição de ruas contribuíram para uma maior 
+                | personalização e controlo do sistema.
+                br
+                br
+                | Em suma, o desenvolvimento deste projeto permitiu consolidar os conhecimentos adquiridos em Engenharia Web, aplicando-os na criação de um site 
+                | funcional e útil para os utilizadores interessados nas estradas da cidade de Braga. Ao longo do processo, foram enfrentados desafios e tomadas decisões que 
+                | contribuíram para um melhor entendimento das tecnologias e conceitos envolvidos no desenvolvimento web.
                 br
                 br
 
