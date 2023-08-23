@@ -7,7 +7,7 @@
 - O projeto foi desenvolvido pelos seguintes elementos:
   - [Henrique Ribeiro Fernandes, A95323 - 0HenriqueFernandes0](https://github.com/0HenriqueFernandes0)
   - [João Paulo Peixoto Castro, A97223 - joaocasr](https://github.com/joaocasr)
-  - [Mateus Pereira, A91924 - Cavalex](https://github.com/Cavalex)
+  - [Mateus Pereira, A91924](https://www.google.com)
 
 ## Introdução
 
