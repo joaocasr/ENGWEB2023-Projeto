@@ -17,6 +17,16 @@ O projeto foi implementado utilizando a framework Express e envolveu a construç
 
 O site permite aos utilizadores visualizar informações sobre as ruas, ruas relacionadas, comentários e interagir com o sistema através de funcionalidades como adicionar comentários e ruas.
 
+## Visão Geral da Aplicação
+
+<img src= "images/1.png" width=800>
+<img src= "images/2.png" width=800>
+<img src= "images/3.png" width=800>
+<img src= "images/4.png" width=800>
+<img src= "images/5.png" width=800>
+<img src= "images/6.png" width=800>
+<img src= "images/7.png" width=800>
+
 ## Descrição dos Datasets
 
 - **Dataset de Ruas:**
@@ -127,7 +137,7 @@ Dependente do serviço mongodbpara para garantir que a base de dados esteja em e
 
 Este serviço garante e executa o servidor de autenticação do projeto,o código-fonte do servidor de autenticação está localizado no diretório "./AUTH".
 Ele reiniciava automaticamente em caso de falhas.
-Estabeleça uma variável de ambiente MONGODB_URLpara estabelecer a conexão com a base de dados MongoDB.
+Estabeleça uma variável de ambiente MONGODB_URL para estabelecer a conexão com a base de dados MongoDB.
 A porta 7779 do contêiner é mapeada para a porta 7779 do host, permitindo o acesso ao servidor de autenticação por meio dessa porta.
 Dependente do serviço mongodbpara garantir que a base de dados esteja em execução antes do servidor de autenticação.
 
