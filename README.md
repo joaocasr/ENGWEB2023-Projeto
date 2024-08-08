@@ -141,11 +141,11 @@ Estabeleça uma variável de ambiente MONGODB_URL para estabelecer a conexão co
 A porta 7779 do contêiner é mapeada para a porta 7779 do host, permitindo o acesso ao servidor de autenticação por meio dessa porta.
 Dependente do serviço mongodbpara garantir que a base de dados esteja em execução antes do servidor de autenticação.
 
+### Run Web App with docker-compose
 
-Após testarmos nosso código-fonte com o Docker, notamos que ele não suporta uma funcionalidade da nossa aplicação: os comentários das ruas. Portanto, tomamos a decisão de desabilitar o código relacionado ao Docker e executar nossa aplicação sem o uso de contêineres.
-
-Ao desabilitar o código do Docker, nosso aplicativo funcionará corretamente e todas as suas funcionalidades, incluindo os comentários das ruas, estarão disponíveis. Essa abordagem nos permite garantir o pleno funcionamento da aplicação.
-
+```
+docker-compose up --build
+```
 
 ## Conclusão
 

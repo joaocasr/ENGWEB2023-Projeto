@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGODB_URL,
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 5000});
 */
-var mongoDB = 'mongodb://127.0.0.1/MapaBraga'
+var mongoDB = process.env.MONGODB_URL;
 mongoose.connect(mongoDB,{useNewUrlParser: true,useUnifiedTopology:true})
   
 var db = mongoose.connection;
